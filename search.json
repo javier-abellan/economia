@@ -14,19 +14,89 @@
     "href": "intro.html",
     "title": "1  La economía: conceptos y problemas fundamentales",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. «Literate Programming». Comput. J. (USA) 27 (2): 97-111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "1.1 La ciencia económica: microeconomía y macroeconomía\nLa ciencia económica suele dividirse en dos partes, en función del objeto de estudio: microeconomía y macroeconomía.\nLa microeconomía estudia el comportamiento de los agentes individuales (consumidores y empresas) y el funcionamiento de cada mercado. La macroeconomía estudia el comportamiento del sistema económico en su conjunto, de magnitudes agregadas (totales).",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
     ]
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "Referencias",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "objectID": "intro.html#escasez-elección-y-coste-de-oportunidad",
+    "href": "intro.html#escasez-elección-y-coste-de-oportunidad",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.2 Escasez, elección y coste de oportunidad",
+    "text": "1.2 Escasez, elección y coste de oportunidad",
     "crumbs": [
-      "Referencias"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#la-producción-factores-productivos-y-tecnología",
+    "href": "intro.html#la-producción-factores-productivos-y-tecnología",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.3 La producción: factores productivos y tecnología",
+    "text": "1.3 La producción: factores productivos y tecnología",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#el-reparto-del-producto-la-distribución",
+    "href": "intro.html#el-reparto-del-producto-la-distribución",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.4 El reparto del producto: la distribución",
+    "text": "1.4 El reparto del producto: la distribución",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#el-uso-del-producto-bienes-de-consumo-y-de-capital",
+    "href": "intro.html#el-uso-del-producto-bienes-de-consumo-y-de-capital",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.5 El uso del producto: bienes de consumo y de capital",
+    "text": "1.5 El uso del producto: bienes de consumo y de capital",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#la-frontera-de-posibilidades-de-producción-fpp",
+    "href": "intro.html#la-frontera-de-posibilidades-de-producción-fpp",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.6 La frontera de posibilidades de producción (FPP)",
+    "text": "1.6 La frontera de posibilidades de producción (FPP)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#la-ley-de-los-rendimientos-marginales-decrecientes-rmd",
+    "href": "intro.html#la-ley-de-los-rendimientos-marginales-decrecientes-rmd",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.7 La ley de los rendimientos marginales decrecientes (RMD)",
+    "text": "1.7 La ley de los rendimientos marginales decrecientes (RMD)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#la-eficiencia",
+    "href": "intro.html#la-eficiencia",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.8 La eficiencia",
+    "text": "1.8 La eficiencia",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#formas-de-organización-autoridad-y-mercado",
+    "href": "intro.html#formas-de-organización-autoridad-y-mercado",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.9 Formas de organización: autoridad y mercado",
+    "text": "1.9 Formas de organización: autoridad y mercado",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
     ]
   }
 ]
