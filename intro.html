@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -217,12 +246,24 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#la-ciencia-económica-microeconomía-y-macroeconomía" id="toc-la-ciencia-económica-microeconomía-y-macroeconomía" class="nav-link active" data-scroll-target="#la-ciencia-económica-microeconomía-y-macroeconomía"><span class="header-section-number">1.1</span> La ciencia económica: microeconomía y macroeconomía</a>
   <ul class="collapse">
   <li><a href="#microeconomía" id="toc-microeconomía" class="nav-link" data-scroll-target="#microeconomía"><span class="header-section-number">1.1.1</span> Microeconomía</a></li>
+  <li><a href="#macroeconomía" id="toc-macroeconomía" class="nav-link" data-scroll-target="#macroeconomía"><span class="header-section-number">1.1.2</span> Macroeconomía</a></li>
   </ul></li>
   <li><a href="#escasez-elección-y-coste-de-oportunidad" id="toc-escasez-elección-y-coste-de-oportunidad" class="nav-link" data-scroll-target="#escasez-elección-y-coste-de-oportunidad"><span class="header-section-number">1.2</span> Escasez, elección y coste de oportunidad</a></li>
-  <li><a href="#la-producción-factores-productivos-y-tecnología" id="toc-la-producción-factores-productivos-y-tecnología" class="nav-link" data-scroll-target="#la-producción-factores-productivos-y-tecnología"><span class="header-section-number">1.3</span> La producción: factores productivos y tecnología</a></li>
+  <li><a href="#la-producción-factores-productivos-y-tecnología" id="toc-la-producción-factores-productivos-y-tecnología" class="nav-link" data-scroll-target="#la-producción-factores-productivos-y-tecnología"><span class="header-section-number">1.3</span> La producción: factores productivos y tecnología</a>
+  <ul class="collapse">
+  <li><a href="#los-recursos-y-los-factores-productivos" id="toc-los-recursos-y-los-factores-productivos" class="nav-link" data-scroll-target="#los-recursos-y-los-factores-productivos"><span class="header-section-number">1.3.1</span> Los recursos y los factores productivos</a></li>
+  <li><a href="#la-tecnología" id="toc-la-tecnología" class="nav-link" data-scroll-target="#la-tecnología"><span class="header-section-number">1.3.2</span> La tecnología</a></li>
+  </ul></li>
   <li><a href="#el-reparto-del-producto-la-distribución" id="toc-el-reparto-del-producto-la-distribución" class="nav-link" data-scroll-target="#el-reparto-del-producto-la-distribución"><span class="header-section-number">1.4</span> El reparto del producto: la distribución</a></li>
   <li><a href="#el-uso-del-producto-bienes-de-consumo-y-de-capital" id="toc-el-uso-del-producto-bienes-de-consumo-y-de-capital" class="nav-link" data-scroll-target="#el-uso-del-producto-bienes-de-consumo-y-de-capital"><span class="header-section-number">1.5</span> El uso del producto: bienes de consumo y de capital</a></li>
-  <li><a href="#la-frontera-de-posibilidades-de-producción-fpp" id="toc-la-frontera-de-posibilidades-de-producción-fpp" class="nav-link" data-scroll-target="#la-frontera-de-posibilidades-de-producción-fpp"><span class="header-section-number">1.6</span> La frontera de posibilidades de producción (FPP)</a></li>
+  <li><a href="#la-frontera-de-posibilidades-de-producción-fpp" id="toc-la-frontera-de-posibilidades-de-producción-fpp" class="nav-link" data-scroll-target="#la-frontera-de-posibilidades-de-producción-fpp"><span class="header-section-number">1.6</span> La frontera de posibilidades de producción (FPP)</a>
+  <ul class="collapse">
+  <li><a href="#configuración-del-modelo-y-factores-de-producción" id="toc-configuración-del-modelo-y-factores-de-producción" class="nav-link" data-scroll-target="#configuración-del-modelo-y-factores-de-producción"><span class="header-section-number">1.6.1</span> Configuración del modelo y factores de producción</a></li>
+  <li><a href="#combinaciones-de-producción-eficientes" id="toc-combinaciones-de-producción-eficientes" class="nav-link" data-scroll-target="#combinaciones-de-producción-eficientes"><span class="header-section-number">1.6.2</span> Combinaciones de Producción Eficientes</a></li>
+  <li><a href="#propiedades-de-la-fpp" id="toc-propiedades-de-la-fpp" class="nav-link" data-scroll-target="#propiedades-de-la-fpp"><span class="header-section-number">1.6.3</span> Propiedades de la FPP</a></li>
+  <li><a href="#la-fpp-y-el-coste-de-oportunidad" id="toc-la-fpp-y-el-coste-de-oportunidad" class="nav-link" data-scroll-target="#la-fpp-y-el-coste-de-oportunidad"><span class="header-section-number">1.6.4</span> La FPP y el Coste de Oportunidad</a></li>
+  <li><a href="#desplazamientos-de-la-frontera" id="toc-desplazamientos-de-la-frontera" class="nav-link" data-scroll-target="#desplazamientos-de-la-frontera"><span class="header-section-number">1.6.5</span> Desplazamientos de la frontera</a></li>
+  </ul></li>
   <li><a href="#la-ley-de-los-rendimientos-marginales-decrecientes-rmd" id="toc-la-ley-de-los-rendimientos-marginales-decrecientes-rmd" class="nav-link" data-scroll-target="#la-ley-de-los-rendimientos-marginales-decrecientes-rmd"><span class="header-section-number">1.7</span> La ley de los rendimientos marginales decrecientes (RMD)</a></li>
   <li><a href="#la-eficiencia" id="toc-la-eficiencia" class="nav-link" data-scroll-target="#la-eficiencia"><span class="header-section-number">1.8</span> La eficiencia</a></li>
   <li><a href="#formas-de-organización-autoridad-y-mercado" id="toc-formas-de-organización-autoridad-y-mercado" class="nav-link" data-scroll-target="#formas-de-organización-autoridad-y-mercado"><span class="header-section-number">1.9</span> Formas de organización: autoridad y mercado</a></li>
@@ -270,21 +311,328 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
+<section id="macroeconomía" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="macroeconomía"><span class="header-section-number">1.1.2</span> Macroeconomía</h3>
+<p>La macroeconomía estudia el comportamiento del sistema económico en su conjunto, de magnitudes agregadas (totales).</p>
+<p>Sus objetivos principales son comprender el funcionamiento global de la economía y formular políticas económicas que promuevan la estabilidad y el crecimiento económico sostenible.</p>
+<section id="ámbitos-de-estudio-en-macroeconomía" class="level4" data-number="1.1.2.1">
+<h4 data-number="1.1.2.1" class="anchored" data-anchor-id="ámbitos-de-estudio-en-macroeconomía"><span class="header-section-number">1.1.2.1</span> Ámbitos de estudio en macroeconomía</h4>
+<ul>
+<li>Teoría del crecimiento económico (PIB).</li>
+<li>Teoría del ciclo económico (PIB, desempleo).</li>
+<li>Economía monetaria y financiera (inflación, IPC).</li>
+<li>Políticas fiscales y monetarias.</li>
+<li>Comercio internacional y balanza de pagos.</li>
+</ul>
+</section>
+</section>
 </section>
 <section id="escasez-elección-y-coste-de-oportunidad" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="escasez-elección-y-coste-de-oportunidad"><span class="header-section-number">1.2</span> Escasez, elección y coste de oportunidad</h2>
+<p>Las personas tienen <strong>deseos</strong> y <em>necesidades</em> que satisfacer.</p>
+<p>Los <strong>recursos</strong> son los medios de los que disponen los individuos o la sociedad para conseguir sus objetivos.</p>
+<p>Los recursos son <strong>escasos</strong>, porque son insuficientes para colmar todos los deseos ilimitados de las personas.</p>
+<p>La escasez hace necesaria la <strong>elección</strong> entre los usos u opciones diferentes que pueden darse a los recursos.</p>
+<p>El <strong>coste de oportunidad</strong> es el valor de la mejor opción alternativa a la elegida (el coste de renunciar).</p>
+<p>Excepcionalmente se pueden encontrar recursos en cantidad más que suficiente para colmar los deseos: se habla de <strong>bienes libres</strong>. Por ejemplo, el aire que respiramos.</p>
 </section>
 <section id="la-producción-factores-productivos-y-tecnología" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="la-producción-factores-productivos-y-tecnología"><span class="header-section-number">1.3</span> La producción: factores productivos y tecnología</h2>
+<section id="los-recursos-y-los-factores-productivos" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="los-recursos-y-los-factores-productivos"><span class="header-section-number">1.3.1</span> Los recursos y los factores productivos</h3>
+<p>Hay muchos tipos de recursos. Los que se usan para producir otras cosas se llaman <em>factores productivos</em>:</p>
+<ul>
+<li><strong>Tierra</strong> (recursos naturales): suelo, agua, petróleo, minerales…</li>
+<li><strong>Trabajo</strong> (recursos humanos): capacidad física, mental, formación…</li>
+<li><strong>Capital</strong>: maquinaria, instalaciones, infraestructuras…</li>
+</ul>
+<p><em>Producir</em> es <em>combinar factores</em> para obtener un <em>producto</em>:</p>
+<ul>
+<li>Los productos <strong>tangibles</strong> son denominados bienes o mercancías.</li>
+<li>Los productos <strong>intangibles</strong> son denominados servicios.</li>
+</ul>
+</section>
+<section id="la-tecnología" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="la-tecnología"><span class="header-section-number">1.3.2</span> La tecnología</h3>
+<p>La <strong>tecnología</strong> es el conjunto de <em>conocimientos técnicos</em> y <strong>formas de hacer y actuar</strong> para producir.</p>
+<p>Determina qué cantidades máximas de producto pueden obtenerse con cada combinación de factores productivos.</p>
+<p>Un avance en los conocimientos, inventos o nuevos descubrimientos resultan en una <em>mejora tecnológica</em>.</p>
+<p>La aplicación de una mejora tecnológica a la producción constituye una <em>innovación</em>.</p>
+</section>
 </section>
 <section id="el-reparto-del-producto-la-distribución" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="el-reparto-del-producto-la-distribución"><span class="header-section-number">1.4</span> El reparto del producto: la distribución</h2>
+<p>La economía también estudia <strong>cómo se reparten los bienes y servicios producidos</strong> por una sociedad.</p>
+<p>Existen dos formas de medir o analizar la <strong>distribución</strong>:</p>
+<ul>
+<li><p><strong>Distribución funcional</strong>: cómo se reparte el producto entre grupos sociales atendiendo al tipo de factor productivo aportado (<strong>trabajadores</strong> y <strong>propietarios de empresas</strong>).</p></li>
+<li><p><strong>Distribución personal</strong>: cómo se reparte el producto entre individuos, con independencia del tipo de factor productivo aportado.</p></li>
+</ul>
 </section>
 <section id="el-uso-del-producto-bienes-de-consumo-y-de-capital" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="el-uso-del-producto-bienes-de-consumo-y-de-capital"><span class="header-section-number">1.5</span> El uso del producto: bienes de consumo y de capital</h2>
+<p>Una vez realizada la producción y repartida ¿para qué se utilizan los productos?</p>
+<p>La mayor parte de ellos se utilizan para satisfacer los deseos de los individuos: se llaman <strong>bienes de consumo</strong>.</p>
+<p>El <strong>consumo</strong> es la actividad por la que los individuos satisfacen sus necesidades.</p>
+<p>El individuo toma una <strong>decisión</strong> en la que decide cuánto destinar a consumo y cuánto destinar a ahorro.</p>
+<p>El ahorro consiste en consumir menos ahora para consumir más en el futuro.</p>
+<p>También se puede “desahorrar”, consumiendo más ahora y menos en el futuro (endeudándose).</p>
+<p>La <strong>renta</strong> acumulada mediante el ahorro es la <strong>riqueza</strong>. Se puede mantener en activos, que pueden ser materiales (terrenos, inmuebles…), o financieros (cuentas bancarias, letras, acciones…).</p>
+<p>Los <strong>bienes de capital</strong> (o bienes de inversión) son aquellos que no se usan para satisfacer deseos directamente sino para <em>producir otros bienes</em>.</p>
+<p>La <strong>inversión</strong> es el proceso por el que la sociedad produce e instala bienes de capital con el objetivo de aumentar la capacidad productiva. La inversión genera un aumento del fondo o <em>stock</em> de capital.</p>
+<p>La decisión de inversión implica asumir <strong>costes en el presente</strong> (préstamos o ahorros) para obtener <strong>ganancias en el futuro</strong>.</p>
 </section>
 <section id="la-frontera-de-posibilidades-de-producción-fpp" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="la-frontera-de-posibilidades-de-producción-fpp"><span class="header-section-number">1.6</span> La frontera de posibilidades de producción (FPP)</h2>
+<p>La <strong>frontera de posibilidades de producción</strong> (FPP) se refiere a las posibilidades de elección de una sociedad.</p>
+<p>Conocer las opciones: Recursos escasos y la tecnología es limitada.</p>
+<p>Todos los condicionantes que limitan las posibilidades de elección se denominan <strong>restricciones</strong>.</p>
+<p>La FPP constituye un modelo que va a indicar las <strong>combinaciones de bienes que se pueden o no se pueden producir</strong>, dados unos recursos limitados y una tecnología.</p>
+<p>[cite_start]Para entender cómo una sociedad gestiona la escasez, analizaremos el modelo de la <strong>Frontera de Posibilidades de Producción (FPP)</strong> a través de un ejemplo práctico con restricciones de recursos y tecnología fijas[cite: 415, 416, 429].</p>
+<section id="configuración-del-modelo-y-factores-de-producción" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="configuración-del-modelo-y-factores-de-producción"><span class="header-section-number">1.6.1</span> Configuración del modelo y factores de producción</h3>
+<p>[cite_start]Supongamos una economía simplificada que cuenta con los siguientes recursos productivos disponibles[cite: 415]:</p>
+<ul>
+<li>[cite_start]<strong>Tierra (<span class="math inline">\(T\)</span>):</strong> 10 unidades[cite: 415].</li>
+<li>[cite_start]<strong>Trabajo (<span class="math inline">\(L\)</span>):</strong> 5 unidades[cite: 415].</li>
+<li>[cite_start]<strong>Capital (<span class="math inline">\(K\)</span>):</strong> 3 unidades[cite: 415].</li>
+</ul>
+<p>[cite_start]En esta economía únicamente se pueden producir dos tipos de bienes[cite: 415]: 1. [cite_start]<strong>Alimentos:</strong> Cuya producción requiere combinar factores de <em>tierra</em> y <em>trabajo</em>[cite: 415]. 2. [cite_start]<strong>Vestidos:</strong> Cuya producción requiere combinar factores de <em>capital</em> y <em>trabajo</em>[cite: 415].</p>
+<p>[cite_start]Se asume, además, que el estado de la tecnología se mantiene constante durante el análisis[cite: 416].</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>[cite_start]Las funciones de producción individuales para ambos bienes reflejan una propiedad económica fundamental: la <strong>Ley de Rendimientos Decrecientes</strong>. [cite_start]A medida que se asignan más unidades de trabajo a una cantidad fija de tierra o capital, el incremento en la producción final es cada vez menor.</p>
+</div>
+</div>
+<p>[cite_start]Las siguientes tablas detallan las cantidades máximas que se obtienen de cada bien de manera independiente según la asignación del factor trabajo (<span class="math inline">\(L\)</span>):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 9%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Trabajo (<span class="math inline">\(L\)</span>) en Alimentos</th>
+<th style="text-align: center;">Tierra (<span class="math inline">\(T\)</span>)</th>
+<th style="text-align: center;">Producción de Alimentos</th>
+<th></th>
+<th style="text-align: center;">Trabajo (<span class="math inline">\(L\)</span>) en Vestidos</th>
+<th style="text-align: center;">Capital (<span class="math inline">\(K\)</span>)</th>
+<th style="text-align: center;">Producción de Vestidos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0</td>
+<td></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">50</td>
+<td></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">90</td>
+<td></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">120</td>
+<td></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">24</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">140</td>
+<td></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">28</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">150</td>
+<td></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">30</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="combinaciones-de-producción-eficientes" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="combinaciones-de-producción-eficientes"><span class="header-section-number">1.6.2</span> Combinaciones de Producción Eficientes</h3>
+<p>[cite_start]Dado que el factor trabajo (<span class="math inline">\(L = 5\)</span>) es limitado, la sociedad debe decidir cómo distribuirlo entre ambas industrias[cite: 415, 421]. [cite_start]Se puede optar por destinar toda la tierra y el trabajo a los alimentos, todo el capital y el trabajo a los vestidos, o buscar un punto intermedio.</p>
+<p>[cite_start]Al realizar esta asignación, se obtienen <strong>seis combinaciones posibles</strong> de producción máxima (del punto A al F)[cite: 421, 422]:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Combinación</th>
+<th style="text-align: center;">Trabajo Alimentos</th>
+<th style="text-align: center;">Trabajo Vestidos</th>
+<th style="text-align: center;">Producción Alimentos</th>
+<th style="text-align: center;">Producción Vestidos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">28</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">90</td>
+<td style="text-align: center;">24</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>E</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">140</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>F</strong></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">150</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p>[cite_start]Esta tabla recoge formalmente el límite de lo que la economía es capaz de generar: muestra la cantidad máxima de alimentos que se pueden producir dada una cantidad determinada de vestidos, y viceversa[cite: 421].</p>
+</section>
+<section id="propiedades-de-la-fpp" class="level3" data-number="1.6.3">
+<h3 data-number="1.6.3" class="anchored" data-anchor-id="propiedades-de-la-fpp"><span class="header-section-number">1.6.3</span> Propiedades de la FPP</h3>
+<p>[cite_start]Al trasladar estas seis combinaciones a un eje de coordenadas, se traza la curva de la <strong>Frontera de Posibilidades de Producción (FPP)</strong>[cite: 422, 423]. Esta frontera cuenta con dos características visuales y teóricas esenciales:</p>
+<ol type="1">
+<li>[cite_start]<strong>Es decreciente:</strong> Debido a que los recursos son plenamente utilizados, si la sociedad desea aumentar la producción de alimentos, obligatoriamente debe reasignar mano de obra y renunciar a la producción de algunos vestidos[cite: 424].</li>
+<li>[cite_start]<strong>Es cóncava hacia el origen:</strong> Esto se debe a la disparidad en la productividad de los factores al ser transferidos de una industria a otra (relacionado directamente con los rendimientos decrecientes)[cite: 425].</li>
+</ol>
+<section id="clasificación-de-las-combinaciones-económicas" class="level4" data-number="1.6.3.1">
+<h4 data-number="1.6.3.1" class="anchored" data-anchor-id="clasificación-de-las-combinaciones-económicas"><span class="header-section-number">1.6.3.1</span> Clasificación de las combinaciones económicas</h4>
+<p>[cite_start]La línea de la FPP actúa como una barrera divisoria que segmenta las decisiones de producción en tres escenarios posibles[cite: 425, 427]:</p>
+<ul>
+<li>[cite_start]<strong>Combinaciones Inaccesibles:</strong> Son aquellas que se sitúan a la derecha de la FPP[cite: 425]. [cite_start]Representan niveles de producción inalcanzables para la sociedad dados los recursos y la tecnología actuales[cite: 426].</li>
+<li>[cite_start]<strong>Combinaciones Eficientes:</strong> Son los puntos que se encuentran estrictamente <em>sobre</em> la línea de la frontera (Puntos A al F)[cite: 427]. [cite_start]En ellos se están aprovechando todos los factores productivos disponibles con la mejor tecnología posible[cite: 427].</li>
+<li>[cite_start]<strong>Combinaciones Ineficientes:</strong> Son los puntos situados a la izquierda de la FPP[cite: 425, 427]. [cite_start]En este espacio la economía no está utilizando la totalidad de sus factores productivos (existe desempleo u ociosidad de recursos) o se está empleando una tecnología inadecuada[cite: 427].</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="la-fpp-y-el-coste-de-oportunidad" class="level3" data-number="1.6.4">
+<h3 data-number="1.6.4" class="anchored" data-anchor-id="la-fpp-y-el-coste-de-oportunidad"><span class="header-section-number">1.6.4</span> La FPP y el Coste de Oportunidad</h3>
+<p>[cite_start]La frontera es una excelente herramienta para ilustrar el <strong>coste de oportunidad</strong> que asume la sociedad al tomar decisiones de asignación[cite: 429].</p>
+<p>[cite_start]Si analizamos de manera secuencial los saltos entre las combinaciones eficientes, observamos un fenómeno crucial: el coste de oportunidad no es constante, sino que aumenta a medida que nos especializamos en un bien[cite: 430]. [cite_start]Esto se conoce como la <strong>Ley de Costes Relativos Crecientes</strong>[cite: 430].</p>
+<ul>
+<li><p>[cite_start]<strong>Pasando del punto A al B:</strong> Ganamos 10 unidades de vestidos sacrificando 10 unidades de alimentos[cite: 430]. [cite_start]<span class="math display">\[\text{Coste de oportunidad (A } \rightarrow \text{ B)} = \frac{10 \text{ alimentos}}{10 \text{ vestidos}} = 1.0 \text{ alimento por vestido}\]</span></p></li>
+<li><p>[cite_start]<strong>Pasando del punto B al C:</strong> Ganamos 8 unidades de vestidos adicionales, pero ahora debemos sacrificar 20 unidades de alimentos[cite: 430]. [cite_start]<span class="math display">\[\text{Coste de oportunidad (B } \rightarrow \text{ C)} = \frac{20 \text{ alimentos}}{8 \text{ vestidos}} = 2.5 \text{ alimentos por vestido}\]</span></p></li>
+</ul>
+<hr>
+</section>
+<section id="desplazamientos-de-la-frontera" class="level3" data-number="1.6.5">
+<h3 data-number="1.6.5" class="anchored" data-anchor-id="desplazamientos-de-la-frontera"><span class="header-section-number">1.6.5</span> Desplazamientos de la frontera</h3>
+<p>[cite_start]La FPP no es estática; representa una fotografía del potencial productivo en un momento determinado. [cite_start]Si las condiciones de partida cambian, la frontera sufrirá un desplazamiento:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Causa del Cambio</th>
+<th>Naturaleza del Movimiento</th>
+<th>Efecto en la Economía</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[cite_start]<strong>Aumento de recursos productivos</strong> <br>(Más tierra, trabajo o capital) [cite: 432]</td>
+<td>[cite_start]Desplazamiento hacia el <strong>exterior</strong> (Derecha) [cite: 432]</td>
+<td>[cite_start]Crece la capacidad de producción de ambos bienes en simultáneo[cite: 436].</td>
+</tr>
+<tr class="even">
+<td>[cite_start]<strong>Disminución de recursos productivos</strong> <br>(Causado por catástrofes, guerras, etc.) [cite: 433]</td>
+<td>[cite_start]Desplazamiento hacia el <strong>origen</strong> (Izquierda) [cite: 434]</td>
+<td>[cite_start]Se reduce el potencial productivo global de la economía[cite: 434].</td>
+</tr>
+<tr class="odd">
+<td>[cite_start]<strong>Mejora tecnológica en un solo bien</strong> <br>(Por ejemplo, solo en vestidos) [cite: 434, 435]</td>
+<td>[cite_start]Desplazamiento hacia el <strong>exterior por el lado del bien afectado</strong> [cite: 434]</td>
+<td>[cite_start]La frontera se pivota o estira únicamente sobre el eje del bien cuya tecnología mejoró[cite: 434].</td>
+</tr>
+<tr class="even">
+<td>[cite_start]<strong>Mejora tecnológica en todos los bienes</strong> [cite: 435]</td>
+<td>[cite_start]Desplazamiento hacia el <strong>exterior</strong> (Derecha) [cite: 435, 436]</td>
+<td>[cite_start]Representa un crecimiento económico generalizado[cite: 436].</td>
+</tr>
+<tr class="odd">
+<td>[cite_start]<strong>Uso de recursos que estaban ociosos</strong> [cite: 436]</td>
+<td>[cite_start]<strong>No hay desplazamiento</strong> de la FPP [cite: 438]</td>
+<td>[cite_start]La economía simplemente se mueve desde un punto ineficiente (interno) hacia un punto eficiente (en la frontera)[cite: 427, 436].</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="la-ley-de-los-rendimientos-marginales-decrecientes-rmd" class="level2" data-number="1.7">
 <h2 data-number="1.7" class="anchored" data-anchor-id="la-ley-de-los-rendimientos-marginales-decrecientes-rmd"><span class="header-section-number">1.7</span> La ley de los rendimientos marginales decrecientes (RMD)</h2>
