@@ -11,3 +11,7 @@ h2 .header-section-number {
 h3 {
   color: #841848 !important;
 }
+
+h3 .header-section-number {
+  color: #841848 !important;
+}
