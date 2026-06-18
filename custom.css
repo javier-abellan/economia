@@ -1,10 +1,10 @@
 /* Custom styling for h2 titles (## in markdown) */
 h2 {
-  color: #005578 !important;
+  color: #385e9d !important;
 }
 
 h2 .header-section-number {
-  color: #005578 !important;
+  color: #385e9d !important;
 }
 
 /* Custom styling for h3 titles (### in markdown) */
