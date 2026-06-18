@@ -19,6 +19,7 @@ h3 .header-section-number {
 /* Custom styling for h4 titles (#### in markdown) */
 h4 {
   color: #ed694b !important;  /* naranja */
+  font-weight: bold !important; /* negrita */
 }
 
 h4 .header-section-number {
