@@ -1,0 +1,8 @@
+/* Custom styling for h2 titles (## in markdown) */
+h2, .anchored[data-number] {
+  color: #003d66 !important;
+}
+
+section.level2 h2 {
+  color: #003d66 !important;
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Economía: una introducción",
+    "section": "",
+    "text": "Prefacio\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Prefacio"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "",
+    "text": "1.1 La ciencia económica: microeconomía y macroeconomía\nLa ciencia económica suele dividirse en dos partes, en función del objeto de estudio: microeconomía y macroeconomía.\nLa microeconomía estudia el comportamiento de los agentes individuales (consumidores y empresas) y el funcionamiento de cada mercado.\nLa macroeconomía estudia el comportamiento del sistema económico en su conjunto, de magnitudes agregadas (totales).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#la-ciencia-económica-microeconomía-y-macroeconomía",
+    "href": "intro.html#la-ciencia-económica-microeconomía-y-macroeconomía",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "",
+    "text": "1.1.1 Microeconomía\nLa microeconomía estudia el comportamiento de los agentes individuales (consumidores y productores) y el funcionamiento de cada mercado.\nAnaliza cómo las decisiones de los agentes individuales afectan a la oferta y la demanda de bienes y servicios, determinando los precios y cómo se distribuyen los recursos.\nSe está haciendo microeconomía cuando se estudia, por ejemplo, el mercado de zapatillas, o el mercado de vehículos, el mercado de la vivienda, el mercado de trabajo, etc.\n\n1.1.1.1 Ámbitos de estudio en microeconomía\n\nTeoría del consumidor: cómo los consumidores deciden gastar su dinero.\nTeoría de la producción: cómo las empresas deciden qué y cuánto producir.\nTeoría de los mercados: cómo se determinan los precios y se asignan los recursos en diferentes tipos de mercados (competencia perfecta, monopolio, etc.).\n\n\n\n\n1.1.2 Macroeconomía\nLa macroeconomía estudia el comportamiento del sistema económico en su conjunto, de magnitudes agregadas (totales).\nSus objetivos principales son comprender el funcionamiento global de la economía y formular políticas económicas que promuevan la estabilidad y el crecimiento económico sostenible.\n\n1.1.2.1 Ámbitos de estudio en macroeconomía\n\nTeoría del crecimiento económico (PIB).\nTeoría del ciclo económico (PIB, desempleo).\nEconomía monetaria y financiera (inflación, IPC).\nPolíticas fiscales y monetarias.\nComercio internacional y balanza de pagos.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#escasez-elección-y-coste-de-oportunidad",
+    "href": "intro.html#escasez-elección-y-coste-de-oportunidad",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.2 Escasez, elección y coste de oportunidad",
+    "text": "1.2 Escasez, elección y coste de oportunidad\nLas personas tienen deseos y necesidades que satisfacer.\nLos recursos son los medios de los que disponen los individuos o la sociedad para conseguir sus objetivos.\nLos recursos son escasos, porque son insuficientes para colmar todos los deseos ilimitados de las personas.\nLa escasez hace necesaria la elección entre los usos u opciones diferentes que pueden darse a los recursos.\nEl coste de oportunidad es el valor de la mejor opción alternativa a la elegida (el coste de renunciar).\nExcepcionalmente se pueden encontrar recursos en cantidad más que suficiente para colmar los deseos: se habla de bienes libres. Por ejemplo, el aire que respiramos.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#la-producción-factores-productivos-y-tecnología",
+    "href": "intro.html#la-producción-factores-productivos-y-tecnología",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.3 La producción: factores productivos y tecnología",
+    "text": "1.3 La producción: factores productivos y tecnología\n\n1.3.1 Los recursos y los factores productivos\nHay muchos tipos de recursos. Los que se usan para producir otras cosas se llaman factores productivos:\n\nTierra (recursos naturales): suelo, agua, petróleo, minerales…\nTrabajo (recursos humanos): capacidad física, mental, formación…\nCapital: maquinaria, instalaciones, infraestructuras…\n\nProducir es combinar factores para obtener un producto:\n\nLos productos tangibles son denominados bienes o mercancías.\nLos productos intangibles son denominados servicios.\n\n\n\n1.3.2 La tecnología\nLa tecnología es el conjunto de conocimientos técnicos y formas de hacer y actuar para producir.\nDetermina qué cantidades máximas de producto pueden obtenerse con cada combinación de factores productivos.\nUn avance en los conocimientos, inventos o nuevos descubrimientos resultan en una mejora tecnológica.\nLa aplicación de una mejora tecnológica a la producción constituye una innovación.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#el-reparto-del-producto-la-distribución",
+    "href": "intro.html#el-reparto-del-producto-la-distribución",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.4 El reparto del producto: la distribución",
+    "text": "1.4 El reparto del producto: la distribución\nLa economía también estudia cómo se reparten los bienes y servicios producidos por una sociedad.\nExisten dos formas de medir o analizar la distribución:\n\nDistribución funcional: cómo se reparte el producto entre grupos sociales atendiendo al tipo de factor productivo aportado (trabajadores y propietarios de empresas).\nDistribución personal: cómo se reparte el producto entre individuos, con independencia del tipo de factor productivo aportado.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#el-uso-del-producto-bienes-de-consumo-y-de-capital",
+    "href": "intro.html#el-uso-del-producto-bienes-de-consumo-y-de-capital",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.5 El uso del producto: bienes de consumo y de capital",
+    "text": "1.5 El uso del producto: bienes de consumo y de capital\nUna vez realizada la producción y repartida ¿para qué se utilizan los productos?\nLa mayor parte de ellos se utilizan para satisfacer los deseos de los individuos: se llaman bienes de consumo.\nEl consumo es la actividad por la que los individuos satisfacen sus necesidades.\nEl individuo toma una decisión en la que decide cuánto destinar a consumo y cuánto destinar a ahorro.\nEl ahorro consiste en consumir menos ahora para consumir más en el futuro.\nTambién se puede “desahorrar”, consumiendo más ahora y menos en el futuro (endeudándose).\nLa renta acumulada mediante el ahorro es la riqueza. Se puede mantener en activos, que pueden ser materiales (terrenos, inmuebles…), o financieros (cuentas bancarias, letras, acciones…).\nLos bienes de capital (o bienes de inversión) son aquellos que no se usan para satisfacer deseos directamente sino para producir otros bienes.\nLa inversión es el proceso por el que la sociedad produce e instala bienes de capital con el objetivo de aumentar la capacidad productiva. La inversión genera un aumento del fondo o stock de capital.\nLa decisión de inversión implica asumir costes en el presente (préstamos o ahorros) para obtener ganancias en el futuro.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#la-frontera-de-posibilidades-de-producción-fpp",
+    "href": "intro.html#la-frontera-de-posibilidades-de-producción-fpp",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.6 La frontera de posibilidades de producción (FPP)",
+    "text": "1.6 La frontera de posibilidades de producción (FPP)\nLa frontera de posibilidades de producción (FPP) se refiere a las posibilidades de elección de una sociedad.\nConocer las opciones: Recursos escasos y la tecnología es limitada.\nTodos los condicionantes que limitan las posibilidades de elección se denominan restricciones.\nLa FPP constituye un modelo que va a indicar las combinaciones de bienes que se pueden o no se pueden producir, dados unos recursos limitados y una tecnología.\nPara entender cómo una sociedad gestiona la escasez, analizaremos el modelo de la Frontera de Posibilidades de Producción (FPP) a través de un ejemplo práctico con restricciones de recursos y tecnología fijas.\n\n1.6.1 Configuración del modelo y factores de producción\nSupongamos una economía simplificada que cuenta con los siguientes recursos productivos disponibles:\n\nTierra (\\(T\\)): 10 unidades.\nTrabajo (\\(L\\)): 5 unidades.\nCapital (\\(K\\)): 3 unidades.\n\nEn esta economía únicamente se pueden producir dos tipos de bienes: 1. Alimentos: Cuya producción requiere combinar factores de tierra y trabajo. 2. Vestidos: Cuya producción requiere combinar factores de capital y trabajo.\nSe asume, además, que el estado de la tecnología se mantiene constante durante el análisis.\n\n\n1.6.2 Tablas de producción\nLas tablas que se muestran a continuación, llamadas tablas de producción, muestran las cantidades máximas que se obtienen de cada bien de manera independiente según la asignación del factor trabajo (\\(L\\)). Dado que la producción de vestidos no requiere tierra, se puede destinar toda la tierra a producir alimentos. Del mismo modo, dado que la producción de alimentos no requiere capital, se puede destinar todo el capital a producir vestidos.\n\n\n\nTabla 1.1: Producción máxima de alimentos según el factor trabajo\n\n\n\n\n\nTrabajo (\\(L\\))\nTierra (\\(T\\))\nALIMENTOS\n\n\n\n\n0\n10\n0\n\n\n1\n10\n50\n\n\n2\n10\n90\n\n\n3\n10\n120\n\n\n4\n10\n140\n\n\n5\n10\n150\n\n\n\n\n\n\n\n\n\n\nTabla 1.2: Producción máxima de vestidos según el factor trabajo\n\n\n\n\n\nTrabajo (\\(L\\))\nCapital (\\(K\\))\nVESTIDOS\n\n\n\n\n0\n3\n0\n\n\n1\n3\n10\n\n\n2\n3\n18\n\n\n3\n3\n24\n\n\n4\n3\n28\n\n\n5\n3\n30\n\n\n\n\n\n\nLas tablas de producción para estos dos bienes reflejan una importante ley económica: la Ley de Rendimientos Decrecientes. A medida que se asignan más unidades de trabajo a una cantidad fija de tierra o capital, el incremento en la producción final es cada vez menor.\n\n\n1.6.3 Combinaciones de Producción Eficientes\nDado que el factor trabajo (\\(L = 5\\)) es limitado, la sociedad debe decidir cómo distribuirlo entre ambas industrias. Se puede optar por destinar toda la tierra y el trabajo a los alimentos, todo el capital y el trabajo a los vestidos, o buscar un punto intermedio.\nAl realizar esta asignación, se obtienen seis combinaciones posibles de producción máxima (del punto A al F):\n\n\n\nTabla 1.3: Posibilidades de producción de alimentos y vestidos\n\n\n\n\n\n\n\n\n\n\n\n\nCombinación\nTrabajo Alimentos\nTrabajo Vestidos\nProducción Alimentos\nProducción Vestidos\n\n\n\n\nA\n0\n5\n0\n30\n\n\nB\n1\n4\n50\n28\n\n\nC\n2\n3\n90\n24\n\n\nD\n3\n2\n120\n18\n\n\nE\n4\n1\n140\n10\n\n\nF\n5\n0\n150\n0\n\n\n\n\n\n\nEsta tabla recoge formalmente el límite de lo que la economía es capaz de generar: muestra la cantidad máxima de alimentos que se pueden producir dada una cantidad determinada de vestidos, y viceversa.\n\n\n1.6.4 Propiedades de la FPP\nAl trasladar estas seis combinaciones a un eje de coordenadas, se traza la curva de la Frontera de Posibilidades de Producción (FPP). Esta frontera cuenta con dos características visuales y teóricas esenciales:\n\nEs decreciente: Debido a que los recursos son plenamente utilizados, si la sociedad desea aumentar la producción de alimentos, obligatoriamente debe reasignar mano de obra y renunciar a la producción de algunos vestidos.\nEs cóncava hacia el origen: Esto se debe a la disparidad en la productividad de los factores al ser transferidos de una industria a otra (relacionado directamente con los rendimientos decrecientes).\n\n\n\n\n\n\n\n\n\nFigura 1.1: Representación gráfica de la Frontera de Posibilidades de Producción (FPP)\n\n\n\n\n\n\n1.6.4.1 Clasificación de las combinaciones económicas\nLa línea de la FPP actúa como una barrera divisoria que segmenta las decisiones de producción en dos escenarios posibles:\n\nCombinaciones inaccesibles: Son aquellas que se sitúan a la derecha de la FPP. Representan niveles de producción inalcanzables para la sociedad dados los recursos y la tecnología actuales. Por ejemplo, en el gráfico anterior, la combinación formada por 25 unidades de vestidos y 120 de alimentos es una combinación inaccesible.\nCombinaciones accesibles: Son aquellas que se sitúan a en la FPP o a su izquierda. Representan niveles de producción alcanzables para la sociedad dados los recursos y la tecnología actuales. Por ejemplo, en el gráfico anterior, la combinación de 10 vestidos y 140 alimentos es accesible. También es accesible la combinación de 10 vestidos y 20 alimentos.\n\nLa FPP es una representación de las restricciones a las que se enfrenta la sociedad. Esta debe elegir una combinación situada sobre la frontera o a su izquierda. No puede elegir las situadas a la derecha.\nEntre las combinaciones accesibles, se puede distinguir a su vez entre combinaciones eficientes e ineficientes:\n\nCombinaciones eficientes: Son los puntos que se encuentran estrictamente sobre la línea de la frontera (Puntos A al F). En ellos se están aprovechando todos los factores productivos disponibles con la mejor tecnología posible. Por ejemplo, en el gráfico anterior, la combinación de 10 vestidos y 140 alimentos es eficiente.\nCombinaciones ineficientes: Son los puntos situados a la izquierda de la FPP. En este espacio la economía no está utilizando la totalidad de sus factores productivos (existe desempleo u ociosidad de recursos) o se está empleando una tecnología inadecuada. Por ejemplo, en el gráfico anterior, la combinación de 10 vestidos y 20 alimentos es ineficiente.\n\n\n\n\n\n1.6.5 La FPP y el Coste de Oportunidad\nLa frontera es una excelente herramienta para ilustrar el coste de oportunidad que asume la sociedad al tomar decisiones de asignación.\nSi analizamos de manera secuencial los saltos entre las combinaciones eficientes, observamos un fenómeno crucial: el coste de oportunidad no es constante, sino que aumenta a medida que nos especializamos en un bien. Esto se conoce como la Ley de Costes Relativos Crecientes.\n\nAl pasar del punto A al B: Ganamos 10 unidades de vestidos sacrificando 10 unidades de alimentos. Esto implica un coste de oportunidad de 1.0 alimento por cada vestido obtenido.\nAl pasar del punto B al C: Ganamos 8 unidades de vestidos adicionales, pero ahora debemos sacrificar 20 unidades de alimentos. El coste aumenta a 2.5 alimentos por cada nuevo vestido.\n\n\n\n\n1.6.6 Desplazamientos de la Frontera\nLa FPP no es estática; representa una fotografía del potencial productivo en un momento determinado. Si las condiciones de partida cambian, la frontera sufrirá un desplazamiento:\n\n\n\n\n\n\n\n\nCausa del Cambio\nNaturaleza del Movimiento\nEfecto en la Economía\n\n\n\n\nAumento de recursos productivos (Más tierra, trabajo o capital)\nDesplazamiento hacia el exterior (Derecha)\nCrece la capacidad de producción de ambos bienes en simultáneo.\n\n\nDisminución de recursos productivos (Causado por catástrofes, guerras, etc.)\nDesplazamiento hacia el origen (Izquierda)\nSe reduce el potencial productivo global de la economía.\n\n\nMejora tecnológica en un solo bien (Por ejemplo, solo en vestidos)\nDesplazamiento hacia el exterior por el lado del bien afectado\nLa frontera se pivota o estira únicamente sobre el eje del bien cuya tecnología mejoró.\n\n\nMejora tecnológica en todos los bienes\nDesplazamiento hacia el exterior (Derecha)\nRepresenta un crecimiento económico generalizado.\n\n\nUso de recursos que estaban ociosos\nNo hay desplazamiento de la FPP\nLa economía simplemente se mueve desde un punto ineficiente (interno) hacia un punto eficiente (en la frontera).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#la-ley-de-los-rendimientos-marginales-decrecientes-rmd",
+    "href": "intro.html#la-ley-de-los-rendimientos-marginales-decrecientes-rmd",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.7 La ley de los rendimientos marginales decrecientes (RMD)",
+    "text": "1.7 La ley de los rendimientos marginales decrecientes (RMD)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#la-eficiencia",
+    "href": "intro.html#la-eficiencia",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.8 La eficiencia",
+    "text": "1.8 La eficiencia",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#formas-de-organización-autoridad-y-mercado",
+    "href": "intro.html#formas-de-organización-autoridad-y-mercado",
+    "title": "1  La economía: conceptos y problemas fundamentales",
+    "section": "1.9 Formas de organización: autoridad y mercado",
+    "text": "1.9 Formas de organización: autoridad y mercado",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>La economía: conceptos y problemas fundamentales</span>"
+    ]
+  }
+]
