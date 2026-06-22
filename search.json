@@ -281,7 +281,7 @@
     "href": "competencia_perfecta.html#el-excedente-de-consumidores-y-productores",
     "title": "4  La empresa en el mercado de competencia perfecta",
     "section": "4.7 El excedente de consumidores y productores",
-    "text": "4.7 El excedente de consumidores y productores\nEl excedente mide la diferencia entre lo que un agente está dispuesto a dar o recibir en el mercado y lo que realmente da o recibe. Se mide en unidades monetarias.\n\n4.7.1 Excedente del consumidor\nEl excedente del consumidor (\\(ec\\)) es la diferencia entre la cantidad de dinero que el consumidor está dispuesto a pagar y la que realmente paga:\n\\[\nec=\\text{disposición a pagar}-\\text{precio pagado}\n\\]\nEs una medida de bienestar o satisfacción del consumidor. Será positivo o cero, pero nunca será negativo.\nEjemplo: el excedente de Juanito y sus empanadas favoritas. Juanito es un amante de las empanadas y está dispuesto a pagar hasta 10 euros por una. Al ir a la tienda, descubre que cuestan solo 5 euros. Juanito tiene un “extra” de 5 euros de satisfacción en comparación con lo que pagó. Ese “extra” es lo que llamamos excedente del consumidor.\n\n\n4.7.2 Excedente del productor\nEl excedente del productor (\\(ep\\)) es la diferencia entre el ingreso que el vendedor obtiene por esa unidad, es decir, el precio, y lo que cuesta producir esa unidad en términos incrementales, es decir, el coste marginal.\nCoincide con el beneficio marginal, que es el incremento del beneficio que proporciona esa unidad.\nSerá positivo si el precio es superior al coste marginal, o será cero, pero nunca producirá una unidad cuyo coste marginal sea superior al precio que le pagan.\nEjemplo. Un fabricante observa que puede vender sus productos a 10 euros y que la unidad 450 tiene un coste marginal de producción de 7 euros. El \\(ep\\) por la unidad 450 será:\n\\[\n10-7=3 \\text{euros}\n\\]",
+    "text": "4.7 El excedente de consumidores y productores\nEl excedente mide la diferencia entre lo que un agente está dispuesto a dar o recibir en el mercado y lo que realmente da o recibe. Se mide en unidades monetarias.\n\n4.7.1 Excedente del consumidor\nEl excedente del consumidor (\\(ec\\)) es la diferencia entre la cantidad de dinero que el consumidor está dispuesto a pagar y la que realmente paga:\n\\[\nec=\\text{disposición a pagar}-\\text{precio pagado}\n\\]\nEs una medida de bienestar o satisfacción del consumidor. Será positivo o cero, pero nunca será negativo.\nEjemplo: el excedente de Juanito y sus empanadas favoritas. Juanito es un amante de las empanadas y está dispuesto a pagar hasta 10 euros por una. Al ir a la tienda, descubre que cuestan solo 5 euros. Juanito tiene un “extra” de 5 euros de satisfacción en comparación con lo que pagó. Ese “extra” es lo que llamamos excedente del consumidor.\n\n\n4.7.2 Excedente del productor\nEl excedente del productor (\\(ep\\)) es la diferencia entre el ingreso que el vendedor obtiene por esa unidad, es decir, el precio, y lo que cuesta producir esa unidad en términos incrementales, es decir, el coste marginal.\nCoincide con el beneficio marginal, que es el incremento del beneficio que proporciona esa unidad.\nSerá positivo si el precio es superior al coste marginal, o será cero, pero nunca producirá una unidad cuyo coste marginal sea superior al precio que le pagan.\nEjemplo. Un fabricante observa que puede vender sus productos a 10 euros y que la unidad 450 tiene un coste marginal de producción de 7 euros. El \\(ep\\) por la unidad 450 será:\n\\[\n10-7=3 \\text{ euros}\n\\]",
     "crumbs": [
       "Parte I. Microeconomía",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
@@ -296,6 +296,94 @@
     "crumbs": [
       "Parte I. Microeconomía",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
+    ]
+  },
+  {
+    "objectID": "mercados_no_competitivos.html",
+    "href": "mercados_no_competitivos.html",
+    "title": "5  Los mercados no competitivos",
+    "section": "",
+    "text": "5.1 Contenidos\nEl tema se organiza en torno a tres bloques:",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Los mercados no competitivos</span>"
+    ]
+  },
+  {
+    "objectID": "mercados_no_competitivos.html#contenidos",
+    "href": "mercados_no_competitivos.html#contenidos",
+    "title": "5  Los mercados no competitivos",
+    "section": "",
+    "text": "El monopolio: características e ingresos; maximización del beneficio y elección de la cantidad óptima.\nLa competencia monopolística: principales características.\nEl oligopolio: principales características.",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Los mercados no competitivos</span>"
+    ]
+  },
+  {
+    "objectID": "mercados_no_competitivos.html#introducción-competencia-perfecta-vs.-imperfecta",
+    "href": "mercados_no_competitivos.html#introducción-competencia-perfecta-vs.-imperfecta",
+    "title": "5  Los mercados no competitivos",
+    "section": "5.2 Introducción: competencia perfecta vs. imperfecta",
+    "text": "5.2 Introducción: competencia perfecta vs. imperfecta\nEn competencia perfecta, la empresa individual no tiene ninguna capacidad para afectar al precio del producto.\nEn los mercados no competitivos, sí tiene cierta capacidad para fijar el precio. Esta capacidad se denomina poder de mercado.",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Los mercados no competitivos</span>"
+    ]
+  },
+  {
+    "objectID": "mercados_no_competitivos.html#el-monopolio",
+    "href": "mercados_no_competitivos.html#el-monopolio",
+    "title": "5  Los mercados no competitivos",
+    "section": "5.3 El monopolio",
+    "text": "5.3 El monopolio\n\n5.3.1 Características e ingresos\nEn el monopolio, a diferencia de la competencia perfecta, el mercado está concentrado en una única empresa. La comparación básica entre ambos tipos de mercado se resume en la Tabla 5.1.\n\n\n\nTabla 5.1: Características de la competencia perfecta y del monopolio\n\n\n\n\n\n\n\n\n\n\nPregunta\nCompetencia perfecta\nMonopolio\n\n\n\n\n¿Cuántas empresas participan en el mercado?\nActúan un gran número de empresas y cada una aporta una porción pequeña del total. El mercado está atomizado.\nActúa un único vendedor. El mercado está concentrado en una única empresa.\n\n\n¿El producto obtenido por todas las empresas es idéntico?\nSí, es idéntico. Producen bienes homogéneos.\nSolo hay un vendedor y un tipo de producto.\n\n\n¿La empresa tiene capacidad para fijar el precio del producto cuando actúa individualmente?\nNo tiene capacidad. Lo fija el mercado.\nSí, tiene capacidad. Tiene gran poder de mercado, pero limitado por la curva de demanda.\n\n\n¿Existen barreras de entrada o salida del sector?\nNo. Hay libre concurrencia.\nSí. Si no existiesen, entrarían empresas y ya no sería un monopolio.\n\n\n\n\n\n\n\n\n5.3.2 Recordemos: la demanda en competencia perfecta\nLa curva de demanda a la que se enfrenta la empresa competitiva individual es horizontal.\n\n\n\n\n\n\n\n\nFigura 5.1: Mercado competitivo: el precio de equilibrio lo determina el mercado.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 5.2: Empresa competitiva: la curva de demanda individual es horizontal.\n\n\n\n\n\n\n\n5.3.3 La demanda a la que se enfrenta el monopolista\nLa curva de demanda a la que se enfrenta la empresa monopolista es la curva de demanda de todo el mercado.\nLa curva de demanda limita las posibilidades de elección del monopolista:\n\nPuede fijar el precio o la cantidad que lleva al mercado.\nPero no puede establecer conjuntamente cualquier combinación de precio y cantidad que desee.\nLa demanda supone una restricción para el monopolista.\n\n\n\n\n\n\n\n\n\nFigura 5.3: La curva de demanda limita las combinaciones posibles de precio y cantidad para el monopolista.\n\n\n\n\n\nLa curva de demanda es decreciente:\n\nSolo puede vender más si acepta bajar el precio.\nSolo puede subir el precio si acepta vender menos.\n\nLa empresa monopolista decidirá producir la cantidad que haga máximo su beneficio, es decir, la cantidad que haga máxima la diferencia entre ingresos (\\(IT\\)) y costes (\\(CT\\)).\nSi la empresa monopolista adquiere los factores productivos en mercados competitivos, el análisis de costes es igual al de las empresas en competencia perfecta. Por tanto, nos centramos en los ingresos.\n\n\n5.3.4 Ingreso medio e ingreso marginal\nLa curva de ingreso medio es la curva de demanda de mercado:\n\\[\nIMe(X)=\\frac{IT}{X}=\\frac{P(X)\\cdot X}{X}=P(X)\n\\]\nEl ingreso medio es igual al precio unitario para cada cantidad.\nEl ingreso marginal (\\(IMg\\)) mide la variación de \\(IT\\) cuando la producción se incrementa en una unidad:\n\\[\nIMg(X)=\\frac{\\Delta IT(X)}{\\Delta X}\n\\]\nLa cuestión clave es la relación entre el ingreso marginal (\\(IMg\\)) y el ingreso medio (\\(IMe\\)) o precio (\\(P\\)). En competencia perfecta, el precio no dependía de \\(X\\). En monopolio, sí.\n\n\n5.3.5 Recordemos: ingresos y costes en competencia perfecta\nEn competencia perfecta, la empresa es tomadora de precios. Maximiza beneficio donde \\(IMg = CMg\\), esto es, donde \\(P = CMg\\).\n\n\n\nTabla 5.2: Ejemplo numérico de competencia perfecta: producción, costes, ingresos y beneficio\n\n\n\n\n\nPT\nCT\nCTMe\nCMg\nP\nIT\nIMg\nBº\nΔ Bº\n\n\n\n\n1\n14\n14\n—\n5\n5\n—\n−9\n—\n\n\n2\n19\n9.5\n5\n5\n10\n5\n−9\n0\n\n\n3\n22\n7.33\n3\n5\n15\n5\n−7\n+2\n\n\n4\n24\n6\n2\n5\n20\n5\n−4\n+3\n\n\n5\n25\n5\n1\n5\n25\n5\n0\n+4\n\n\n6\n27\n4.5\n2\n5\n30\n5\n3\n+3\n\n\n7\n30\n4.29\n3\n5\n35\n5\n5\n+2\n\n\n8\n34\n4.25\n4\n5\n40\n5\n6\n+1\n\n\n9\n39\n4.33\n5\n5\n45\n5\n6\n0\n\n\n10\n45\n4.5\n6\n5\n50\n5\n5\n−1\n\n\n11\n52\n4.73\n7\n5\n55\n5\n3\n−2\n\n\n12\n60\n5\n8\n5\n60\n5\n0\n−3\n\n\n13\n69\n5.31\n9\n5\n65\n5\n−4\n−4\n\n\n14\n79\n5.64\n10\n5\n70\n5\n−9\n−5\n\n\n15\n90\n6\n11\n5\n75\n5\n−15\n−6\n\n\n\n\n\n\nEn esta tabla, la producción se expresa en toneladas y las magnitudes monetarias en miles de euros. La variación del beneficio es \\(\\Delta Bº = IMg - CMg\\).\n\n\n5.3.6 Ingresos en monopolio\nEn un monopolio, el precio varía con la producción.\n\n\n\nTabla 5.3: Ejemplo numérico de monopolio: precio, demanda, costes, ingresos y beneficio\n\n\n\n\n\nP\nXd\nIT\nIMg\nCT\nCMg\nBº\nΔ Bº\n\n\n\n\n30\n0\n0\n—\n33\n—\n−33\n—\n\n\n29\n1\n29\n29\n38\n5\n−9\n+24\n\n\n28\n2\n56\n27\n45\n7\n11\n+20\n\n\n27\n3\n81\n25\n54\n9\n27\n+16\n\n\n26\n4\n104\n23\n65\n11\n39\n+12\n\n\n25\n5\n125\n21\n78\n13\n47\n+8\n\n\n24\n6\n144\n19\n93\n15\n51\n+4\n\n\n23\n7\n161\n17\n110\n17\n51\n0\n\n\n22\n8\n176\n15\n129\n19\n47\n−4\n\n\n21\n9\n189\n13\n150\n21\n39\n−8\n\n\n20\n10\n200\n11\n173\n23\n27\n−12\n\n\n19\n11\n209\n9\n198\n25\n11\n−16\n\n\n18\n12\n216\n7\n225\n27\n−9\n−20\n\n\n17\n13\n221\n5\n254\n29\n−33\n−24\n\n\n16\n14\n224\n3\n285\n31\n−61\n−28\n\n\n\n\n\n\nPara la primera unidad, \\(IMg = P\\), ya que \\(29 - 0 = 29\\). Para el resto de unidades, \\(IMg &lt; P\\); por ejemplo, al pasar de una a dos unidades, \\(56 - 29 = 27\\), mientras que el precio correspondiente es 28.\n\n\n\n\n\n\n\n\nFigura 5.4: En monopolio, la curva de ingreso marginal queda por debajo de la curva de demanda o ingreso medio.",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Los mercados no competitivos</span>"
+    ]
+  },
+  {
+    "objectID": "mercados_no_competitivos.html#beneficio-y-producción-óptima-del-monopolio",
+    "href": "mercados_no_competitivos.html#beneficio-y-producción-óptima-del-monopolio",
+    "title": "5  Los mercados no competitivos",
+    "section": "5.4 Beneficio y producción óptima del monopolio",
+    "text": "5.4 Beneficio y producción óptima del monopolio\nEl \\(IMg\\) es importante en la decisión del productor. El beneficio del monopolista es:\n\\[\nBº = IT - CT\n\\]\nEl beneficio será máximo en el nivel de producción en el que el ingreso marginal es igual al coste marginal:\n\\[\n\\frac{dBº}{dX}=\\frac{d(IT)}{dX}-\\frac{d(CT)}{dX}=0\n\\quad \\Rightarrow \\quad\n\\frac{d(IT)}{dX}=\\frac{d(CT)}{dX}\n\\]\nPor tanto:\n\\[\nIMg = CMg\n\\]\nLa condición de máximo se expresa como:\n\\[\n\\frac{d^2Bº}{dX^2}=\\frac{d(IMg)}{dX}-\\frac{dCMg}{dX}&lt;0\n\\quad \\Rightarrow \\quad\n\\frac{d(IMg)}{dX}&lt;\\frac{d(CMg)}{dX}\n\\]\nEsta condición garantiza que se trata de un máximo.\n\n\n\n\n\n\n\n\nFigura 5.5: La condición de segundo orden compara la pendiente del ingreso marginal con la pendiente del coste marginal.\n\n\n\n\n\nEl razonamiento económico es el siguiente:\n\n\\(IMg\\) indica cuánto aumenta el \\(IT\\) al producir una unidad más.\n\\(CMg\\) indica cuánto aumenta el \\(CT\\) al producir una unidad más.\nCuando \\(IMg &gt; CMg\\), el monopolista debe aumentar su producción en una unidad, ya que el beneficio crece.\nCuando \\(IMg &lt; CMg\\), el monopolista NO debe aumentar su producción, ya que el beneficio decrece.\n\nEn el ejemplo numérico de la Tabla 5.3, el beneficio se maximiza donde \\(IMg = CMg\\). La igualdad se alcanza en \\(X = 7\\), con \\(IMg = 17\\), \\(CMg = 17\\) y \\(Bº = 51\\).\n\n\n\n\n\n\n\n\nFigura 5.6: Elección óptima del monopolista: producción donde IMg = CMg y precio fijado sobre la demanda.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 5.7: Beneficio del monopolista en el ejemplo numérico.\n\n\n\n\n\nGráficamente, el monopolista elige la producción en el punto donde \\(IMg = CMg\\) y, después, fija el precio correspondiente sobre la curva de demanda.\nEl monopolista no tiene curva de oferta. No es posible encontrar una relación única entre el precio y la cantidad que decide producir: depende de la curva de demanda. Solo hay curva de oferta en los mercados en que la empresa toma el precio como dado.",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Los mercados no competitivos</span>"
+    ]
+  },
+  {
+    "objectID": "mercados_no_competitivos.html#la-competencia-monopolística",
+    "href": "mercados_no_competitivos.html#la-competencia-monopolística",
+    "title": "5  Los mercados no competitivos",
+    "section": "5.5 La competencia monopolística",
+    "text": "5.5 La competencia monopolística\nLos mercados de competencia monopolística se sitúan entre la competencia perfecta y el monopolio. Por tanto, tienen características de ambos mercados.\n\n\n\nTabla 5.4: Características de la competencia perfecta y de la competencia monopolística\n\n\n\n\n\n\n\n\n\n\nPregunta\nCompetencia perfecta\nCompetencia monopolística\n\n\n\n\n¿Cuántas empresas participan en el mercado?\nActúan un gran número de empresas y cada una aporta una porción pequeña del total. El mercado está atomizado.\nActúan un gran número de empresas y cada una aporta una porción pequeña del total. El mercado está atomizado.\n\n\n¿El producto obtenido por todas las empresas es idéntico?\nSí, es idéntico. Producen bienes homogéneos.\nNo, no es idéntico. Producen bienes muy similares pero diferenciados.\n\n\n¿La empresa tiene capacidad para fijar el precio del producto cuando actúa individualmente?\nNo tiene capacidad. Lo fija el mercado.\nSí, tiene capacidad limitada. Cada empresa puede vender su producto un poco más caro que sus competidores, sin perder a todos sus clientes.\n\n\n¿Existen barreras de entrada o salida del sector?\nNo. Hay libre concurrencia.\nNo. Hay libre concurrencia.\n\n\n\n\n\n\nEjemplos: pequeño comercio, bares, restaurantes.\nEl equilibrio de la empresa a corto plazo es igual que en monopolio. Al igual que el monopolista, puede obtener beneficio extraordinario, pero este beneficio solo se puede mantener en el corto plazo: dado que no existen barreras de entrada, este beneficio actúa como incentivo para la entrada de nuevas empresas.\nLa diferencia clave entre monopolio y competencia monopolística se refiere a las barreras de entrada.\n\n\n\n\n\n\n\n\nFigura 5.8: Equilibrio de la empresa en competencia monopolística a corto plazo.",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Los mercados no competitivos</span>"
+    ]
+  },
+  {
+    "objectID": "mercados_no_competitivos.html#el-oligopolio",
+    "href": "mercados_no_competitivos.html#el-oligopolio",
+    "title": "5  Los mercados no competitivos",
+    "section": "5.6 El oligopolio",
+    "text": "5.6 El oligopolio\n\n\n\nTabla 5.5: Características de la competencia perfecta y del oligopolio\n\n\n\n\n\n\n\n\n\n\nPregunta\nCompetencia perfecta\nOligopolio\n\n\n\n\n¿Cuántas empresas participan en el mercado?\nActúan un gran número de empresas y cada una aporta una porción pequeña del total. El mercado está atomizado.\nActúan pocas empresas y cada una aporta una porción grande del total.\n\n\n¿El producto obtenido por todas las empresas es idéntico?\nSí, es idéntico. Producen bienes homogéneos.\nPuede ser idéntico (petróleo) o no (coches). Supondremos que sí es idéntico.\n\n\n¿La empresa tiene capacidad para fijar el precio del producto cuando actúa individualmente?\nNo tiene capacidad. Lo fija el mercado.\nSí, tiene capacidad limitada. Este poder disminuye al aumentar el número de empresas.\n\n\n¿Existen barreras de entrada o salida del sector?\nNo. Hay libre concurrencia.\nSí. Si no existiesen, entrarían más empresas y no habría tan pocas.\n\n\n\n\n\n\nEl rasgo fundamental del oligopolio es la interdependencia de las acciones. La decisión de una empresa, como modificar la producción o el precio, afecta a las demás.\nA la hora de tomar su decisión, la empresa tiende a prever la reacción de sus rivales. Esto se denomina comportamiento estratégico.\nLa interdependencia y el comportamiento estratégico complican el análisis: no basta la maximización del beneficio. Hay que introducir nuevos supuestos, dando lugar a diferentes modelos de oligopolio.\nLa rama de la ciencia económica que estudia el comportamiento estratégico de los agentes económicos y su resultado final se denomina teoría de juegos.\nComo referencia audiovisual, se menciona Una mente maravillosa (Ron Howard, 2001).",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Los mercados no competitivos</span>"
+    ]
+  },
+  {
+    "objectID": "mercados_no_competitivos.html#continuará",
+    "href": "mercados_no_competitivos.html#continuará",
+    "title": "5  Los mercados no competitivos",
+    "section": "5.7 Continuará",
+    "text": "5.7 Continuará\nLa diapositiva final anuncia la continuación del tema con Microeconomía II, en el Grado en Administración y Dirección de Empresas, curso 2025/2026. En los datos visibles de la asignatura aparece la fecha de última modificación 26-05-25 8:43.\n\n\n\nTabla 5.6: Datos visibles de la asignatura Microeconomía II\n\n\n\n\n\nCódigo\nPlan\nECTS\nCarácter\nCurso\nPeriodicidad\n\n\n\n\n103832\n—\n3.00\nObligatoria\n3\nSegundo Semestre\n\n\n\n\n\n\nLos contenidos visibles de esa continuación son:\n\nMercados competitivos.\nMonopolio, monopsonio y competencia monopolística.\nPoder de mercado y estrategias de precios.\nInteracción estratégica: Introducción a la teoría de juegos.\nOligopolio.",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Los mercados no competitivos</span>"
     ]
   }
 ]

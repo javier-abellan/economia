@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="custom.css">
 </head>
@@ -210,8 +239,28 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#contenidos" id="toc-contenidos" class="nav-link active" data-scroll-target="#contenidos"><span class="header-section-number">5.1</span> Contenidos</a></li>
+  <li><a href="#introducción-competencia-perfecta-vs.-imperfecta" id="toc-introducción-competencia-perfecta-vs.-imperfecta" class="nav-link" data-scroll-target="#introducción-competencia-perfecta-vs.-imperfecta"><span class="header-section-number">5.2</span> Introducción: competencia perfecta vs.&nbsp;imperfecta</a></li>
+  <li><a href="#el-monopolio" id="toc-el-monopolio" class="nav-link" data-scroll-target="#el-monopolio"><span class="header-section-number">5.3</span> El monopolio</a>
+  <ul class="collapse">
+  <li><a href="#características-e-ingresos" id="toc-características-e-ingresos" class="nav-link" data-scroll-target="#características-e-ingresos"><span class="header-section-number">5.3.1</span> Características e ingresos</a></li>
+  <li><a href="#recordemos-la-demanda-en-competencia-perfecta" id="toc-recordemos-la-demanda-en-competencia-perfecta" class="nav-link" data-scroll-target="#recordemos-la-demanda-en-competencia-perfecta"><span class="header-section-number">5.3.2</span> Recordemos: la demanda en competencia perfecta</a></li>
+  <li><a href="#la-demanda-a-la-que-se-enfrenta-el-monopolista" id="toc-la-demanda-a-la-que-se-enfrenta-el-monopolista" class="nav-link" data-scroll-target="#la-demanda-a-la-que-se-enfrenta-el-monopolista"><span class="header-section-number">5.3.3</span> La demanda a la que se enfrenta el monopolista</a></li>
+  <li><a href="#ingreso-medio-e-ingreso-marginal" id="toc-ingreso-medio-e-ingreso-marginal" class="nav-link" data-scroll-target="#ingreso-medio-e-ingreso-marginal"><span class="header-section-number">5.3.4</span> Ingreso medio e ingreso marginal</a></li>
+  <li><a href="#recordemos-ingresos-y-costes-en-competencia-perfecta" id="toc-recordemos-ingresos-y-costes-en-competencia-perfecta" class="nav-link" data-scroll-target="#recordemos-ingresos-y-costes-en-competencia-perfecta"><span class="header-section-number">5.3.5</span> Recordemos: ingresos y costes en competencia perfecta</a></li>
+  <li><a href="#ingresos-en-monopolio" id="toc-ingresos-en-monopolio" class="nav-link" data-scroll-target="#ingresos-en-monopolio"><span class="header-section-number">5.3.6</span> Ingresos en monopolio</a></li>
+  </ul></li>
+  <li><a href="#beneficio-y-producción-óptima-del-monopolio" id="toc-beneficio-y-producción-óptima-del-monopolio" class="nav-link" data-scroll-target="#beneficio-y-producción-óptima-del-monopolio"><span class="header-section-number">5.4</span> Beneficio y producción óptima del monopolio</a></li>
+  <li><a href="#la-competencia-monopolística" id="toc-la-competencia-monopolística" class="nav-link" data-scroll-target="#la-competencia-monopolística"><span class="header-section-number">5.5</span> La competencia monopolística</a></li>
+  <li><a href="#el-oligopolio" id="toc-el-oligopolio" class="nav-link" data-scroll-target="#el-oligopolio"><span class="header-section-number">5.6</span> El oligopolio</a></li>
+  <li><a href="#continuará" id="toc-continuará" class="nav-link" data-scroll-target="#continuará"><span class="header-section-number">5.7</span> Continuará</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -235,8 +284,778 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="contenidos" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="contenidos"><span class="header-section-number">5.1</span> Contenidos</h2>
+<p>El tema se organiza en torno a tres bloques:</p>
+<ul>
+<li><strong>El monopolio</strong>: características e ingresos; maximización del beneficio y elección de la cantidad óptima.</li>
+<li><strong>La competencia monopolística</strong>: principales características.</li>
+<li><strong>El oligopolio</strong>: principales características.</li>
+</ul>
+</section>
+<section id="introducción-competencia-perfecta-vs.-imperfecta" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="introducción-competencia-perfecta-vs.-imperfecta"><span class="header-section-number">5.2</span> Introducción: competencia perfecta vs.&nbsp;imperfecta</h2>
+<p>En <strong>competencia perfecta</strong>, la empresa individual no tiene ninguna capacidad para afectar al precio del producto.</p>
+<p>En los <strong>mercados no competitivos</strong>, sí tiene cierta <strong>capacidad para fijar el precio</strong>. Esta capacidad se denomina <strong>poder de mercado</strong>.</p>
+</section>
+<section id="el-monopolio" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="el-monopolio"><span class="header-section-number">5.3</span> El monopolio</h2>
+<section id="características-e-ingresos" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="características-e-ingresos"><span class="header-section-number">5.3.1</span> Características e ingresos</h3>
+<p>En el monopolio, a diferencia de la competencia perfecta, el mercado está concentrado en una única empresa. La comparación básica entre ambos tipos de mercado se resume en la <a href="#tbl-monopolio-caracteristicas" class="quarto-xref">Tabla&nbsp;<span>5.1</span></a>.</p>
+<div id="tbl-monopolio-caracteristicas" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-monopolio-caracteristicas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;5.1: Características de la competencia perfecta y del monopolio
+</figcaption>
+<div aria-describedby="tbl-monopolio-caracteristicas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pregunta</th>
+<th><strong>Competencia perfecta</strong></th>
+<th><strong>Monopolio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>¿<strong>Cuántas empresas</strong> participan en el mercado?</td>
+<td>Actúan un <strong>gran número de empresas</strong> y cada una aporta una <strong>porción pequeña del total</strong>. El mercado está atomizado.</td>
+<td>Actúa <strong>un único vendedor</strong>. El mercado está concentrado en una única empresa.</td>
+</tr>
+<tr class="even">
+<td>¿El <strong>producto</strong> obtenido por todas las empresas es <strong>idéntico</strong>?</td>
+<td><strong>Sí, es idéntico</strong>. Producen bienes homogéneos.</td>
+<td>Solo hay un vendedor y <strong>un tipo de producto</strong>.</td>
+</tr>
+<tr class="odd">
+<td>¿La empresa tiene <strong>capacidad para fijar el precio</strong> del producto cuando actúa individualmente?</td>
+<td><strong>No</strong> tiene capacidad. Lo fija el mercado.</td>
+<td><strong>Sí, tiene capacidad</strong>. Tiene gran poder de mercado, pero <strong>limitado</strong> por la curva de demanda.</td>
+</tr>
+<tr class="even">
+<td>¿Existen <strong>barreras de entrada o salida</strong> del sector?</td>
+<td><strong>No</strong>. Hay libre concurrencia.</td>
+<td><strong>Sí</strong>. Si no existiesen, entrarían empresas y ya no sería un monopolio.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="recordemos-la-demanda-en-competencia-perfecta" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="recordemos-la-demanda-en-competencia-perfecta"><span class="header-section-number">5.3.2</span> Recordemos: la demanda en competencia perfecta</h3>
+<p>La <strong>curva de demanda</strong> a la que se enfrenta la <strong>empresa competitiva</strong> individual es <strong>horizontal</strong>.</p>
+<div id="cell-fig-demanda-mercado-competencia-perfecta" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div id="fig-demanda-mercado-competencia-perfecta" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-demanda-mercado-competencia-perfecta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados_no_competitivos_files/figure-html/fig-demanda-mercado-competencia-perfecta-output-1.png" width="565" height="372" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-demanda-mercado-competencia-perfecta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.1: Mercado competitivo: el precio de equilibrio lo determina el mercado.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-fig-demanda-empresa-competencia-perfecta" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-demanda-empresa-competencia-perfecta" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-demanda-empresa-competencia-perfecta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados_no_competitivos_files/figure-html/fig-demanda-empresa-competencia-perfecta-output-1.png" width="598" height="372" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-demanda-empresa-competencia-perfecta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.2: Empresa competitiva: la curva de demanda individual es horizontal.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="la-demanda-a-la-que-se-enfrenta-el-monopolista" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="la-demanda-a-la-que-se-enfrenta-el-monopolista"><span class="header-section-number">5.3.3</span> La demanda a la que se enfrenta el monopolista</h3>
+<p>La <strong>curva de demanda</strong> a la que se enfrenta la <strong>empresa monopolista</strong> es la <strong>curva de demanda de todo el mercado</strong>.</p>
+<p>La curva de demanda <strong>limita las posibilidades de elección</strong> del monopolista:</p>
+<ul>
+<li>Puede <strong>fijar</strong> el <strong>precio</strong> o la <strong>cantidad</strong> que lleva al mercado.</li>
+<li>Pero <strong>no puede establecer</strong> conjuntamente cualquier <strong>combinación de precio y cantidad</strong> que desee.</li>
+<li>La demanda supone una <strong>restricción</strong> para el monopolista.</li>
+</ul>
+<div id="cell-fig-restriccion-demanda-monopolista" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-restriccion-demanda-monopolista" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-restriccion-demanda-monopolista-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados_no_competitivos_files/figure-html/fig-restriccion-demanda-monopolista-output-1.png" width="565" height="372" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-restriccion-demanda-monopolista-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.3: La curva de demanda limita las combinaciones posibles de precio y cantidad para el monopolista.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La <strong>curva de demanda</strong> es <strong>decreciente</strong>:</p>
+<ul>
+<li>Solo puede <strong>vender más</strong> si acepta <strong>bajar el precio</strong>.</li>
+<li>Solo puede <strong>subir el precio</strong> si acepta <strong>vender menos</strong>.</li>
+</ul>
+<p>La empresa monopolista decidirá producir la cantidad que haga <strong>máximo</strong> su <strong>beneficio</strong>, es decir, la cantidad que haga <strong>máxima</strong> la <strong>diferencia</strong> entre <strong>ingresos</strong> (<span class="math inline">\(IT\)</span>) y <strong>costes</strong> (<span class="math inline">\(CT\)</span>).</p>
+<p>Si la empresa monopolista adquiere los factores productivos en mercados competitivos, el <strong>análisis de costes</strong> es <strong>igual</strong> al de las empresas en <strong>competencia perfecta</strong>. Por tanto, nos centramos en los <strong>ingresos</strong>.</p>
+</section>
+<section id="ingreso-medio-e-ingreso-marginal" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="ingreso-medio-e-ingreso-marginal"><span class="header-section-number">5.3.4</span> Ingreso medio e ingreso marginal</h3>
+<p>La <strong>curva de ingreso medio</strong> es la <strong>curva de demanda de mercado</strong>:</p>
+<p><span class="math display">\[
+IMe(X)=\frac{IT}{X}=\frac{P(X)\cdot X}{X}=P(X)
+\]</span></p>
+<p>El <strong>ingreso medio</strong> es <strong>igual</strong> al <strong>precio</strong> unitario para cada cantidad.</p>
+<p>El <strong>ingreso marginal</strong> (<span class="math inline">\(IMg\)</span>) mide la variación de <span class="math inline">\(IT\)</span> cuando la producción se incrementa en una unidad:</p>
+<p><span class="math display">\[
+IMg(X)=\frac{\Delta IT(X)}{\Delta X}
+\]</span></p>
+<p>La cuestión clave es la <strong>relación</strong> entre el <strong>ingreso marginal</strong> (<span class="math inline">\(IMg\)</span>) y el <strong>ingreso medio</strong> (<span class="math inline">\(IMe\)</span>) o <strong>precio</strong> (<span class="math inline">\(P\)</span>). En competencia perfecta, el precio no dependía de <span class="math inline">\(X\)</span>. En monopolio, sí.</p>
+</section>
+<section id="recordemos-ingresos-y-costes-en-competencia-perfecta" class="level3" data-number="5.3.5">
+<h3 data-number="5.3.5" class="anchored" data-anchor-id="recordemos-ingresos-y-costes-en-competencia-perfecta"><span class="header-section-number">5.3.5</span> Recordemos: ingresos y costes en competencia perfecta</h3>
+<p>En <strong>competencia perfecta</strong>, la empresa es <strong>tomadora de precios</strong>. Maximiza beneficio donde <span class="math inline">\(IMg = CMg\)</span>, esto es, donde <span class="math inline">\(P = CMg\)</span>.</p>
+<div id="tbl-competencia-perfecta-costes-ingresos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-competencia-perfecta-costes-ingresos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;5.2: Ejemplo numérico de competencia perfecta: producción, costes, ingresos y beneficio
+</figcaption>
+<div aria-describedby="tbl-competencia-perfecta-costes-ingresos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">PT</th>
+<th style="text-align: right;">CT</th>
+<th style="text-align: right;">CTMe</th>
+<th style="text-align: right;">CMg</th>
+<th style="text-align: right;">P</th>
+<th style="text-align: right;">IT</th>
+<th style="text-align: right;">IMg</th>
+<th style="text-align: right;">Bº</th>
+<th style="text-align: right;">Δ Bº</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">−9</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">9.5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">−9</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">7.33</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">−7</td>
+<td style="text-align: right;">+2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">−4</td>
+<td style="text-align: right;">+3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">+4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">+3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4.29</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">+2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">4.25</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">+1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">4.33</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">−1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">4.73</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">−2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">−3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">5.31</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">−4</td>
+<td style="text-align: right;">−4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">5.64</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">−9</td>
+<td style="text-align: right;">−5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">−15</td>
+<td style="text-align: right;">−6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>En esta tabla, la producción se expresa en toneladas y las magnitudes monetarias en miles de euros. La variación del beneficio es <span class="math inline">\(\Delta Bº = IMg - CMg\)</span>.</p>
+</section>
+<section id="ingresos-en-monopolio" class="level3" data-number="5.3.6">
+<h3 data-number="5.3.6" class="anchored" data-anchor-id="ingresos-en-monopolio"><span class="header-section-number">5.3.6</span> Ingresos en monopolio</h3>
+<p>En <strong>un monopolio</strong>, el precio varía con la producción.</p>
+<div id="tbl-monopolio-costes-ingresos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-monopolio-costes-ingresos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;5.3: Ejemplo numérico de monopolio: precio, demanda, costes, ingresos y beneficio
+</figcaption>
+<div aria-describedby="tbl-monopolio-costes-ingresos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">P</th>
+<th style="text-align: right;">Xd</th>
+<th style="text-align: right;">IT</th>
+<th style="text-align: right;">IMg</th>
+<th style="text-align: right;">CT</th>
+<th style="text-align: right;">CMg</th>
+<th style="text-align: right;">Bº</th>
+<th style="text-align: right;">Δ Bº</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">−33</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">−9</td>
+<td style="text-align: right;">+24</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">+20</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">+16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">+12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">+8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">144</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">+4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">161</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">176</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">−4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">189</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">−8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">173</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">−12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">209</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">198</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">−16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">216</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">225</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">−9</td>
+<td style="text-align: right;">−20</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">221</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">254</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">−33</td>
+<td style="text-align: right;">−24</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">224</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">285</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">−61</td>
+<td style="text-align: right;">−28</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Para la primera unidad, <span class="math inline">\(IMg = P\)</span>, ya que <span class="math inline">\(29 - 0 = 29\)</span>. Para el resto de unidades, <span class="math inline">\(IMg &lt; P\)</span>; por ejemplo, al pasar de una a dos unidades, <span class="math inline">\(56 - 29 = 27\)</span>, mientras que el precio correspondiente es 28.</p>
+<div id="cell-fig-ingreso-marginal-monopolio" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-ingreso-marginal-monopolio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ingreso-marginal-monopolio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados_no_competitivos_files/figure-html/fig-ingreso-marginal-monopolio-output-1.png" width="570" height="372" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ingreso-marginal-monopolio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.4: En monopolio, la curva de ingreso marginal queda por debajo de la curva de demanda o ingreso medio.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="beneficio-y-producción-óptima-del-monopolio" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="beneficio-y-producción-óptima-del-monopolio"><span class="header-section-number">5.4</span> Beneficio y producción óptima del monopolio</h2>
+<p>El <span class="math inline">\(IMg\)</span> es importante en la decisión del productor. El <strong>beneficio</strong> del monopolista es:</p>
+<p><span class="math display">\[
+Bº = IT - CT
+\]</span></p>
+<p>El <strong>beneficio</strong> será <strong>máximo</strong> en el nivel de producción en el que el <strong>ingreso marginal</strong> es <strong>igual</strong> al <strong>coste marginal</strong>:</p>
+<p><span class="math display">\[
+\frac{dBº}{dX}=\frac{d(IT)}{dX}-\frac{d(CT)}{dX}=0
+\quad \Rightarrow \quad
+\frac{d(IT)}{dX}=\frac{d(CT)}{dX}
+\]</span></p>
+<p>Por tanto:</p>
+<p><span class="math display">\[
+IMg = CMg
+\]</span></p>
+<p>La condición de máximo se expresa como:</p>
+<p><span class="math display">\[
+\frac{d^2Bº}{dX^2}=\frac{d(IMg)}{dX}-\frac{dCMg}{dX}&lt;0
+\quad \Rightarrow \quad
+\frac{d(IMg)}{dX}&lt;\frac{d(CMg)}{dX}
+\]</span></p>
+<p>Esta condición garantiza que se trata de un máximo.</p>
+<div id="cell-fig-condicion-segundo-orden-monopolio" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div id="fig-condicion-segundo-orden-monopolio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-condicion-segundo-orden-monopolio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados_no_competitivos_files/figure-html/fig-condicion-segundo-orden-monopolio-output-1.png" width="949" height="313" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-condicion-segundo-orden-monopolio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.5: La condición de segundo orden compara la pendiente del ingreso marginal con la pendiente del coste marginal.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>El razonamiento económico es el siguiente:</p>
+<ul>
+<li><span class="math inline">\(IMg\)</span> indica cuánto aumenta el <span class="math inline">\(IT\)</span> al producir una unidad más.</li>
+<li><span class="math inline">\(CMg\)</span> indica cuánto aumenta el <span class="math inline">\(CT\)</span> al producir una unidad más.</li>
+<li>Cuando <span class="math inline">\(IMg &gt; CMg\)</span>, el monopolista <strong>debe aumentar su producción</strong> en una unidad, ya que el <strong>beneficio crece</strong>.</li>
+<li>Cuando <span class="math inline">\(IMg &lt; CMg\)</span>, el monopolista <strong>NO debe aumentar su producción</strong>, ya que el <strong>beneficio decrece</strong>.</li>
+</ul>
+<p>En el ejemplo numérico de la <a href="#tbl-monopolio-costes-ingresos" class="quarto-xref">Tabla&nbsp;<span>5.3</span></a>, el beneficio se maximiza donde <span class="math inline">\(IMg = CMg\)</span>. La igualdad se alcanza en <span class="math inline">\(X = 7\)</span>, con <span class="math inline">\(IMg = 17\)</span>, <span class="math inline">\(CMg = 17\)</span> y <span class="math inline">\(Bº = 51\)</span>.</p>
+<div id="cell-fig-optimo-monopolio" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-optimo-monopolio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-optimo-monopolio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados_no_competitivos_files/figure-html/fig-optimo-monopolio-output-1.png" width="568" height="420" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-optimo-monopolio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.6: Elección óptima del monopolista: producción donde IMg = CMg y precio fijado sobre la demanda.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-fig-beneficio-monopolio" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div id="fig-beneficio-monopolio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-beneficio-monopolio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados_no_competitivos_files/figure-html/fig-beneficio-monopolio-output-1.png" width="565" height="371" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-beneficio-monopolio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.7: Beneficio del monopolista en el ejemplo numérico.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Gráficamente, el monopolista elige la producción en el punto donde <span class="math inline">\(IMg = CMg\)</span> y, después, fija el precio correspondiente sobre la curva de demanda.</p>
+<p>El monopolista <strong>no tiene curva de oferta</strong>. No es posible encontrar una relación única entre el precio y la cantidad que decide producir: depende de la curva de demanda. Solo hay curva de oferta en los mercados en que la empresa toma el precio como dado.</p>
+</section>
+<section id="la-competencia-monopolística" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="la-competencia-monopolística"><span class="header-section-number">5.5</span> La competencia monopolística</h2>
+<p>Los mercados de <strong>competencia monopolística</strong> se sitúan <strong>entre</strong> la <strong>competencia perfecta</strong> y el <strong>monopolio</strong>. Por tanto, tienen <strong>características</strong> de <strong>ambos mercados</strong>.</p>
+<div id="tbl-competencia-monopolistica-caracteristicas" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-competencia-monopolistica-caracteristicas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;5.4: Características de la competencia perfecta y de la competencia monopolística
+</figcaption>
+<div aria-describedby="tbl-competencia-monopolistica-caracteristicas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pregunta</th>
+<th><strong>Competencia perfecta</strong></th>
+<th><strong>Competencia monopolística</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>¿<strong>Cuántas empresas</strong> participan en el mercado?</td>
+<td>Actúan un <strong>gran número de empresas</strong> y cada una aporta una <strong>porción pequeña del total</strong>. El mercado está atomizado.</td>
+<td>Actúan un <strong>gran número de empresas</strong> y cada una aporta una <strong>porción pequeña del total</strong>. El mercado está atomizado.</td>
+</tr>
+<tr class="even">
+<td>¿El <strong>producto</strong> obtenido por todas las empresas es <strong>idéntico</strong>?</td>
+<td><strong>Sí</strong>, es idéntico. Producen <strong>bienes homogéneos</strong>.</td>
+<td><strong>No</strong>, no es idéntico. Producen <strong>bienes</strong> muy similares pero <strong>diferenciados</strong>.</td>
+</tr>
+<tr class="odd">
+<td>¿La empresa tiene <strong>capacidad para fijar el precio</strong> del producto cuando actúa individualmente?</td>
+<td><strong>No</strong> tiene capacidad. Lo fija el mercado.</td>
+<td><strong>Sí, tiene capacidad limitada</strong>. Cada empresa puede vender su producto un poco más caro que sus competidores, sin perder a todos sus clientes.</td>
+</tr>
+<tr class="even">
+<td>¿Existen <strong>barreras de entrada o salida</strong> del sector?</td>
+<td><strong>No</strong>. Hay libre concurrencia.</td>
+<td><strong>No</strong>. Hay libre concurrencia.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><strong>Ejemplos:</strong> pequeño comercio, bares, restaurantes.</p>
+<p>El <strong>equilibrio</strong> de la empresa a corto plazo es <strong>igual</strong> que en <strong>monopolio</strong>. Al igual que el monopolista, puede obtener <strong>beneficio extraordinario</strong>, pero este beneficio solo se puede mantener en el <strong>corto plazo</strong>: dado que <strong>no existen barreras de entrada</strong>, este beneficio actúa como incentivo para la entrada de nuevas empresas.</p>
+<p>La <strong>diferencia clave</strong> entre <strong>monopolio</strong> y <strong>competencia monopolística</strong> se refiere a las <strong>barreras de entrada</strong>.</p>
+<div id="cell-fig-equilibrio-competencia-monopolistica" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div id="fig-equilibrio-competencia-monopolistica" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-equilibrio-competencia-monopolistica-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados_no_competitivos_files/figure-html/fig-equilibrio-competencia-monopolistica-output-1.png" width="571" height="420" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-equilibrio-competencia-monopolistica-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.8: Equilibrio de la empresa en competencia monopolística a corto plazo.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="el-oligopolio" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="el-oligopolio"><span class="header-section-number">5.6</span> El oligopolio</h2>
+<div id="tbl-oligopolio-caracteristicas" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-oligopolio-caracteristicas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;5.5: Características de la competencia perfecta y del oligopolio
+</figcaption>
+<div aria-describedby="tbl-oligopolio-caracteristicas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pregunta</th>
+<th><strong>Competencia perfecta</strong></th>
+<th><strong>Oligopolio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>¿<strong>Cuántas empresas</strong> participan en el mercado?</td>
+<td>Actúan un <strong>gran número de empresas</strong> y cada una aporta una <strong>porción pequeña del total</strong>. El mercado está atomizado.</td>
+<td>Actúan <strong>pocas empresas</strong> y cada una aporta una <strong>porción grande del total</strong>.</td>
+</tr>
+<tr class="even">
+<td>¿El <strong>producto</strong> obtenido por todas las empresas es <strong>idéntico</strong>?</td>
+<td><strong>Sí</strong>, es idéntico. Producen <strong>bienes homogéneos</strong>.</td>
+<td>Puede ser idéntico (petróleo) o no (coches). Supondremos que <strong>sí</strong> es <strong>idéntico</strong>.</td>
+</tr>
+<tr class="odd">
+<td>¿La empresa tiene <strong>capacidad para fijar el precio</strong> del producto cuando actúa individualmente?</td>
+<td><strong>No</strong> tiene capacidad. Lo fija el mercado.</td>
+<td><strong>Sí, tiene capacidad limitada</strong>. Este poder disminuye al aumentar el número de empresas.</td>
+</tr>
+<tr class="even">
+<td>¿Existen <strong>barreras de entrada o salida</strong> del sector?</td>
+<td><strong>No</strong>. Hay libre concurrencia.</td>
+<td><strong>Sí</strong>. Si no existiesen, entrarían más empresas y no habría tan pocas.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>El <strong>rasgo fundamental</strong> del oligopolio es la <strong>interdependencia</strong> de las acciones. La decisión de una empresa, como modificar la producción o el precio, afecta a las demás.</p>
+<p>A la hora de tomar su <strong>decisión</strong>, la empresa tiende a <strong>prever</strong> la <strong>reacción</strong> de sus rivales. Esto se denomina <strong>comportamiento estratégico</strong>.</p>
+<p>La interdependencia y el comportamiento estratégico complican el análisis: no basta la maximización del beneficio. Hay que introducir <strong>nuevos supuestos</strong>, dando lugar a <strong>diferentes modelos de oligopolio</strong>.</p>
+<p>La rama de la ciencia económica que estudia el comportamiento estratégico de los agentes económicos y su resultado final se denomina <strong>teoría de juegos</strong>.</p>
+<p>Como referencia audiovisual, se menciona <em>Una mente maravillosa</em> (Ron Howard, 2001).</p>
+</section>
+<section id="continuará" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="continuará"><span class="header-section-number">5.7</span> Continuará</h2>
+<p>La diapositiva final anuncia la continuación del tema con <strong>Microeconomía II</strong>, en el <strong>Grado en Administración y Dirección de Empresas</strong>, <strong>curso 2025/2026</strong>. En los datos visibles de la asignatura aparece la fecha de última modificación <strong>26-05-25 8:43</strong>.</p>
+<div id="tbl-microeconomia-ii-datos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-microeconomia-ii-datos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;5.6: Datos visibles de la asignatura Microeconomía II
+</figcaption>
+<div aria-describedby="tbl-microeconomia-ii-datos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Código</th>
+<th>Plan</th>
+<th style="text-align: right;">ECTS</th>
+<th>Carácter</th>
+<th style="text-align: right;">Curso</th>
+<th>Periodicidad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">103832</td>
+<td>—</td>
+<td style="text-align: right;">3.00</td>
+<td>Obligatoria</td>
+<td style="text-align: right;">3</td>
+<td>Segundo Semestre</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Los contenidos visibles de esa continuación son:</p>
+<ol type="1">
+<li><strong>Mercados competitivos</strong>.</li>
+<li><strong>Monopolio, monopsonio y competencia monopolística</strong>.</li>
+<li><strong>Poder de mercado y estrategias de precios</strong>.</li>
+<li><strong>Interacción estratégica: Introducción a la teoría de juegos</strong>.</li>
+<li><strong>Oligopolio</strong>.</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
