@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -519,36 +484,16 @@ X = F(K, L)
 </tr>
 </tbody>
 </table>
-<p><strong>Figura 5.1. Evolución de la producción con rendimientos a escala constantes, crecientes y decrecientes.</strong></p>
-<div id="79d3b5d5" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>lambda_ <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">300</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>produccion_constante <span class="op">=</span> lambda_</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>produccion_creciente <span class="op">=</span> <span class="fl">0.35</span> <span class="op">*</span> lambda_<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> <span class="fl">0.35</span> <span class="op">*</span> lambda_</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>produccion_decreciente <span class="op">=</span> <span class="fl">1.8</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> np.exp(<span class="op">-</span><span class="fl">0.9</span> <span class="op">*</span> lambda_))</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">5</span>))</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>ax.plot(lambda_, produccion_creciente, color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>,</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span><span class="st">"Rendimientos crecientes"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>ax.plot(lambda_, produccion_constante, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>,</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span><span class="st">"Rendimientos constantes"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>ax.plot(lambda_, produccion_decreciente, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>,</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        linestyle<span class="op">=</span><span class="st">"--"</span>, label<span class="op">=</span><span class="st">"Rendimientos decrecientes"</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Factor de escala (λ)"</span>)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Producción"</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(<span class="dv">0</span>, <span class="dv">3</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="bu">max</span>(produccion_creciente) <span class="op">*</span> <span class="fl">1.05</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-fig-rendimientos" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="produccion_files/figure-html/cell-2-output-1.png" width="600" height="429" class="figure-img"></p>
+<div id="fig-rendimientos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rendimientos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="produccion_files/figure-html/fig-rendimientos-output-1.png" width="600" height="429" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rendimientos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.1: Evolución de la producción con rendimientos a escala constantes, crecientes y decrecientes
+</figcaption>
 </figure>
 </div>
 </div>
@@ -760,43 +705,41 @@ PMg_L = \frac{\Delta PT_L}{\Delta L}
 <li>Es la cantidad de trabajo donde la <strong>productividad media es máxima</strong>.</li>
 <li>En ese punto coinciden la <span class="math inline">\(PMg_L\)</span> y <span class="math inline">\(PMe_L\)</span>.</li>
 </ul>
-<p><strong>Gráfico de productividad total, media y marginal.</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> np.linspace(<span class="fl">0.1</span>, <span class="dv">22</span>, <span class="dv">300</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>PT <span class="op">=</span> <span class="dv">8</span> <span class="op">*</span> L <span class="op">+</span> <span class="fl">1.2</span> <span class="op">*</span> L<span class="op">**</span><span class="dv">2</span> <span class="op">-</span> <span class="fl">0.06</span> <span class="op">*</span> L<span class="op">**</span><span class="dv">3</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>PMe <span class="op">=</span> PT <span class="op">/</span> L</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>PMg <span class="op">=</span> <span class="dv">8</span> <span class="op">+</span> <span class="fl">2.4</span> <span class="op">*</span> L <span class="op">-</span> <span class="fl">0.18</span> <span class="op">*</span> L<span class="op">**</span><span class="dv">2</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>L_max_tecnico <span class="op">=</span> L[np.argmax(PT)]</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>L_opt_tecnico <span class="op">=</span> L[np.argmax(PMe)]</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">4</span>))</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>ax.plot(L, PT, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"$PT_L$"</span>)</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>ax.axvline(L_max_tecnico, color<span class="op">=</span><span class="st">"#d22020"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, linewidth<span class="op">=</span><span class="fl">1.5</span>)</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>ax.scatter([L_max_tecnico], [PT.<span class="bu">max</span>()], color<span class="op">=</span><span class="st">"#d22020"</span>, zorder<span class="op">=</span><span class="dv">3</span>)</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>ax.text(L_max_tecnico, PT.<span class="bu">max</span>(), <span class="st">"  Máximo técnico"</span>, va<span class="op">=</span><span class="st">"bottom"</span>)</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"L"</span>)</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"X"</span>)</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">4</span>))</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>ax.plot(L, PMg, color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"$PMg_L$"</span>)</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>ax.plot(L, PMe, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"$PMe_L$"</span>)</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>ax.axvline(L_opt_tecnico, color<span class="op">=</span><span class="st">"#385e9d"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, linewidth<span class="op">=</span><span class="fl">1.5</span>)</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>ax.axhline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">"black"</span>, linewidth<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>ax.scatter([L_opt_tecnico], [PMe.<span class="bu">max</span>()], color<span class="op">=</span><span class="st">"#385e9d"</span>, zorder<span class="op">=</span><span class="dv">3</span>)</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>ax.text(L_opt_tecnico, PMe.<span class="bu">max</span>(), <span class="st">"  Óptimo técnico"</span>, va<span class="op">=</span><span class="st">"bottom"</span>)</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"L"</span>)</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"PMg / PMe"</span>)</span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell" data-execution_count="2">
+<div id="fig-productividad" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="2">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-productividad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display">
+<div id="fig-productividad-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-productividad-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="produccion_files/figure-html/fig-productividad-output-1.png" data-ref-parent="fig-productividad" width="593" height="356" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-productividad-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Gráfico de productividad total, media y marginal
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-productividad-2" class="quarto-float quarto-figure quarto-figure-center anchored" width="596" height="356">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-productividad-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="produccion_files/figure-html/fig-productividad-output-2.png" id="fig-productividad-2" data-ref-parent="fig-productividad" width="596" height="356" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-productividad-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-productividad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.2
+</figcaption>
+</figure>
+</div>
+</div>
 </section>
 </section>
 <section id="los-costes-de-producción" class="level2" data-number="3.3">
@@ -882,46 +825,41 @@ CFMe = \frac{\text{Coste fijo}}{\text{N.º unidades producidas}} = \frac{CF}{X}
 <p><span class="math display">\[
 CMg = \frac{\text{Aumento del coste total o variable}}{\text{Aumento del n.º de unidades producidas}} = \frac{\Delta CT}{\Delta X} = \frac{\Delta CV}{\Delta X}
 \]</span></p>
-<p><strong>Relación entre coste marginal y coste medio.</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.linspace(<span class="fl">0.5</span>, <span class="dv">20</span>, <span class="dv">300</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>CF <span class="op">=</span> <span class="dv">30</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>CV <span class="op">=</span> <span class="dv">12</span> <span class="op">*</span> X <span class="op">-</span> <span class="fl">1.2</span> <span class="op">*</span> X<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> <span class="fl">0.08</span> <span class="op">*</span> X<span class="op">**</span><span class="dv">3</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>CT <span class="op">=</span> CF <span class="op">+</span> CV</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>CMg <span class="op">=</span> <span class="dv">12</span> <span class="op">-</span> <span class="fl">2.4</span> <span class="op">*</span> X <span class="op">+</span> <span class="fl">0.24</span> <span class="op">*</span> X<span class="op">**</span><span class="dv">2</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>CVMe <span class="op">=</span> CV <span class="op">/</span> X</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>CTMe <span class="op">=</span> CT <span class="op">/</span> X</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">4</span>))</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>ax.plot(X, CT, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"CT"</span>)</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>ax.plot(X, CV, color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"CV"</span>)</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>ax.hlines(CF, X.<span class="bu">min</span>(), X.<span class="bu">max</span>(), color<span class="op">=</span><span class="st">"#385e9d"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, linewidth<span class="op">=</span><span class="dv">2</span>,</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>          label<span class="op">=</span><span class="st">"CF"</span>)</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"X"</span>)</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"CT / CV"</span>)</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">4</span>))</span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>ax.plot(X, CMg, color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"CMg"</span>)</span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>ax.plot(X, CTMe, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"CTMe"</span>)</span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>ax.plot(X, CVMe, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, label<span class="op">=</span><span class="st">"CVMe"</span>)</span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>x_min_ctme <span class="op">=</span> X[np.argmin(CTMe)]</span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>x_min_cvme <span class="op">=</span> X[np.argmin(CVMe)]</span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>ax.scatter([x_min_ctme], [CTMe.<span class="bu">min</span>()], color<span class="op">=</span><span class="st">"#385e9d"</span>, zorder<span class="op">=</span><span class="dv">3</span>)</span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>ax.scatter([x_min_cvme], [CVMe.<span class="bu">min</span>()], color<span class="op">=</span><span class="st">"#385e9d"</span>, zorder<span class="op">=</span><span class="dv">3</span>)</span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"X"</span>)</span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"CMg / CTMe / CVMe"</span>)</span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell" data-execution_count="3">
+<div id="fig-costemg-costeme" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="3">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-costemg-costeme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display">
+<div id="fig-costemg-costeme-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-costemg-costeme-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="produccion_files/figure-html/fig-costemg-costeme-output-1.png" data-ref-parent="fig-costemg-costeme" width="593" height="356" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-costemg-costeme-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Relación entre coste marginal y coste medio
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div id="fig-costemg-costeme-2" class="quarto-float quarto-figure quarto-figure-center anchored" width="585" height="356">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-costemg-costeme-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="produccion_files/figure-html/fig-costemg-costeme-output-2.png" id="fig-costemg-costeme-2" data-ref-parent="fig-costemg-costeme" width="585" height="356" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-costemg-costeme-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-costemg-costeme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.3
+</figcaption>
+</figure>
+</div>
+</div>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1046,54 +984,26 @@ B^\circ = IT - CT
 \]</span></p>
 <p><strong>El beneficio contable</strong>: la diferencia entre ingresos y costes contables.</p>
 <p><strong>El beneficio económico</strong>: la diferencia entre ingresos y costes económicos.</p>
-<p>En el esquema de la diapositiva:</p>
 <ul>
 <li><strong>Costes contables</strong>: costes explícitos.</li>
 <li><strong>Costes económicos</strong>: costes explícitos + costes implícitos.</li>
 <li><strong>Beneficio contable</strong>: ingresos menos costes contables.</li>
 <li><strong>Beneficio económico</strong>: ingresos menos costes económicos.</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.patches <span class="im">import</span> Rectangle</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="fl">3.8</span>))</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(<span class="dv">0</span>, <span class="dv">10</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="dv">4</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>ax.axis(<span class="st">"off"</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Bloque de ingresos completo</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>ax.add_patch(Rectangle((<span class="fl">0.5</span>, <span class="fl">0.8</span>), <span class="dv">2</span>, <span class="fl">2.6</span>, fill<span class="op">=</span><span class="va">False</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>))</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">1.5</span>, <span class="fl">2.1</span>, <span class="st">"INGRESOS"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Descomposición de ingresos</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>ax.add_patch(Rectangle((<span class="fl">3.0</span>, <span class="fl">2.5</span>), <span class="dv">2</span>, <span class="fl">0.9</span>, fill<span class="op">=</span><span class="va">False</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>))</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">4.0</span>, <span class="fl">2.95</span>, <span class="st">"COSTES</span><span class="ch">\n</span><span class="st">EXPLÍCITOS"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>ax.add_patch(Rectangle((<span class="fl">3.0</span>, <span class="fl">1.6</span>), <span class="dv">2</span>, <span class="fl">0.9</span>, fill<span class="op">=</span><span class="va">False</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>))</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">4.0</span>, <span class="fl">2.05</span>, <span class="st">"COSTES</span><span class="ch">\n</span><span class="st">IMPLÍCITOS"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>ax.add_patch(Rectangle((<span class="fl">3.0</span>, <span class="fl">0.8</span>), <span class="dv">2</span>, <span class="fl">0.8</span>, fill<span class="op">=</span><span class="va">False</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>))</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">4.0</span>, <span class="fl">1.2</span>, <span class="st">"BENEFICIO</span><span class="ch">\n</span><span class="st">ECONÓMICO"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>,</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"#385e9d"</span>)</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Etiquetas de agrupación</span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">6.0</span>, <span class="fl">2.95</span>, <span class="st">"COSTES</span><span class="ch">\n</span><span class="st">CONTABLES"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>,</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"#d22020"</span>)</span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>ax.plot([<span class="fl">5.3</span>, <span class="fl">5.3</span>, <span class="fl">5.7</span>], [<span class="fl">2.5</span>, <span class="fl">3.4</span>, <span class="fl">3.4</span>], color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>)</span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">7.6</span>, <span class="fl">2.5</span>, <span class="st">"COSTES</span><span class="ch">\n</span><span class="st">ECONÓMICOS"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>,</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"#d22020"</span>)</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>ax.plot([<span class="fl">6.9</span>, <span class="fl">6.9</span>, <span class="fl">7.3</span>], [<span class="fl">1.6</span>, <span class="fl">3.4</span>, <span class="fl">3.4</span>], color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>)</span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">6.0</span>, <span class="fl">1.45</span>, <span class="st">"BENEFICIO</span><span class="ch">\n</span><span class="st">CONTABLE"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>,</span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"#385e9d"</span>)</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>ax.plot([<span class="fl">5.3</span>, <span class="fl">5.3</span>, <span class="fl">5.7</span>], [<span class="fl">0.8</span>, <span class="fl">2.5</span>, <span class="fl">2.5</span>], color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>)</span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">7.6</span>, <span class="fl">1.0</span>, <span class="st">"BENEFICIO</span><span class="ch">\n</span><span class="st">ECONÓMICO"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>,</span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"#385e9d"</span>)</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>ax.plot([<span class="fl">6.9</span>, <span class="fl">6.9</span>, <span class="fl">7.3</span>], [<span class="fl">0.8</span>, <span class="fl">1.6</span>, <span class="fl">1.6</span>], color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>)</span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-fig-beneficioEco" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-beneficioeco" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-beneficioeco-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="produccion_files/figure-html/fig-beneficioeco-output-1.png" width="614" height="300" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-beneficioeco-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.4: Beneficios
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
