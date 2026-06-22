@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="custom.css">
 </head>
@@ -210,8 +239,30 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#producción" id="toc-producción" class="nav-link active" data-scroll-target="#producción"><span class="header-section-number">6.1</span> Producción</a>
+  <ul class="collapse">
+  <li><a href="#el-producto-interior-bruto-pib" id="toc-el-producto-interior-bruto-pib" class="nav-link" data-scroll-target="#el-producto-interior-bruto-pib"><span class="header-section-number">6.1.1</span> El producto interior bruto (PIB)</a></li>
+  <li><a href="#recordemos-variables-flujo-y-variables-fondo" id="toc-recordemos-variables-flujo-y-variables-fondo" class="nav-link" data-scroll-target="#recordemos-variables-flujo-y-variables-fondo"><span class="header-section-number">6.1.2</span> Recordemos: variables flujo y variables fondo</a></li>
+  <li><a href="#pib-nominal-y-pib-real" id="toc-pib-nominal-y-pib-real" class="nav-link" data-scroll-target="#pib-nominal-y-pib-real"><span class="header-section-number">6.1.3</span> PIB nominal y PIB real</a></li>
+  <li><a href="#tres-enfoques-para-medir-el-pib" id="toc-tres-enfoques-para-medir-el-pib" class="nav-link" data-scroll-target="#tres-enfoques-para-medir-el-pib"><span class="header-section-number">6.1.4</span> Tres enfoques para medir el PIB</a></li>
+  <li><a href="#el-flujo-circular-de-la-renta" id="toc-el-flujo-circular-de-la-renta" class="nav-link" data-scroll-target="#el-flujo-circular-de-la-renta"><span class="header-section-number">6.1.5</span> El flujo circular de la renta</a></li>
+  <li><a href="#componentes-del-pib-según-el-enfoque" id="toc-componentes-del-pib-según-el-enfoque" class="nav-link" data-scroll-target="#componentes-del-pib-según-el-enfoque"><span class="header-section-number">6.1.6</span> Componentes del PIB según el enfoque</a></li>
+  <li><a href="#qué-no-mide-el-pib" id="toc-qué-no-mide-el-pib" class="nav-link" data-scroll-target="#qué-no-mide-el-pib"><span class="header-section-number">6.1.7</span> Qué no mide el PIB</a></li>
+  <li><a href="#otros-indicadores-de-producción-y-renta" id="toc-otros-indicadores-de-producción-y-renta" class="nav-link" data-scroll-target="#otros-indicadores-de-producción-y-renta"><span class="header-section-number">6.1.8</span> Otros indicadores de producción y renta</a></li>
+  </ul></li>
+  <li><a href="#empleo" id="toc-empleo" class="nav-link" data-scroll-target="#empleo"><span class="header-section-number">6.2</span> Empleo</a>
+  <ul class="collapse">
+  <li><a href="#principales-magnitudes" id="toc-principales-magnitudes" class="nav-link" data-scroll-target="#principales-magnitudes"><span class="header-section-number">6.2.1</span> Principales magnitudes</a></li>
+  <li><a href="#cómo-se-miden-los-desempleados" id="toc-cómo-se-miden-los-desempleados" class="nav-link" data-scroll-target="#cómo-se-miden-los-desempleados"><span class="header-section-number">6.2.2</span> Cómo se miden los desempleados</a></li>
+  <li><a href="#los-efectos-del-desempleo" id="toc-los-efectos-del-desempleo" class="nav-link" data-scroll-target="#los-efectos-del-desempleo"><span class="header-section-number">6.2.3</span> Los efectos del desempleo</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -235,8 +286,457 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="producción" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="producción"><span class="header-section-number">6.1</span> Producción</h2>
+<section id="el-producto-interior-bruto-pib" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="el-producto-interior-bruto-pib"><span class="header-section-number">6.1.1</span> El producto interior bruto (PIB)</h3>
+<p>El <strong>Producto Interior Bruto (PIB)</strong> es el <strong>valor de mercado</strong> de todos los <strong>bienes y servicios finales</strong> producidos en un <strong>territorio</strong> durante un <strong>periodo determinado</strong>.</p>
+<p>Como hay muchos bienes que pueden ser intermedios o finales, en la práctica se mide como la suma total de <strong>valor añadido</strong> (VA):</p>
+<p><span class="math display">\[
+VA = \text{Valor total de la producción} - \text{Valor de los bienes intermedios}
+\]</span></p>
+<p>El PIB es una variable que se mide durante un <strong>periodo de tiempo determinado</strong> (año, trimestre…). Ese tipo de variable se llama…</p>
+</section>
+<section id="recordemos-variables-flujo-y-variables-fondo" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="recordemos-variables-flujo-y-variables-fondo"><span class="header-section-number">6.1.2</span> Recordemos: variables flujo y variables fondo</h3>
+<p><strong>Variables flujo</strong>: se miden en un periodo de tiempo.</p>
+<ul>
+<li>El PIB mide el valor de los bienes y servicios producidos durante un periodo (año, trimestre…).</li>
+<li>La renta o ingreso de una persona durante un mes.</li>
+</ul>
+<p><strong>Variables fondo (stock)</strong>: se miden en un instante en el tiempo.</p>
+<ul>
+<li>La deuda pública mide el total de deuda en un momento determinado (por ejemplo, al final del año fiscal).</li>
+<li>El capital físico de una empresa (maquinaria, edificios…).</li>
+</ul>
+<div id="cell-fig-renta-consumo-ahorro-riqueza" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-renta-consumo-ahorro-riqueza" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-renta-consumo-ahorro-riqueza-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="macro_produccion_empleo_files/figure-html/fig-renta-consumo-ahorro-riqueza-output-1.png" width="674" height="393" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-renta-consumo-ahorro-riqueza-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.1: Variables flujo y variables fondo: renta, consumo, ahorro y riqueza
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>El PIB es un indicador de la actividad económica de un territorio. Sirve para hacer comparaciones entre diferentes territorios en un mismo periodo de tiempo y entre diferentes periodos de tiempo en un mismo territorio; en este segundo caso hablamos de <strong>crecimiento económico</strong>.</p>
+<p>El valor de mercado de los bienes y servicios puede variar por:</p>
+<ul>
+<li>Variación en las cantidades producidas.</li>
+<li>Variación en los precios.</li>
+</ul>
+<p>Para saber si ha crecido la producción, es necesario eliminar el efecto de la variación en los precios.</p>
+</section>
+<section id="pib-nominal-y-pib-real" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="pib-nominal-y-pib-real"><span class="header-section-number">6.1.3</span> PIB nominal y PIB real</h3>
+<p><strong>PIB nominal</strong> (o a precios corrientes): suma de todos los bienes y servicios finales multiplicados por su precio corriente.</p>
+<p><strong>Precio corriente</strong> = precio vigente en el periodo de producción.</p>
+<p><strong>PIB real</strong> (o a precios constantes): suma de todos los bienes y servicios finales multiplicados por un precio constante (en base a un año de referencia).</p>
+<p><strong>Precio constante</strong> = precio vigente en un periodo de referencia o “base”, que se usa para calcular el valor de mercado en todos los periodos.</p>
+<p>Si queremos medir la evolución de la producción a lo largo del tiempo, debemos usar el <strong>PIB real</strong>.</p>
+<section id="ejemplo-cantidades-precios-pib-nominal-y-pib-real" class="level4" data-number="6.1.3.1">
+<h4 data-number="6.1.3.1" class="anchored" data-anchor-id="ejemplo-cantidades-precios-pib-nominal-y-pib-real"><span class="header-section-number">6.1.3.1</span> Ejemplo: cantidades, precios, PIB nominal y PIB real</h4>
+<div id="tbl-cantidades-precios" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cantidades-precios-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;6.1: Tabla 10.1. Cantidades y precios en un país en el que se producen solo cuatro bienes finales.
+</figcaption>
+<div aria-describedby="tbl-cantidades-precios-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bien final</th>
+<th style="text-align: right;">Año 0: cantidad</th>
+<th style="text-align: right;">Año 0: precio</th>
+<th style="text-align: right;">Año 1: cantidad</th>
+<th style="text-align: right;">Año 1: precio</th>
+<th style="text-align: right;">Año 2: cantidad</th>
+<th style="text-align: right;">Año 2: precio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Automóviles</td>
+<td style="text-align: right;">500 unid.</td>
+<td style="text-align: right;">20.000 €</td>
+<td style="text-align: right;">500 unid.</td>
+<td style="text-align: right;">40.000 €</td>
+<td style="text-align: right;">625 unid.</td>
+<td style="text-align: right;">44.000 €</td>
+</tr>
+<tr class="even">
+<td>Alimentos</td>
+<td style="text-align: right;">20.000 Tn.</td>
+<td style="text-align: right;">100 €</td>
+<td style="text-align: right;">20.000 Tn.</td>
+<td style="text-align: right;">200 €</td>
+<td style="text-align: right;">18.000 Tn.</td>
+<td style="text-align: right;">150 €</td>
+</tr>
+<tr class="odd">
+<td>Maquinaria</td>
+<td style="text-align: right;">1.000 unid.</td>
+<td style="text-align: right;">2.500 €</td>
+<td style="text-align: right;">1.000 unid.</td>
+<td style="text-align: right;">5.000 €</td>
+<td style="text-align: right;">1.200 unid.</td>
+<td style="text-align: right;">7.500 €</td>
+</tr>
+<tr class="even">
+<td>Servicios</td>
+<td style="text-align: right;">40.000 horas</td>
+<td style="text-align: right;">50 €</td>
+<td style="text-align: right;">40.000 horas</td>
+<td style="text-align: right;">100 €</td>
+<td style="text-align: right;">50.000 horas</td>
+<td style="text-align: right;">110 €</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><strong>PIB nominal año 0</strong>: (500 x 20.000) + (20.000 x 100) + (1.000 x 2.500) + (40.000 x 50) = 16.500.000 €.</p>
+<p><strong>PIB nominal año 1</strong>: (500 x 40.000) + (20.000 x 200) + (1.000 x 5.000) + (40.000 x 100) = 33.000.000 €.</p>
+<p><strong>PIB nominal año 2</strong>: (625 x 44.000) + (18.000 x 150) + (1.200 x 7.500) + (50.000 x 110) = 44.700.000 €.</p>
+<p><strong>PIB real año 0 (base: año 0)</strong>: (500 x 20.000) + (20.000 x 100) + (1.000 x 2.500) + (40.000 x 50) = 16.500.000 €.</p>
+<p><strong>PIB real año 1 (base: año 0)</strong>: (500 x 20.000) + (20.000 x 100) + (1.000 x 2.500) + (40.000 x 50) = 16.500.000 €.</p>
+<p><strong>PIB real año 2 (base: año 0)</strong>: (625 x 20.000) + (18.000 x 100) + (1.200 x 2.500) + (50.000 x 50) = 19.800.000 €.</p>
+<p>La tasa de crecimiento del PIB real se calcula como:</p>
+<p><span class="math display">\[
+\text{Tasa de crecimiento del PIB (año }t\text{)} = \frac{\text{PIB real}_t - \text{PIB real}_{t-1}}{\text{PIB real}_{t-1}} \cdot 100
+\]</span></p>
+<div id="cell-fig-crecimiento-pib-real-espana" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-crecimiento-pib-real-espana" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-crecimiento-pib-real-espana-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="macro_produccion_empleo_files/figure-html/fig-crecimiento-pib-real-espana-output-1.png" width="949" height="505" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-crecimiento-pib-real-espana-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.2: Tasa de crecimiento anual del PIB real (1980-2024): España
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-fig-crecimiento-pib-real-espana-italia" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-crecimiento-pib-real-espana-italia" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-crecimiento-pib-real-espana-italia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="macro_produccion_empleo_files/figure-html/fig-crecimiento-pib-real-espana-italia-output-1.png" width="949" height="505" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-crecimiento-pib-real-espana-italia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.3: Tasa de crecimiento anual del PIB real (1980-2024): España e Italia
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-fig-crecimiento-pib-real-espana-italia-francia" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div id="fig-crecimiento-pib-real-espana-italia-francia" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-crecimiento-pib-real-espana-italia-francia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="macro_produccion_empleo_files/figure-html/fig-crecimiento-pib-real-espana-italia-francia-output-1.png" width="949" height="505" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-crecimiento-pib-real-espana-italia-francia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.4: Tasa de crecimiento anual del PIB real (1980-2024): España, Italia y Francia
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-fig-crecimiento-pib-real-avanzados" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-crecimiento-pib-real-avanzados" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-crecimiento-pib-real-avanzados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="macro_produccion_empleo_files/figure-html/fig-crecimiento-pib-real-avanzados-output-1.png" width="949" height="505" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-crecimiento-pib-real-avanzados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.5: Tasa de crecimiento anual del PIB real (1980-2024): España, Italia, Francia y Estados Unidos
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-fig-crecimiento-pib-real-comparacion" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div id="fig-crecimiento-pib-real-comparacion" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-crecimiento-pib-real-comparacion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="macro_produccion_empleo_files/figure-html/fig-crecimiento-pib-real-comparacion-output-1.png" width="949" height="505" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-crecimiento-pib-real-comparacion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.6: Tasa de crecimiento anual del PIB real (1980-2024): China, España, Francia, Italia y Estados Unidos
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Fuente: Banco Mundial (NY.GDP.MKTP.KD.ZG).</p>
+<p>Las <strong>diferencias</strong> entre PIB <strong>nominal</strong> y <strong>real</strong> se deben a las <strong>variaciones de los precios</strong>. Es posible utilizar el <strong>cociente</strong> entre ambas magnitudes como una <strong>medida del nivel general de precios</strong>:</p>
+<p><span class="math display">\[
+\text{Deflactor del PIB}_t = \frac{\text{PIB nominal}_t}{\text{PIB real}_t}\cdot 100
+\]</span></p>
+</section>
+</section>
+<section id="tres-enfoques-para-medir-el-pib" class="level3" data-number="6.1.4">
+<h3 data-number="6.1.4" class="anchored" data-anchor-id="tres-enfoques-para-medir-el-pib"><span class="header-section-number">6.1.4</span> Tres enfoques para medir el PIB</h3>
+<p><strong>Enfoque de la producción</strong>: el PIB puede medirse como la suma total del valor agregado en la producción. Es el enfoque que hemos visto hasta ahora.</p>
+<p><strong>Enfoque del gasto</strong>: el PIB puede medirse como el gasto total (agregado) que se realiza en un país.</p>
+<p><strong>Enfoque de las rentas</strong> (o de los ingresos): el PIB puede medir la suma total de los salarios, beneficios, alquileres, intereses…</p>
+</section>
+<section id="el-flujo-circular-de-la-renta" class="level3" data-number="6.1.5">
+<h3 data-number="6.1.5" class="anchored" data-anchor-id="el-flujo-circular-de-la-renta"><span class="header-section-number">6.1.5</span> El flujo circular de la renta</h3>
+<div id="cell-fig-flujo-circular-renta" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div id="fig-flujo-circular-renta" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-flujo-circular-renta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="macro_produccion_empleo_files/figure-html/fig-flujo-circular-renta-output-1.png" width="767" height="486" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-flujo-circular-renta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.7: Figura 10.1. Flujo circular de la renta en una economía muy sencilla
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>No se incluye el Estado ni la relación del país con el exterior y solo hay bienes de consumo.</p>
+</section>
+<section id="componentes-del-pib-según-el-enfoque" class="level3" data-number="6.1.6">
+<h3 data-number="6.1.6" class="anchored" data-anchor-id="componentes-del-pib-según-el-enfoque"><span class="header-section-number">6.1.6</span> Componentes del PIB según el enfoque</h3>
+<p>Según el <strong>enfoque de la producción</strong>, el PIB se calcula como la suma de los sectores productivos: agricultura, pesca, industrias extractivas, servicios…</p>
+<p>Según el <strong>enfoque de las rentas o ingresos</strong>, el PIB recoge remuneraciones de los trabajadores, de las empresas (beneficios)…</p>
+<p>Según el <strong>enfoque del gasto</strong>, el PIB recoge el gasto de las familias (<strong>consumo</strong>), las empresas (<strong>inversión</strong>), el Estado (<strong>gasto público</strong>) y el sector exterior (<strong>exportaciones netas</strong>).</p>
+<p><span class="math display">\[
+PIB = \text{Consumo privado }(C) + \text{Inversión privada }(I) + \text{Compras del Estado }(G) + \text{Exportaciones netas }(XN)
+\]</span></p>
+<p><span class="math display">\[
+PIB = \text{Consumo privado} + \text{Consumo público} + \text{Formación bruta de capital} + \text{Exportaciones netas}
+\]</span></p>
+<p>Si consideramos conjuntamente <strong>inversión privada</strong> y la <strong>inversión pública</strong>, lo llamaremos <strong>formación bruta de capital</strong>.</p>
+</section>
+<section id="qué-no-mide-el-pib" class="level3" data-number="6.1.7">
+<h3 data-number="6.1.7" class="anchored" data-anchor-id="qué-no-mide-el-pib"><span class="header-section-number">6.1.7</span> Qué no mide el PIB</h3>
+<p>¿El PIB mide <strong>toda la actividad económica</strong>? <strong>No</strong>.</p>
+<p>Quedan fuera, por ejemplo:</p>
+<ul>
+<li>Autoconsumo, trabajo doméstico, trabajo voluntario…</li>
+<li>Economía sumergida.</li>
+</ul>
+<p>¿El PIB es un indicador de <strong>bienestar</strong>? <strong>No</strong>, aunque hay cierta relación.</p>
+<p>Indicadores propuestos:</p>
+<ul>
+<li>Índice de bienestar económico sostenible (IBES).</li>
+<li>Índice de progreso real/genuino (IPR/IPG).</li>
+<li><strong>Índice de desarrollo humano</strong> (IDH), etc.</li>
+</ul>
+<p>El PIBpc se incluye en el cálculo del IDH:</p>
+<p><span class="math display">\[
+\text{PIB per cápita} = \frac{\text{PIB}}{\text{número de habitantes}}
+\]</span></p>
+<p>Referencia destacada: Diane Coyle, <em>El producto interno bruto: una historia breve pero entrañable</em> (Fondo de Cultura Económica).</p>
+<blockquote class="blockquote">
+<p>Nota de pronunciación: /dáian coil/.</p>
+</blockquote>
+</section>
+<section id="otros-indicadores-de-producción-y-renta" class="level3" data-number="6.1.8">
+<h3 data-number="6.1.8" class="anchored" data-anchor-id="otros-indicadores-de-producción-y-renta"><span class="header-section-number">6.1.8</span> Otros indicadores de producción y renta</h3>
+<section id="producto-interior-neto" class="level4" data-number="6.1.8.1">
+<h4 data-number="6.1.8.1" class="anchored" data-anchor-id="producto-interior-neto"><span class="header-section-number">6.1.8.1</span> Producto interior neto</h4>
+<p><strong>Producto Interior Neto (PIN)</strong>: es una medida que <strong>ajusta el PIB</strong> teniendo en cuenta la <strong>depreciación</strong> de los activos para proporcionar un dato más preciso del crecimiento económico de un país.</p>
+<p><span class="math display">\[
+PIN = PIB - \text{Depreciación}
+\]</span></p>
+<p>De toda la inversión, hay parte dedicada a reponer capital desgastado (reposición = depreciación). El resto es la <strong>inversión neta</strong>:</p>
+<p><span class="math display">\[
+\text{Inversión neta} = \text{Inversión bruta} - \text{Reposición}
+\]</span></p>
+<p><span class="math display">\[
+\text{Inversión neta} = \text{Inversión bruta} - \text{Depreciación}
+\]</span></p>
+</section>
+<section id="producto-nacional-bruto-y-producto-nacional-neto" class="level4" data-number="6.1.8.2">
+<h4 data-number="6.1.8.2" class="anchored" data-anchor-id="producto-nacional-bruto-y-producto-nacional-neto"><span class="header-section-number">6.1.8.2</span> Producto nacional bruto y producto nacional neto</h4>
+<p><strong>Producto Nacional Bruto (PNB)</strong>: suma de ingresos o <strong>rentas totales</strong> que se generan a favor de los <strong>residentes</strong> de un país, se generen donde se generen.</p>
+<p><span class="math display">\[
+PNB = PIB - RFEN + RFNE
+\]</span></p>
+<p>Donde <strong>RFEN</strong> son las rentas de los factores extranjeros en territorio nacional y <strong>RFNE</strong> son las rentas de los factores nacionales en territorio extranjero.</p>
+<p><strong>Práctica 1.</strong> Una <strong>empresa estadounidense</strong> tiene una <strong>planta de producción en México</strong>. El valor de los bienes producidos por esta planta se incluirá en el <strong>PIB de México</strong>. Los ingresos que los propietarios estadounidenses obtienen de esta planta se incluirán en el <strong>PNB de Estados Unidos</strong>.</p>
+<p>Una empresa mexicana posee inversiones en otros países. Los ingresos que los inversionistas mexicanos reciben del extranjero se sumarán al <strong>PNB de México</strong>.</p>
+<p><strong>Producto Nacional Neto (PNN)</strong>: diferencia entre PNB y la <strong>depreciación</strong> (pérdida de valor) o <strong>reposición</strong>:</p>
+<p><span class="math display">\[
+PNN = PNB - \text{Depreciación} = PNB - \text{Reposición}
+\]</span></p>
+</section>
+<section id="renta-nacional" class="level4" data-number="6.1.8.3">
+<h4 data-number="6.1.8.3" class="anchored" data-anchor-id="renta-nacional"><span class="header-section-number">6.1.8.3</span> Renta nacional</h4>
+<p><strong>Renta Nacional (RN)</strong>: mide la <strong>suma total de todas las rentas</strong> generadas a favor de los <strong>poseedores de los factores productivos</strong> como contraprestación por su aportación al proceso productivo.</p>
+<p><span class="math display">\[
+RN = PNN - \text{impuestos indirectos} + \text{subvenciones}
+\]</span></p>
+<p>Las subvenciones son pagos que perciben las empresas del Estado.</p>
+</section>
+<section id="renta-personal-y-renta-personal-disponible" class="level4" data-number="6.1.8.4">
+<h4 data-number="6.1.8.4" class="anchored" data-anchor-id="renta-personal-y-renta-personal-disponible"><span class="header-section-number">6.1.8.4</span> Renta personal y renta personal disponible</h4>
+<p><strong>Renta Personal (RP)</strong>: suma de las <strong>rentas que reciben las personas</strong>:</p>
+<p><span class="math display">\[
+RP = RN - BND - TSB - TSS + TNE + IDP
+\]</span></p>
+<p><strong>Renta Personal Disponible (RPD)</strong>: es la renta personal menos los impuestos directos sobre las personas (TDP). Se puede usar para consumo o ahorro privados.</p>
+<p><span class="math display">\[
+RPD = RP - TDP
+\]</span></p>
+<p><span class="math display">\[
+RPD = \text{consumo privado} + \text{ahorro privado}
+\]</span></p>
+<p><strong>BND</strong>: Bº no distribuido. <strong>TSB</strong>: impuestos sobre beneficios. <strong>TSS</strong>: impuestos Seguridad Social. <strong>TNE</strong>: transferencias netas del Estado. <strong>IDP</strong>: intereses de deuda pública. <strong>TDP</strong>: impuestos directos sobre las personas.</p>
+<blockquote class="blockquote">
+<p>Nota de la diapositiva: si TNE son las transferencias netas del Estado, entonces eso ya restaría los impuestos directos, ¿no? Entonces, ¿por qué se restan de nuevo para calcular la renta personal disponible? En todo caso, las transferencias en la renta personal deberían ser brutas, sin restar los impuestos.</p>
+</blockquote>
+</section>
+</section>
+</section>
+<section id="empleo" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="empleo"><span class="header-section-number">6.2</span> Empleo</h2>
+<section id="principales-magnitudes" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="principales-magnitudes"><span class="header-section-number">6.2.1</span> Principales magnitudes</h3>
+<p>La situación en relación con la actividad económica se basa en criterios OIT.</p>
+<div id="cell-fig-clasificacion-poblacion-mundo-laboral" class="cell" data-execution_count="9">
+<div class="cell-output cell-output-display">
+<div id="fig-clasificacion-poblacion-mundo-laboral" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-clasificacion-poblacion-mundo-laboral-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="macro_produccion_empleo_files/figure-html/fig-clasificacion-poblacion-mundo-laboral-output-1.png" width="767" height="393" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-clasificacion-poblacion-mundo-laboral-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.8: Figura 10.3. Clasificación de la población de un país según su relación con el mundo laboral
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Nota: en España, la edad legal para poder trabajar es de 16 años.</p>
+</blockquote>
+<p><strong>Tasa de actividad</strong>: cociente entre la población activa y la población en edad de trabajar.</p>
+<p><span class="math display">\[
+\text{Tasa de actividad} = \frac{\text{Población activa}}{\text{Población en edad de trabajar}} \times 100
+\]</span></p>
+<p><strong>Tasa de desempleo</strong>: cociente entre los desempleados y los activos, esto es, la proporción de activos que buscan pero no encuentran un puesto de trabajo.</p>
+<p><span class="math display">\[
+\text{Tasa de desempleo} = \frac{\text{Desempleados}}{\text{Población activa}} \times 100 = \frac{\text{Desempleados}}{\text{Ocupados} + \text{Desempleados}} \times 100
+\]</span></p>
+</section>
+<section id="cómo-se-miden-los-desempleados" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="cómo-se-miden-los-desempleados"><span class="header-section-number">6.2.2</span> Cómo se miden los desempleados</h3>
+<p><strong>Desempleo medido con una encuesta</strong> (en España, la Encuesta de Población Activa, EPA): se computa como desempleados a quienes:</p>
+<ul>
+<li>No hayan tenido un empleo por cuenta ajena ni por cuenta propia durante la semana de referencia.</li>
+<li>Estén disponibles para trabajar.</li>
+<li>Hayan tomado medidas concretas para buscar un trabajo por cuenta ajena o hayan hecho gestiones para establecerse por su cuenta durante el mes precedente.</li>
+</ul>
+<p><strong>Desempleo registrado</strong>: total de demandas de empleo en alta (en España, en el Servicio Público de Empleo Estatal, SEPE), existentes el último día de cada mes, excluyendo ciertas situaciones.</p>
+<p>La metodología estadística es diferente:</p>
+<ul>
+<li>La EPA es una encuesta telefónica (realizada por el INE).</li>
+<li>El desempleo registrado del SEPE es un registro administrativo.</li>
+</ul>
+<blockquote class="blockquote">
+<p>Referencia incluida en las notas de la diapositiva: https://www.ine.es/prensa/epa_prensa.htm</p>
+</blockquote>
+<section id="paro-estimado-epa-cómo-se-mide" class="level4" data-number="6.2.2.1">
+<h4 data-number="6.2.2.1" class="anchored" data-anchor-id="paro-estimado-epa-cómo-se-mide"><span class="header-section-number">6.2.2.1</span> Paro estimado (EPA): cómo se mide</h4>
+<p>Definición operativa: cómo interpretar la búsqueda activa de trabajo.</p>
+<ul>
+<li>Oficina pública de empleo.</li>
+<li>Oficina privada.</li>
+<li>Enviar candidaturas.</li>
+<li>Sindicatos, contactos personales.</li>
+<li>Responder anuncios.</li>
+<li>Pruebas, concursos.</li>
+<li>Buscar local, material.</li>
+<li>Gestiones de permisos.</li>
+</ul>
+<p>No basta sólo inscribirse.</p>
+</section>
+<section id="paro-registrado-sepe-cómo-se-mide" class="level4" data-number="6.2.2.2">
+<h4 data-number="6.2.2.2" class="anchored" data-anchor-id="paro-registrado-sepe-cómo-se-mide"><span class="header-section-number">6.2.2.2</span> Paro registrado (SEPE): cómo se mide</h4>
+<p>El paro registrado está constituido por el total de demandas de empleo registradas el último día de cada mes, excluyendo ciertas situaciones:</p>
+<ul>
+<li>Pluriempleo.</li>
+<li>Buscan mejor empleo.</li>
+<li>Colaboradores sociales que perciben prestación por desempleo.</li>
+<li>Jubilados.</li>
+<li>Quienes buscan empleo coyuntural (3 meses).</li>
+<li>Quienes buscan empleos de menos de 20 horas a la semana.</li>
+<li>Estudiantes.</li>
+<li>Trabajadores agrícolas subsidiados.</li>
+<li>Quienes rechazan ofertas.</li>
+<li>Demandantes sin disponibilidad inmediata.</li>
+</ul>
+</section>
+<section id="la-diferencia-entre-epa-y-paro-registrado" class="level4" data-number="6.2.2.3">
+<h4 data-number="6.2.2.3" class="anchored" data-anchor-id="la-diferencia-entre-epa-y-paro-registrado"><span class="header-section-number">6.2.2.3</span> La diferencia entre EPA y paro registrado</h4>
+<p><span class="math display">\[
+\text{Tasa de paro EPA} = \frac{\text{paro declarado}}{\text{población activa}}
+\]</span></p>
+<p><span class="math display">\[
+\text{Tasa de paro SEPE} = \frac{\text{paro registrado}}{\text{población activa}}
+\]</span></p>
+<div id="cell-fig-parados-epa-paro-registrado" class="cell" data-execution_count="10">
+<div class="cell-output cell-output-display">
+<div id="fig-parados-epa-paro-registrado" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-parados-epa-paro-registrado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="macro_produccion_empleo_files/figure-html/fig-parados-epa-paro-registrado-output-1.png" width="950" height="533" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-parados-epa-paro-registrado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.9: Parados según la EPA y paro registrado en España (2002-2023)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Fuente: Encuesta de Población Activa (INE) y Servicio Público de Empleo Estatal.</p>
+</section>
+</section>
+<section id="los-efectos-del-desempleo" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="los-efectos-del-desempleo"><span class="header-section-number">6.2.3</span> Los efectos del desempleo</h3>
+<p><strong>Costes económicos</strong>:</p>
+<ul>
+<li>La sociedad mantiene unos <strong>recursos sin utilizar</strong>.</li>
+<li>Frena el crecimiento económico.</li>
+</ul>
+<p><strong>Costes psicológicos y sociales</strong>:</p>
+<ul>
+<li>Efectos en la <strong>salud</strong> física y mental.</li>
+<li>Reduce el <strong>bienestar</strong> individual.</li>
+<li>Puede generar <strong>tensiones sociales</strong>.</li>
+<li>Desigualdad.</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
