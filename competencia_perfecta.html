@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="custom.css">
 </head>
@@ -210,8 +239,25 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#la-competencia-perfecta-características" id="toc-la-competencia-perfecta-características" class="nav-link active" data-scroll-target="#la-competencia-perfecta-características"><span class="header-section-number">4.1</span> La competencia perfecta: características</a></li>
+  <li><a href="#los-ingresos-de-la-empresa-competitiva" id="toc-los-ingresos-de-la-empresa-competitiva" class="nav-link" data-scroll-target="#los-ingresos-de-la-empresa-competitiva"><span class="header-section-number">4.2</span> Los ingresos de la empresa competitiva</a></li>
+  <li><a href="#cuánto-producir-para-maximizar-el-beneficio" id="toc-cuánto-producir-para-maximizar-el-beneficio" class="nav-link" data-scroll-target="#cuánto-producir-para-maximizar-el-beneficio"><span class="header-section-number">4.3</span> Cuánto producir para maximizar el beneficio</a></li>
+  <li><a href="#el-beneficio-de-la-empresa-a-corto-plazo" id="toc-el-beneficio-de-la-empresa-a-corto-plazo" class="nav-link" data-scroll-target="#el-beneficio-de-la-empresa-a-corto-plazo"><span class="header-section-number">4.4</span> El beneficio de la empresa a corto plazo</a></li>
+  <li><a href="#la-curva-de-oferta-de-la-empresa-a-corto-plazo" id="toc-la-curva-de-oferta-de-la-empresa-a-corto-plazo" class="nav-link" data-scroll-target="#la-curva-de-oferta-de-la-empresa-a-corto-plazo"><span class="header-section-number">4.5</span> La curva de oferta de la empresa a corto plazo</a></li>
+  <li><a href="#la-curva-de-oferta-del-mercado-a-corto-plazo" id="toc-la-curva-de-oferta-del-mercado-a-corto-plazo" class="nav-link" data-scroll-target="#la-curva-de-oferta-del-mercado-a-corto-plazo"><span class="header-section-number">4.6</span> La curva de oferta del mercado a corto plazo</a></li>
+  <li><a href="#el-excedente-de-consumidores-y-productores" id="toc-el-excedente-de-consumidores-y-productores" class="nav-link" data-scroll-target="#el-excedente-de-consumidores-y-productores"><span class="header-section-number">4.7</span> El excedente de consumidores y productores</a>
+  <ul class="collapse">
+  <li><a href="#excedente-del-consumidor" id="toc-excedente-del-consumidor" class="nav-link" data-scroll-target="#excedente-del-consumidor"><span class="header-section-number">4.7.1</span> Excedente del consumidor</a></li>
+  <li><a href="#excedente-del-productor" id="toc-excedente-del-productor" class="nav-link" data-scroll-target="#excedente-del-productor"><span class="header-section-number">4.7.2</span> Excedente del productor</a></li>
+  </ul></li>
+  <li><a href="#la-eficiencia-del-equilibrio-competitivo" id="toc-la-eficiencia-del-equilibrio-competitivo" class="nav-link" data-scroll-target="#la-eficiencia-del-equilibrio-competitivo"><span class="header-section-number">4.8</span> La eficiencia del equilibrio competitivo</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -235,8 +281,536 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="la-competencia-perfecta-características" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="la-competencia-perfecta-características"><span class="header-section-number">4.1</span> La competencia perfecta: características</h2>
+<p>Cuando analicemos el funcionamiento de distintos mercados en función del grado de competencia, nos centraremos en <strong>cuatro cuestiones fundamentales</strong>.</p>
+<p><strong>¿Cuántas empresas participan en el mercado?</strong></p>
+<p>En competencia perfecta actúa un <strong>gran número de empresas</strong> y cada una aporta una porción pequeña de la producción total. Por eso decimos que <strong>el mercado está atomizado</strong>.</p>
+<p><strong>¿El producto obtenido por todas las empresas es idéntico?</strong></p>
+<p>En competencia perfecta, el producto obtenido por todas las empresas es <strong>idéntico</strong>. Son <strong>bienes homogéneos</strong>.</p>
+<p><strong>¿Qué grado de capacidad tiene cada empresa para fijar el precio del producto cuando actúa individualmente?</strong></p>
+<p>En competencia perfecta, la empresa <strong>no tiene ninguna capacidad</strong> para fijar el precio cuando actúa individualmente. Por tanto, <strong>el precio lo fija el mercado</strong>. Si una empresa intenta vender a un precio superior al de mercado, no venderá nada.</p>
+<p>Las 100 toneladas que puede cultivar Pérez son insignificantes dentro de las 500.000 toneladas del mercado, por lo que no tiene capacidad para influir en el precio. En consecuencia:</p>
+<ul>
+<li><strong>el mercado fija el precio</strong>;</li>
+<li><strong>la empresa solo es capaz de vender a ese precio</strong>;</li>
+<li><strong>la curva de demanda a la que se enfrenta la empresa individual es horizontal</strong>.</li>
+</ul>
+<div id="cell-fig-mercado-tomates-empresa-competitiva" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div id="fig-mercado-tomates-empresa-competitiva" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mercado-tomates-empresa-competitiva-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="competencia_perfecta_files/figure-html/fig-mercado-tomates-empresa-competitiva-output-1.png" width="689" height="381" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mercado-tomates-empresa-competitiva-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.1: Mercado de tomates y demanda horizontal de una empresa competitiva.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>¿Existen barreras de entrada o salida del sector?</strong></p>
+<p>En competencia perfecta <strong>no existen barreras de entrada o salida</strong>. Esto se conoce como <strong>libre concurrencia</strong>.</p>
+<p>En el corto plazo, las empresas no pueden entrar o salir instantáneamente. En el largo plazo, sí pueden entrar o salir.</p>
+<p>Para simplificar, en el mercado de competencia perfecta se darán siempre dos supuestos:</p>
+<ul>
+<li><strong>Información perfecta</strong>.</li>
+<li><strong>Las empresas son idénticas</strong>.</li>
+</ul>
+</section>
+<section id="los-ingresos-de-la-empresa-competitiva" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="los-ingresos-de-la-empresa-competitiva"><span class="header-section-number">4.2</span> Los ingresos de la empresa competitiva</h2>
+<p>Es importante recordar:</p>
+<p><span class="math display">\[
+\text{Beneficio económico} = \text{Ingresos} - \text{Costes totales económicos}
+\]</span></p>
+<p><strong>Ingreso total</strong> (<span class="math inline">\(IT\)</span>). Se obtiene multiplicando el precio de una unidad de producto por la cantidad de producto vendida. En competencia perfecta, la empresa no tiene poder para fijar el precio <span class="math inline">\(P\)</span>. Por tanto, <span class="math inline">\(P\)</span> se considera una constante y no depende de la cantidad <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+IT = P \cdot X
+\]</span></p>
+<p><strong>Ingreso medio</strong> (<span class="math inline">\(IMe\)</span>). Se obtiene dividiendo el ingreso total entre la cantidad de producto vendida:</p>
+<p><span class="math display">\[
+IMe = \frac{IT}{X}=\frac{P\cdot X}{X}=P
+\]</span></p>
+<p>El <strong>ingreso medio coincide con el precio</strong>. Este contenido ya fue visto en el tema 3.</p>
+<p><strong>Ingreso marginal</strong>. Es la cantidad en la que se incrementa el ingreso total (<span class="math inline">\(IT\)</span>) cuando la producción aumenta en una unidad:</p>
+<p><span class="math display">\[
+IMg = \frac{\Delta IT}{\Delta X}
+     = \frac{\Delta(P\cdot X)}{\Delta X}
+     = \frac{P\cdot \Delta X}{\Delta X}
+     = P
+\]</span></p>
+<p>En términos continuos:</p>
+<p><span class="math display">\[
+IMg = \frac{dIT}{dX}
+     = \frac{d(P\cdot X)}{dX}
+     = P
+\]</span></p>
+<p>El <strong>ingreso medio</strong> (<span class="math inline">\(IMe\)</span>) y el <strong>ingreso marginal</strong> (<span class="math inline">\(IMg\)</span>) de la empresa en competencia perfecta coinciden con el precio y con la curva de demanda horizontal a la que se enfrenta la empresa competitiva, dado que el precio <span class="math inline">\(P\)</span> no depende de la cantidad <span class="math inline">\(X\)</span> producida por la empresa.</p>
+<div id="cell-fig-ingreso-medio-marginal" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-ingreso-medio-marginal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ingreso-medio-marginal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="competencia_perfecta_files/figure-html/fig-ingreso-medio-marginal-output-1.png" width="552" height="330" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ingreso-medio-marginal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.2: Ingreso medio e ingreso marginal de la empresa en competencia perfecta.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="cuánto-producir-para-maximizar-el-beneficio" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="cuánto-producir-para-maximizar-el-beneficio"><span class="header-section-number">4.3</span> Cuánto producir para maximizar el beneficio</h2>
+<p>Vamos a ver el supuesto en el corto plazo, con un precio fijado por un mercado competitivo para el producto y un número fijo de empresas.</p>
+<p><span class="math display">\[
+B^{\circ}(X)=IT(X)-CT(X)
+\]</span></p>
+<p>La empresa individual <strong>toma el precio como dado</strong> y solo puede elegir el nivel de producción. Por tanto, establecerá el nivel de producción que haga máximo su beneficio, es decir, buscará su <strong>nivel de producción óptimo</strong>.</p>
+<p>La cuestión central es: <strong>¿cómo encontrar el valor de <span class="math inline">\(X\)</span> que maximiza <span class="math inline">\(B^{\circ}(X)\)</span>?</strong></p>
+<p>La <strong>condición de primer orden</strong> para maximizar el beneficio exige que la primera derivada de <span class="math inline">\(B^{\circ}\)</span> respecto de <span class="math inline">\(X\)</span> sea cero:</p>
+<p><span class="math display">\[
+\frac{dB^{\circ}}{dX}
+=\frac{d(IT)}{dX}-\frac{d(CT)}{dX}=0
+\]</span></p>
+<p>Como <span class="math inline">\(\frac{d(IT)}{dX}=IMg\)</span> y <span class="math inline">\(\frac{d(CT)}{dX}=CMg\)</span>:</p>
+<p><span class="math display">\[
+\frac{dB^{\circ}}{dX}=IMg-CMg=0
+\quad \Rightarrow \quad
+IMg=CMg
+\]</span></p>
+<p>En competencia perfecta, el ingreso marginal coincide con el precio. Por tanto:</p>
+<p><span class="math display">\[
+\frac{dB^{\circ}}{dX}
+=\frac{d(P\cdot X)}{dX}-CMg=0
+\]</span></p>
+<p><span class="math display">\[
+\frac{dB^{\circ}}{dX}=P-CMg=0
+\quad \Rightarrow \quad
+P=CMg
+\]</span></p>
+<p>La empresa establecerá el nivel de producción en el punto en el que el <strong>precio</strong> es igual al <strong>coste marginal</strong>. Lo denominaremos <strong>punto óptimo</strong> o <strong>punto de equilibrio de la empresa</strong>.</p>
+<p>Para garantizar que se trata de un máximo, y no de un mínimo, es necesario obtener la <strong>condición de segundo orden</strong>. Es decir, la segunda derivada del beneficio respecto a la cantidad producida debe ser negativa:</p>
+<p><span class="math display">\[
+\frac{d^2 B^{\circ}}{dX^2}
+=\frac{d(P-CMg)}{dX}
+=\frac{dP}{dX}-\frac{dCMg}{dX}&lt;0
+\quad \Rightarrow \quad
+\frac{dCMg}{dX}&gt;0
+\]</span></p>
+<p>La tabla siguiente recoge el cálculo de las variables relevantes. La producción está medida en toneladas y las magnitudes monetarias están expresadas en miles de euros.</p>
+<div id="tbl-eleccion-produccion-beneficio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-eleccion-produccion-beneficio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;4.1: Tabla 6.2 del libro, pág. 119.
+</figcaption>
+<div aria-describedby="tbl-eleccion-produccion-beneficio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(PT\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(CT\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(CTMe\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(CMg\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(P\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(IT\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(IMg\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(B^{\circ}\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\Delta B^{\circ}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">-9</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">9.5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-9</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">7.33</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-7</td>
+<td style="text-align: right;">+2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-4</td>
+<td style="text-align: right;">+3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">+4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">+3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4.29</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">+2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">4.25</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">+1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">4.33</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">4.73</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">5.31</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-4</td>
+<td style="text-align: right;">-4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">5.64</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-9</td>
+<td style="text-align: right;">-5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-15</td>
+<td style="text-align: right;">-6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>En la tabla se utilizan las siguientes relaciones:</p>
+<p><span class="math display">\[
+CTMe=\frac{CT}{PT}
+\]</span></p>
+<p><span class="math display">\[
+CMg=\frac{\Delta CT}{\Delta PT}
+\]</span></p>
+<p><span class="math display">\[
+IT=P\cdot PT
+\]</span></p>
+<p><span class="math display">\[
+IMg=\frac{\Delta IT}{\Delta PT}
+\]</span></p>
+<p><span class="math display">\[
+\Delta B^{\circ}=IMg-CMg
+\]</span></p>
+<p>Se obtiene el <strong>beneficio máximo</strong> con el nivel de producción donde se igualan el <strong>precio</strong> y el <strong>coste marginal</strong>. Por tanto, la condición de máximo beneficio es:</p>
+<p><span class="math display">\[
+IMg=CMg
+\quad \text{o} \quad
+P=CMg
+\]</span></p>
+</section>
+<section id="el-beneficio-de-la-empresa-a-corto-plazo" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="el-beneficio-de-la-empresa-a-corto-plazo"><span class="header-section-number">4.4</span> El beneficio de la empresa a corto plazo</h2>
+<p><strong>Beneficio positivo o extraordinario.</strong> En el nivel de producción óptimo, el precio es mayor que el coste total medio:</p>
+<p><span class="math display">\[
+IT&gt;CT
+\quad \Rightarrow \quad
+\frac{IT}{X}&gt;\frac{CT}{X}
+\quad \Rightarrow \quad
+P&gt;CTMe
+\]</span></p>
+<p><strong>Beneficio nulo o normal.</strong> En el nivel de producción óptimo, el precio es igual al coste total medio:</p>
+<p><span class="math display">\[
+IT=CT
+\quad \Rightarrow \quad
+\frac{IT}{X}=\frac{CT}{X}
+\quad \Rightarrow \quad
+P=CTMe
+\]</span></p>
+<p><strong>Beneficio negativo o pérdidas.</strong> En el nivel de producción óptimo, el precio es menor que el coste total medio:</p>
+<p><span class="math display">\[
+IT&lt;CT
+\quad \Rightarrow \quad
+\frac{IT}{X}&lt;\frac{CT}{X}
+\quad \Rightarrow \quad
+P&lt;CTMe
+\]</span></p>
+</section>
+<section id="la-curva-de-oferta-de-la-empresa-a-corto-plazo" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="la-curva-de-oferta-de-la-empresa-a-corto-plazo"><span class="header-section-number">4.5</span> La curva de oferta de la empresa a corto plazo</h2>
+<p>La curva de oferta de mercado muestra la cantidad máxima que los vendedores están dispuestos a vender a cada precio. La curva de coste marginal de la empresa competitiva recoge la misma información, pero para una empresa individual.</p>
+<p>Aunque algunos tramos de esta curva pueden no formar parte de la curva de oferta de la empresa, la empresa fija el nivel de producción que iguala el <strong>precio</strong> al <strong>coste marginal</strong>. Si el precio de mercado es <span class="math inline">\(P_1\)</span>, la empresa decide producir <span class="math inline">\(X_1\)</span> en el punto A. Si el precio de mercado es <span class="math inline">\(P_2\)</span>, la empresa decide producir <span class="math inline">\(X_2\)</span> en el punto B.</p>
+<div id="cell-fig-precio-coste-marginal" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-precio-coste-marginal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-precio-coste-marginal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="competencia_perfecta_files/figure-html/fig-precio-coste-marginal-output-1.png" width="466" height="389" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-precio-coste-marginal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.3: La empresa fija el nivel de producción que iguala el precio al coste marginal.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La curva de coste marginal es la <strong>curva de oferta de la empresa en competencia perfecta</strong>, pero solo en el tramo en el que el coste marginal supera al coste medio.</p>
+<div id="cell-fig-oferta-empresa-corto-plazo" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-oferta-empresa-corto-plazo" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-oferta-empresa-corto-plazo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="competencia_perfecta_files/figure-html/fig-oferta-empresa-corto-plazo-output-1.png" width="540" height="456" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oferta-empresa-corto-plazo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.4: Curva de coste marginal, beneficio positivo, beneficio negativo y punto de cierre.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="la-curva-de-oferta-del-mercado-a-corto-plazo" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="la-curva-de-oferta-del-mercado-a-corto-plazo"><span class="header-section-number">4.6</span> La curva de oferta del mercado a corto plazo</h2>
+<p>La curva de oferta del mercado a corto plazo se obtiene como la <strong>suma de las ofertas individuales</strong> de las empresas que producen ese bien.</p>
+<p>Supongamos una misma tecnología de producción y, por tanto, la misma curva de <span class="math inline">\(CMg\)</span> y la misma curva de oferta. Si conocemos una de las curvas individuales, se puede conocer la curva de mercado <strong>multiplicando las cantidades ofrecidas por una empresa por el número de empresas</strong>.</p>
+<p>Por ejemplo, existen <strong>2000 empresas</strong> con la misma tecnología que la empresa <span class="math inline">\(i\)</span>.</p>
+<div id="tbl-oferta-mercado-corto-plazo" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-oferta-mercado-corto-plazo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;4.2: Oferta de mercado a corto plazo con 2000 empresas idénticas.
+</figcaption>
+<div aria-describedby="tbl-oferta-mercado-corto-plazo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Precio (miles de euros)</th>
+<th style="text-align: right;">Oferta de la empresa <span class="math inline">\(i\)</span> (toneladas de helado)</th>
+<th style="text-align: right;">Oferta de mercado (toneladas de helado)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><span class="math inline">\(0\cdot 2000 = 0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><span class="math inline">\(0\cdot 2000 = 0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;"><span class="math inline">\(20\cdot 2000 = 40\ 000\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;"><span class="math inline">\(25\cdot 2000 = 50\ 000\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;"><span class="math inline">\(30\cdot 2000 = 60\ 000\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;"><span class="math inline">\(35\cdot 2000 = 70\ 000\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;"><span class="math inline">\(40\cdot 2000 = 80\ 000\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="el-excedente-de-consumidores-y-productores" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="el-excedente-de-consumidores-y-productores"><span class="header-section-number">4.7</span> El excedente de consumidores y productores</h2>
+<p>El <strong>excedente</strong> mide la diferencia entre lo que un agente está dispuesto a dar o recibir en el mercado y lo que realmente da o recibe. Se mide en <strong>unidades monetarias</strong>.</p>
+<section id="excedente-del-consumidor" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="excedente-del-consumidor"><span class="header-section-number">4.7.1</span> Excedente del consumidor</h3>
+<p>El <strong>excedente del consumidor</strong> (<span class="math inline">\(ec\)</span>) es la diferencia entre la cantidad de dinero que el consumidor está dispuesto a pagar y la que realmente paga:</p>
+<p><span class="math display">\[
+ec=\text{disposición a pagar}-\text{precio pagado}
+\]</span></p>
+<p>Es una medida de <strong>bienestar</strong> o <strong>satisfacción</strong> del consumidor. Será positivo o cero, pero nunca será negativo.</p>
+<p><strong>Ejemplo: el excedente de Juanito y sus empanadas favoritas.</strong> Juanito es un amante de las empanadas y está dispuesto a pagar hasta 10 euros por una. Al ir a la tienda, descubre que cuestan solo 5 euros. Juanito tiene un “extra” de 5 euros de satisfacción en comparación con lo que pagó. Ese “extra” es lo que llamamos <strong>excedente del consumidor</strong>.</p>
+</section>
+<section id="excedente-del-productor" class="level3" data-number="4.7.2">
+<h3 data-number="4.7.2" class="anchored" data-anchor-id="excedente-del-productor"><span class="header-section-number">4.7.2</span> Excedente del productor</h3>
+<p>El <strong>excedente del productor</strong> (<span class="math inline">\(ep\)</span>) es la diferencia entre el ingreso que el vendedor obtiene por esa unidad, es decir, el precio, y lo que cuesta producir esa unidad en términos incrementales, es decir, el coste marginal.</p>
+<p>Coincide con el <strong>beneficio marginal</strong>, que es el incremento del beneficio que proporciona esa unidad.</p>
+<p>Será positivo si el precio es superior al coste marginal, o será cero, pero nunca producirá una unidad cuyo coste marginal sea superior al precio que le pagan.</p>
+<p><strong>Ejemplo.</strong> Un fabricante observa que puede vender sus productos a 10 euros y que la unidad 450 tiene un coste marginal de producción de 7 euros. El <span class="math inline">\(ep\)</span> por la unidad 450 será:</p>
+<p><span class="math display">\[
+10-7=3\,€
+\]</span></p>
+</section>
+</section>
+<section id="la-eficiencia-del-equilibrio-competitivo" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="la-eficiencia-del-equilibrio-competitivo"><span class="header-section-number">4.8</span> La eficiencia del equilibrio competitivo</h2>
+<p>El <strong>excedente total</strong> (<span class="math inline">\(et\)</span>) es la suma del excedente del consumidor y del productor:</p>
+<p><span class="math display">\[
+et=ec+ep
+\]</span></p>
+<p>Como el excedente del consumidor es la disposición a pagar menos el precio pagado, y el excedente del productor es el precio cobrado menos el coste marginal:</p>
+<p><span class="math display">\[
+et=ec+ep
+=\text{disposición a pagar}-\text{precio pagado}
++\text{precio cobrado}-\text{coste marginal}
+\]</span></p>
+<p>Por definición, el <strong>precio pagado</strong> es igual al <strong>precio cobrado</strong>. Por tanto:</p>
+<p><span class="math display">\[
+et=ec+ep
+=\text{disposición a pagar}-\text{precio pagado}
++(\text{precio cobrado}-\text{coste marginal})
+\]</span></p>
+<p><span class="math display">\[
+et=\text{disposición a pagar}-\text{coste marginal}
+\]</span></p>
+<p>En el mercado libre con competencia perfecta, el excedente total es mayor que:</p>
+<ul>
+<li>En un mercado intervenido por el sector público, a no ser que existan “fallos de mercado”.</li>
+<li>En un mercado con competencia imperfecta.</li>
+</ul>
+<p>Decimos que existe <strong>eficiencia económica</strong> cuando el excedente total es el máximo posible. Al pasar de la libre competencia perfecta a otra situación alternativa, se produce una disminución del excedente total. Esa disminución se denomina <strong>pérdida irrecuperable de eficiencia</strong>.</p>
+<p>Los economistas suelen usar los conceptos de <strong>excedente total</strong> y <strong>eficiencia económica</strong> para emitir juicios de valor. Se dice que un sistema de asignación que da lugar a un mayor excedente total es mejor o más deseable que otros sistemas.</p>
+<p>Cuando se emiten <strong>juicios de valor</strong>, se trata sobre lo que debe ser: recomendaciones de política. En este caso, se está haciendo <strong>economía normativa</strong>.</p>
+<p>Para poder establecer juicios normativos, la <strong>economía del bienestar</strong> estudia el efecto de la asignación de los recursos sobre el bienestar de individuos y empresas.</p>
+<p>Cuando <strong>no</strong> se emiten juicios de valor, se trata sobre lo que es. En este caso, se está haciendo <strong>economía positiva</strong>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -198,5 +198,104 @@
       "Parte I. Microeconomía",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>La empresa: producción, costes y beneficios</span>"
     ]
+  },
+  {
+    "objectID": "competencia_perfecta.html",
+    "href": "competencia_perfecta.html",
+    "title": "4  La empresa en el mercado de competencia perfecta",
+    "section": "",
+    "text": "4.1 La competencia perfecta: características\nCuando analicemos el funcionamiento de distintos mercados en función del grado de competencia, nos centraremos en cuatro cuestiones fundamentales.\n¿Cuántas empresas participan en el mercado?\nEn competencia perfecta actúa un gran número de empresas y cada una aporta una porción pequeña de la producción total. Por eso decimos que el mercado está atomizado.\n¿El producto obtenido por todas las empresas es idéntico?\nEn competencia perfecta, el producto obtenido por todas las empresas es idéntico. Son bienes homogéneos.\n¿Qué grado de capacidad tiene cada empresa para fijar el precio del producto cuando actúa individualmente?\nEn competencia perfecta, la empresa no tiene ninguna capacidad para fijar el precio cuando actúa individualmente. Por tanto, el precio lo fija el mercado. Si una empresa intenta vender a un precio superior al de mercado, no venderá nada.\nLas 100 toneladas que puede cultivar Pérez son insignificantes dentro de las 500.000 toneladas del mercado, por lo que no tiene capacidad para influir en el precio. En consecuencia:\nFigura 4.1: Mercado de tomates y demanda horizontal de una empresa competitiva.\n¿Existen barreras de entrada o salida del sector?\nEn competencia perfecta no existen barreras de entrada o salida. Esto se conoce como libre concurrencia.\nEn el corto plazo, las empresas no pueden entrar o salir instantáneamente. En el largo plazo, sí pueden entrar o salir.\nPara simplificar, en el mercado de competencia perfecta se darán siempre dos supuestos:",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
+    ]
+  },
+  {
+    "objectID": "competencia_perfecta.html#la-competencia-perfecta-características",
+    "href": "competencia_perfecta.html#la-competencia-perfecta-características",
+    "title": "4  La empresa en el mercado de competencia perfecta",
+    "section": "",
+    "text": "el mercado fija el precio;\nla empresa solo es capaz de vender a ese precio;\nla curva de demanda a la que se enfrenta la empresa individual es horizontal.\n\n\n\n\n\n\n\nInformación perfecta.\nLas empresas son idénticas.",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
+    ]
+  },
+  {
+    "objectID": "competencia_perfecta.html#los-ingresos-de-la-empresa-competitiva",
+    "href": "competencia_perfecta.html#los-ingresos-de-la-empresa-competitiva",
+    "title": "4  La empresa en el mercado de competencia perfecta",
+    "section": "4.2 Los ingresos de la empresa competitiva",
+    "text": "4.2 Los ingresos de la empresa competitiva\nEs importante recordar:\n\\[\n\\text{Beneficio económico} = \\text{Ingresos} - \\text{Costes totales económicos}\n\\]\nIngreso total (\\(IT\\)). Se obtiene multiplicando el precio de una unidad de producto por la cantidad de producto vendida. En competencia perfecta, la empresa no tiene poder para fijar el precio \\(P\\). Por tanto, \\(P\\) se considera una constante y no depende de la cantidad \\(X\\):\n\\[\nIT = P \\cdot X\n\\]\nIngreso medio (\\(IMe\\)). Se obtiene dividiendo el ingreso total entre la cantidad de producto vendida:\n\\[\nIMe = \\frac{IT}{X}=\\frac{P\\cdot X}{X}=P\n\\]\nEl ingreso medio coincide con el precio. Este contenido ya fue visto en el tema 3.\nIngreso marginal. Es la cantidad en la que se incrementa el ingreso total (\\(IT\\)) cuando la producción aumenta en una unidad:\n\\[\nIMg = \\frac{\\Delta IT}{\\Delta X}\n     = \\frac{\\Delta(P\\cdot X)}{\\Delta X}\n     = \\frac{P\\cdot \\Delta X}{\\Delta X}\n     = P\n\\]\nEn términos continuos:\n\\[\nIMg = \\frac{dIT}{dX}\n     = \\frac{d(P\\cdot X)}{dX}\n     = P\n\\]\nEl ingreso medio (\\(IMe\\)) y el ingreso marginal (\\(IMg\\)) de la empresa en competencia perfecta coinciden con el precio y con la curva de demanda horizontal a la que se enfrenta la empresa competitiva, dado que el precio \\(P\\) no depende de la cantidad \\(X\\) producida por la empresa.\n\n\n\n\n\n\n\n\nFigura 4.2: Ingreso medio e ingreso marginal de la empresa en competencia perfecta.",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
+    ]
+  },
+  {
+    "objectID": "competencia_perfecta.html#cuánto-producir-para-maximizar-el-beneficio",
+    "href": "competencia_perfecta.html#cuánto-producir-para-maximizar-el-beneficio",
+    "title": "4  La empresa en el mercado de competencia perfecta",
+    "section": "4.3 Cuánto producir para maximizar el beneficio",
+    "text": "4.3 Cuánto producir para maximizar el beneficio\nVamos a ver el supuesto en el corto plazo, con un precio fijado por un mercado competitivo para el producto y un número fijo de empresas.\n\\[\nB^{\\circ}(X)=IT(X)-CT(X)\n\\]\nLa empresa individual toma el precio como dado y solo puede elegir el nivel de producción. Por tanto, establecerá el nivel de producción que haga máximo su beneficio, es decir, buscará su nivel de producción óptimo.\nLa cuestión central es: ¿cómo encontrar el valor de \\(X\\) que maximiza \\(B^{\\circ}(X)\\)?\nLa condición de primer orden para maximizar el beneficio exige que la primera derivada de \\(B^{\\circ}\\) respecto de \\(X\\) sea cero:\n\\[\n\\frac{dB^{\\circ}}{dX}\n=\\frac{d(IT)}{dX}-\\frac{d(CT)}{dX}=0\n\\]\nComo \\(\\frac{d(IT)}{dX}=IMg\\) y \\(\\frac{d(CT)}{dX}=CMg\\):\n\\[\n\\frac{dB^{\\circ}}{dX}=IMg-CMg=0\n\\quad \\Rightarrow \\quad\nIMg=CMg\n\\]\nEn competencia perfecta, el ingreso marginal coincide con el precio. Por tanto:\n\\[\n\\frac{dB^{\\circ}}{dX}\n=\\frac{d(P\\cdot X)}{dX}-CMg=0\n\\]\n\\[\n\\frac{dB^{\\circ}}{dX}=P-CMg=0\n\\quad \\Rightarrow \\quad\nP=CMg\n\\]\nLa empresa establecerá el nivel de producción en el punto en el que el precio es igual al coste marginal. Lo denominaremos punto óptimo o punto de equilibrio de la empresa.\nPara garantizar que se trata de un máximo, y no de un mínimo, es necesario obtener la condición de segundo orden. Es decir, la segunda derivada del beneficio respecto a la cantidad producida debe ser negativa:\n\\[\n\\frac{d^2 B^{\\circ}}{dX^2}\n=\\frac{d(P-CMg)}{dX}\n=\\frac{dP}{dX}-\\frac{dCMg}{dX}&lt;0\n\\quad \\Rightarrow \\quad\n\\frac{dCMg}{dX}&gt;0\n\\]\nLa tabla siguiente recoge el cálculo de las variables relevantes. La producción está medida en toneladas y las magnitudes monetarias están expresadas en miles de euros.\n\n\n\nTabla 4.1: Tabla 6.2 del libro, pág. 119.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(PT\\)\n\\(CT\\)\n\\(CTMe\\)\n\\(CMg\\)\n\\(P\\)\n\\(IT\\)\n\\(IMg\\)\n\\(B^{\\circ}\\)\n\\(\\Delta B^{\\circ}\\)\n\n\n\n\n1\n14\n14\n—\n5\n5\n—\n-9\n—\n\n\n2\n19\n9.5\n5\n5\n10\n5\n-9\n0\n\n\n3\n22\n7.33\n3\n5\n15\n5\n-7\n+2\n\n\n4\n24\n6\n2\n5\n20\n5\n-4\n+3\n\n\n5\n25\n5\n1\n5\n25\n5\n0\n+4\n\n\n6\n27\n4.5\n2\n5\n30\n5\n3\n+3\n\n\n7\n30\n4.29\n3\n5\n35\n5\n5\n+2\n\n\n8\n34\n4.25\n4\n5\n40\n5\n6\n+1\n\n\n9\n39\n4.33\n5\n5\n45\n5\n6\n0\n\n\n10\n45\n4.5\n6\n5\n50\n5\n5\n-1\n\n\n11\n52\n4.73\n7\n5\n55\n5\n3\n-2\n\n\n12\n60\n5\n8\n5\n60\n5\n0\n-3\n\n\n13\n69\n5.31\n9\n5\n65\n5\n-4\n-4\n\n\n14\n79\n5.64\n10\n5\n70\n5\n-9\n-5\n\n\n15\n90\n6\n11\n5\n75\n5\n-15\n-6\n\n\n\n\n\n\nEn la tabla se utilizan las siguientes relaciones:\n\\[\nCTMe=\\frac{CT}{PT}\n\\]\n\\[\nCMg=\\frac{\\Delta CT}{\\Delta PT}\n\\]\n\\[\nIT=P\\cdot PT\n\\]\n\\[\nIMg=\\frac{\\Delta IT}{\\Delta PT}\n\\]\n\\[\n\\Delta B^{\\circ}=IMg-CMg\n\\]\nSe obtiene el beneficio máximo con el nivel de producción donde se igualan el precio y el coste marginal. Por tanto, la condición de máximo beneficio es:\n\\[\nIMg=CMg\n\\quad \\text{o} \\quad\nP=CMg\n\\]",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
+    ]
+  },
+  {
+    "objectID": "competencia_perfecta.html#el-beneficio-de-la-empresa-a-corto-plazo",
+    "href": "competencia_perfecta.html#el-beneficio-de-la-empresa-a-corto-plazo",
+    "title": "4  La empresa en el mercado de competencia perfecta",
+    "section": "4.4 El beneficio de la empresa a corto plazo",
+    "text": "4.4 El beneficio de la empresa a corto plazo\nBeneficio positivo o extraordinario. En el nivel de producción óptimo, el precio es mayor que el coste total medio:\n\\[\nIT&gt;CT\n\\quad \\Rightarrow \\quad\n\\frac{IT}{X}&gt;\\frac{CT}{X}\n\\quad \\Rightarrow \\quad\nP&gt;CTMe\n\\]\nBeneficio nulo o normal. En el nivel de producción óptimo, el precio es igual al coste total medio:\n\\[\nIT=CT\n\\quad \\Rightarrow \\quad\n\\frac{IT}{X}=\\frac{CT}{X}\n\\quad \\Rightarrow \\quad\nP=CTMe\n\\]\nBeneficio negativo o pérdidas. En el nivel de producción óptimo, el precio es menor que el coste total medio:\n\\[\nIT&lt;CT\n\\quad \\Rightarrow \\quad\n\\frac{IT}{X}&lt;\\frac{CT}{X}\n\\quad \\Rightarrow \\quad\nP&lt;CTMe\n\\]",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
+    ]
+  },
+  {
+    "objectID": "competencia_perfecta.html#la-curva-de-oferta-de-la-empresa-a-corto-plazo",
+    "href": "competencia_perfecta.html#la-curva-de-oferta-de-la-empresa-a-corto-plazo",
+    "title": "4  La empresa en el mercado de competencia perfecta",
+    "section": "4.5 La curva de oferta de la empresa a corto plazo",
+    "text": "4.5 La curva de oferta de la empresa a corto plazo\nLa curva de oferta de mercado muestra la cantidad máxima que los vendedores están dispuestos a vender a cada precio. La curva de coste marginal de la empresa competitiva recoge la misma información, pero para una empresa individual.\nAunque algunos tramos de esta curva pueden no formar parte de la curva de oferta de la empresa, la empresa fija el nivel de producción que iguala el precio al coste marginal. Si el precio de mercado es \\(P_1\\), la empresa decide producir \\(X_1\\) en el punto A. Si el precio de mercado es \\(P_2\\), la empresa decide producir \\(X_2\\) en el punto B.\n\n\n\n\n\n\n\n\nFigura 4.3: La empresa fija el nivel de producción que iguala el precio al coste marginal.\n\n\n\n\n\nLa curva de coste marginal es la curva de oferta de la empresa en competencia perfecta, pero solo en el tramo en el que el coste marginal supera al coste medio.\n\n\n\n\n\n\n\n\nFigura 4.4: Curva de coste marginal, beneficio positivo, beneficio negativo y punto de cierre.",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
+    ]
+  },
+  {
+    "objectID": "competencia_perfecta.html#la-curva-de-oferta-del-mercado-a-corto-plazo",
+    "href": "competencia_perfecta.html#la-curva-de-oferta-del-mercado-a-corto-plazo",
+    "title": "4  La empresa en el mercado de competencia perfecta",
+    "section": "4.6 La curva de oferta del mercado a corto plazo",
+    "text": "4.6 La curva de oferta del mercado a corto plazo\nLa curva de oferta del mercado a corto plazo se obtiene como la suma de las ofertas individuales de las empresas que producen ese bien.\nSupongamos una misma tecnología de producción y, por tanto, la misma curva de \\(CMg\\) y la misma curva de oferta. Si conocemos una de las curvas individuales, se puede conocer la curva de mercado multiplicando las cantidades ofrecidas por una empresa por el número de empresas.\nPor ejemplo, existen 2000 empresas con la misma tecnología que la empresa \\(i\\).\n\n\n\nTabla 4.2: Oferta de mercado a corto plazo con 2000 empresas idénticas.\n\n\n\n\n\n\n\n\n\n\nPrecio (miles de euros)\nOferta de la empresa \\(i\\) (toneladas de helado)\nOferta de mercado (toneladas de helado)\n\n\n\n\n1\n0\n\\(0\\cdot 2000 = 0\\)\n\n\n2\n0\n\\(0\\cdot 2000 = 0\\)\n\n\n3\n20\n\\(20\\cdot 2000 = 40\\ 000\\)\n\n\n4\n25\n\\(25\\cdot 2000 = 50\\ 000\\)\n\n\n5\n30\n\\(30\\cdot 2000 = 60\\ 000\\)\n\n\n6\n35\n\\(35\\cdot 2000 = 70\\ 000\\)\n\n\n7\n40\n\\(40\\cdot 2000 = 80\\ 000\\)",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
+    ]
+  },
+  {
+    "objectID": "competencia_perfecta.html#el-excedente-de-consumidores-y-productores",
+    "href": "competencia_perfecta.html#el-excedente-de-consumidores-y-productores",
+    "title": "4  La empresa en el mercado de competencia perfecta",
+    "section": "4.7 El excedente de consumidores y productores",
+    "text": "4.7 El excedente de consumidores y productores\nEl excedente mide la diferencia entre lo que un agente está dispuesto a dar o recibir en el mercado y lo que realmente da o recibe. Se mide en unidades monetarias.\n\n4.7.1 Excedente del consumidor\nEl excedente del consumidor (\\(ec\\)) es la diferencia entre la cantidad de dinero que el consumidor está dispuesto a pagar y la que realmente paga:\n\\[\nec=\\text{disposición a pagar}-\\text{precio pagado}\n\\]\nEs una medida de bienestar o satisfacción del consumidor. Será positivo o cero, pero nunca será negativo.\nEjemplo: el excedente de Juanito y sus empanadas favoritas. Juanito es un amante de las empanadas y está dispuesto a pagar hasta 10 euros por una. Al ir a la tienda, descubre que cuestan solo 5 euros. Juanito tiene un “extra” de 5 euros de satisfacción en comparación con lo que pagó. Ese “extra” es lo que llamamos excedente del consumidor.\n\n\n4.7.2 Excedente del productor\nEl excedente del productor (\\(ep\\)) es la diferencia entre el ingreso que el vendedor obtiene por esa unidad, es decir, el precio, y lo que cuesta producir esa unidad en términos incrementales, es decir, el coste marginal.\nCoincide con el beneficio marginal, que es el incremento del beneficio que proporciona esa unidad.\nSerá positivo si el precio es superior al coste marginal, o será cero, pero nunca producirá una unidad cuyo coste marginal sea superior al precio que le pagan.\nEjemplo. Un fabricante observa que puede vender sus productos a 10 euros y que la unidad 450 tiene un coste marginal de producción de 7 euros. El \\(ep\\) por la unidad 450 será:\n\\[\n10-7=3\\,€\n\\]",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
+    ]
+  },
+  {
+    "objectID": "competencia_perfecta.html#la-eficiencia-del-equilibrio-competitivo",
+    "href": "competencia_perfecta.html#la-eficiencia-del-equilibrio-competitivo",
+    "title": "4  La empresa en el mercado de competencia perfecta",
+    "section": "4.8 La eficiencia del equilibrio competitivo",
+    "text": "4.8 La eficiencia del equilibrio competitivo\nEl excedente total (\\(et\\)) es la suma del excedente del consumidor y del productor:\n\\[\net=ec+ep\n\\]\nComo el excedente del consumidor es la disposición a pagar menos el precio pagado, y el excedente del productor es el precio cobrado menos el coste marginal:\n\\[\net=ec+ep\n=\\text{disposición a pagar}-\\text{precio pagado}\n+\\text{precio cobrado}-\\text{coste marginal}\n\\]\nPor definición, el precio pagado es igual al precio cobrado. Por tanto:\n\\[\net=ec+ep\n=\\text{disposición a pagar}-\\text{precio pagado}\n+(\\text{precio cobrado}-\\text{coste marginal})\n\\]\n\\[\net=\\text{disposición a pagar}-\\text{coste marginal}\n\\]\nEn el mercado libre con competencia perfecta, el excedente total es mayor que:\n\nEn un mercado intervenido por el sector público, a no ser que existan “fallos de mercado”.\nEn un mercado con competencia imperfecta.\n\nDecimos que existe eficiencia económica cuando el excedente total es el máximo posible. Al pasar de la libre competencia perfecta a otra situación alternativa, se produce una disminución del excedente total. Esa disminución se denomina pérdida irrecuperable de eficiencia.\nLos economistas suelen usar los conceptos de excedente total y eficiencia económica para emitir juicios de valor. Se dice que un sistema de asignación que da lugar a un mayor excedente total es mejor o más deseable que otros sistemas.\nCuando se emiten juicios de valor, se trata sobre lo que debe ser: recomendaciones de política. En este caso, se está haciendo economía normativa.\nPara poder establecer juicios normativos, la economía del bienestar estudia el efecto de la asignación de los recursos sobre el bienestar de individuos y empresas.\nCuando no se emiten juicios de valor, se trata sobre lo que es. En este caso, se está haciendo economía positiva.",
+    "crumbs": [
+      "Parte I. Microeconomía",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La empresa en el mercado de competencia perfecta</span>"
+    ]
   }
 ]
