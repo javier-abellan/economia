@@ -415,7 +415,7 @@ X = F(K, L)
 <h3 data-number="3.2.3" class="anchored" data-anchor-id="producción-rendimientos-a-escala"><span class="header-section-number">3.2.3</span> Producción: rendimientos a escala</h3>
 <p><strong>Tabla 5.5. Rendimientos a escala.</strong> La producción del bien <span class="math inline">\(X_1\)</span> presenta rendimientos constantes a escala, la producción del bien <span class="math inline">\(X_2\)</span> rendimientos decrecientes a escala y la producción del bien <span class="math inline">\(X_3\)</span> rendimientos crecientes a escala.</p>
 <table class="caption-top table">
-<caption>Tabla 5.5.A. Rendimientos constantes (<span class="math inline">\(\lambda = \delta\)</span>)</caption>
+<caption>Tabla 5.5.A. Ejemplo de rendimientos constantes (<span class="math inline">\(\lambda = \delta\)</span>)</caption>
 <thead>
 <tr class="header">
 <th style="text-align: right;"><span class="math inline">\(\lambda\)</span></th>
@@ -449,8 +449,8 @@ X = F(K, L)
 </tr>
 </tbody>
 </table>
-<p><strong>Tabla 5.5.B. Rendimientos decrecientes</strong></p>
 <table class="caption-top table">
+<caption>Tabla 5.5.B. Ejemplo de rendimientos decrecientes (<span class="math inline">\(\lambda &gt; \delta\)</span>)</caption>
 <thead>
 <tr class="header">
 <th style="text-align: right;"><span class="math inline">\(\lambda\)</span></th>
@@ -484,9 +484,8 @@ X = F(K, L)
 </tr>
 </tbody>
 </table>
-<p><strong>Rendimientos decrecientes:</strong> <span class="math inline">\(\lambda &gt; \delta\)</span>.</p>
-<p><strong>Tabla 5.5.C. Rendimientos crecientes</strong></p>
 <table class="caption-top table">
+<caption>Tabla 5.5.C. Ejemplo de rendimientos crecientes (<span class="math inline">\(\lambda &lt; \delta\)</span>)</caption>
 <thead>
 <tr class="header">
 <th style="text-align: right;"><span class="math inline">\(\lambda\)</span></th>
@@ -520,9 +519,9 @@ X = F(K, L)
 </tr>
 </tbody>
 </table>
-<p><strong>Rendimientos crecientes:</strong> <span class="math inline">\(\lambda &lt; \delta\)</span>.</p>
 <p><strong>Figura 5.1. Evolución de la producción con rendimientos a escala constantes, crecientes y decrecientes.</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<div id="79d3b5d5" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>lambda_ <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">300</span>)</span>
@@ -546,6 +545,14 @@ X = F(K, L)
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="produccion_files/figure-html/cell-2-output-1.png" width="600" height="429" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="producción-productividad" class="level3" data-number="3.2.4">
 <h3 data-number="3.2.4" class="anchored" data-anchor-id="producción-productividad"><span class="header-section-number">3.2.4</span> Producción: productividad</h3>
