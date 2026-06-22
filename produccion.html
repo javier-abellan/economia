@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -73,6 +108,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="custom.css">
 </head>
@@ -210,8 +274,33 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#la-empresa-naturaleza-y-objetivos" id="toc-la-empresa-naturaleza-y-objetivos" class="nav-link active" data-scroll-target="#la-empresa-naturaleza-y-objetivos"><span class="header-section-number">3.1</span> La empresa: naturaleza y objetivos</a></li>
+  <li><a href="#la-producción" id="toc-la-producción" class="nav-link" data-scroll-target="#la-producción"><span class="header-section-number">3.2</span> La producción</a>
+  <ul class="collapse">
+  <li><a href="#producción-eficiencia-y-función-de-producción" id="toc-producción-eficiencia-y-función-de-producción" class="nav-link" data-scroll-target="#producción-eficiencia-y-función-de-producción"><span class="header-section-number">3.2.1</span> Producción: eficiencia y función de producción</a></li>
+  <li><a href="#producción-corto-y-largo-plazo" id="toc-producción-corto-y-largo-plazo" class="nav-link" data-scroll-target="#producción-corto-y-largo-plazo"><span class="header-section-number">3.2.2</span> Producción: corto y largo plazo</a></li>
+  <li><a href="#producción-rendimientos-a-escala" id="toc-producción-rendimientos-a-escala" class="nav-link" data-scroll-target="#producción-rendimientos-a-escala"><span class="header-section-number">3.2.3</span> Producción: rendimientos a escala</a></li>
+  <li><a href="#producción-productividad" id="toc-producción-productividad" class="nav-link" data-scroll-target="#producción-productividad"><span class="header-section-number">3.2.4</span> Producción: productividad</a></li>
+  </ul></li>
+  <li><a href="#los-costes-de-producción" id="toc-los-costes-de-producción" class="nav-link" data-scroll-target="#los-costes-de-producción"><span class="header-section-number">3.3</span> Los costes de producción</a>
+  <ul class="collapse">
+  <li><a href="#los-costes-de-producción-el-concepto" id="toc-los-costes-de-producción-el-concepto" class="nav-link" data-scroll-target="#los-costes-de-producción-el-concepto"><span class="header-section-number">3.3.1</span> Los costes de producción: el concepto</a></li>
+  <li><a href="#los-costes-de-producción-la-función-de-costes" id="toc-los-costes-de-producción-la-función-de-costes" class="nav-link" data-scroll-target="#los-costes-de-producción-la-función-de-costes"><span class="header-section-number">3.3.2</span> Los costes de producción: la función de costes</a></li>
+  <li><a href="#costes-a-corto-plazo-fijos-variables-totales" id="toc-costes-a-corto-plazo-fijos-variables-totales" class="nav-link" data-scroll-target="#costes-a-corto-plazo-fijos-variables-totales"><span class="header-section-number">3.3.3</span> Costes a corto plazo: fijos, variables, totales</a></li>
+  <li><a href="#costes-a-corto-plazo-medios-marginales" id="toc-costes-a-corto-plazo-medios-marginales" class="nav-link" data-scroll-target="#costes-a-corto-plazo-medios-marginales"><span class="header-section-number">3.3.4</span> Costes a corto plazo: medios, marginales</a></li>
+  </ul></li>
+  <li><a href="#relación-entre-productividades-y-costes" id="toc-relación-entre-productividades-y-costes" class="nav-link" data-scroll-target="#relación-entre-productividades-y-costes"><span class="header-section-number">3.4</span> Relación entre productividades y costes</a></li>
+  <li><a href="#los-ingresos-y-el-beneficio" id="toc-los-ingresos-y-el-beneficio" class="nav-link" data-scroll-target="#los-ingresos-y-el-beneficio"><span class="header-section-number">3.5</span> Los ingresos y el beneficio</a>
+  <ul class="collapse">
+  <li><a href="#ingreso-vs.-beneficio" id="toc-ingreso-vs.-beneficio" class="nav-link" data-scroll-target="#ingreso-vs.-beneficio"><span class="header-section-number">3.5.1</span> Ingreso vs.&nbsp;beneficio</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -235,8 +324,807 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="la-empresa-naturaleza-y-objetivos" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="la-empresa-naturaleza-y-objetivos"><span class="header-section-number">3.1</span> La empresa: naturaleza y objetivos</h2>
+<p>Una <strong>empresa</strong> es una organización que contrata y organiza <strong>factores productivos</strong> para la <strong>producción</strong> de bienes y servicios.</p>
+<p>La <strong>relación</strong> que existe entre los <strong>factores</strong> y la <strong>cantidad de producto</strong> viene determinada por la <strong>función de producción</strong>: la <strong>función de producción</strong> expresa la <strong>cantidad máxima de producto</strong> que puede obtenerse con <strong>cada combinación de factores</strong>.</p>
+<p>El <strong>objetivo</strong> de la empresa es la <strong>maximización del beneficio</strong>. Para conseguirlo recurrirá a desembolsos o renuncias que se denominan <strong>coste de producción</strong>.</p>
+<p><strong>IMPORTANTE</strong>: <strong>No es lo mismo</strong> los <strong>ingresos</strong> por ventas que los <strong>beneficios</strong> de una empresa.</p>
+</section>
+<section id="la-producción" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="la-producción"><span class="header-section-number">3.2</span> La producción</h2>
+<section id="producción-eficiencia-y-función-de-producción" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="producción-eficiencia-y-función-de-producción"><span class="header-section-number">3.2.1</span> Producción: eficiencia y función de producción</h3>
+<p>Una empresa actúa con <strong>eficiencia técnica</strong> cuando:</p>
+<ul>
+<li>Dada una combinación cualquiera de factores productivos, produce lo máximo posible.</li>
+<li>Dado un nivel de producción cualquiera, utiliza la menor cantidad posible de factores.</li>
+</ul>
+<p>La relación entre cantidad de factores y cantidad producida se puede ver en la <strong>función de producción</strong>.</p>
+<p>La función de producción <strong>implica eficiencia técnica</strong>, ya que muestra las cantidades máximas que se pueden producir:</p>
+<p><span class="math display">\[
+X = F(K, L)
+\]</span></p>
+<p>El <strong>límite</strong> a la producción es la <strong>tecnología</strong>: el conjunto de conocimientos y formas de hacer y actuar para producir.</p>
+<p><strong>Tabla 5.4. Tabla de producción del bien <span class="math inline">\(X\)</span>, utilizando capital <span class="math inline">\((K)\)</span> y trabajo <span class="math inline">\((L)\)</span></strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(L \backslash K\)</span></th>
+<th style="text-align: right;">0</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">142</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">228</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">210</td>
+<td style="text-align: right;">263</td>
+<td style="text-align: right;">300</td>
+</tr>
+</tbody>
+</table>
+<p>Por ejemplo, la cantidad máxima de producción con <strong>2 unidades de capital</strong> <span class="math inline">\((K = 2)\)</span> y <strong>1 unidad de trabajo</strong> <span class="math inline">\((L = 1)\)</span> es <strong>125 unidades de producto</strong>.</p>
+</section>
+<section id="producción-corto-y-largo-plazo" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="producción-corto-y-largo-plazo"><span class="header-section-number">3.2.2</span> Producción: corto y largo plazo</h3>
+<p>Dada una tecnología, una <strong>variación en la producción</strong> requiere una <strong>variación en la cantidad de factores</strong> utilizados. Distintos factores requieren distintos plazos para cambiar.</p>
+<p><strong>Corto plazo</strong></p>
+<ul>
+<li><strong>Alguno de los factores</strong> productivos es <strong>fijo</strong>.</li>
+<li>Análisis de la <strong>productividad de un factor variable</strong>.</li>
+</ul>
+<p><strong>Largo plazo</strong></p>
+<ul>
+<li>La empresa <strong>puede ajustar todos los factores</strong> productivos a los cambios en la demanda de su producto.</li>
+<li>Análisis de los <strong>rendimientos a escala</strong>: cómo cambia la producción cuando todos los factores productivos varían en la misma proporción.</li>
+</ul>
+<p>Si analizamos la <strong>variación en la cantidad producida</strong> cuando <strong>todos los factores varían en la misma proporción</strong>, estamos ante un análisis de los <strong>rendimientos a escala</strong> de la función de producción.</p>
+<p>La función de producción puede tener:</p>
+<ul>
+<li><strong>Rendimientos constantes a escala</strong>: la producción aumenta en la misma proporción que los factores.</li>
+<li><strong>Rendimientos crecientes a escala</strong>: la producción aumenta en mayor proporción que los factores productivos.</li>
+<li><strong>Rendimientos decrecientes a escala</strong>: la producción aumenta en menor proporción que los factores productivos.</li>
+</ul>
+<p>Los factores se multiplican por un número, <span class="math inline">\(\lambda\)</span>. La producción se multiplica por un número, <span class="math inline">\(\delta\)</span>.</p>
+</section>
+<section id="producción-rendimientos-a-escala" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="producción-rendimientos-a-escala"><span class="header-section-number">3.2.3</span> Producción: rendimientos a escala</h3>
+<p><strong>Tabla 5.5. Rendimientos a escala.</strong> La producción del bien <span class="math inline">\(X_1\)</span> presenta rendimientos constantes a escala, la producción del bien <span class="math inline">\(X_2\)</span> rendimientos decrecientes a escala y la producción del bien <span class="math inline">\(X_3\)</span> rendimientos crecientes a escala.</p>
+<p><strong>Tabla 5.5.A. Rendimientos constantes</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(\lambda\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(K\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(L\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(X_1\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\delta\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rendimientos constantes:</strong> <span class="math inline">\(\lambda = \delta\)</span>.</p>
+<p><strong>Tabla 5.5.B. Rendimientos decrecientes</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(\lambda\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(K\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(L\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(X_2\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\delta\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">180</td>
+<td style="text-align: right;">1,80</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">252</td>
+<td style="text-align: right;">2,52</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rendimientos decrecientes:</strong> <span class="math inline">\(\lambda &gt; \delta\)</span>.</p>
+<p><strong>Tabla 5.5.C. Rendimientos crecientes</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(\lambda\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(K\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(L\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(X_3\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\delta\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">2,40</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">408</td>
+<td style="text-align: right;">4,08</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rendimientos crecientes:</strong> <span class="math inline">\(\lambda &lt; \delta\)</span>.</p>
+<p><strong>Figura 5.1. Evolución de la producción con rendimientos a escala constantes, crecientes y decrecientes.</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>lambda_ <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">300</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>produccion_constante <span class="op">=</span> lambda_</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>produccion_creciente <span class="op">=</span> <span class="fl">0.35</span> <span class="op">*</span> lambda_<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> <span class="fl">0.35</span> <span class="op">*</span> lambda_</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>produccion_decreciente <span class="op">=</span> <span class="fl">1.8</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> np.exp(<span class="op">-</span><span class="fl">0.9</span> <span class="op">*</span> lambda_))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">5</span>))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>ax.plot(lambda_, produccion_creciente, color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span><span class="st">"Rendimientos crecientes"</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>ax.plot(lambda_, produccion_constante, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span><span class="st">"Rendimientos constantes"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>ax.plot(lambda_, produccion_decreciente, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        linestyle<span class="op">=</span><span class="st">"--"</span>, label<span class="op">=</span><span class="st">"Rendimientos decrecientes"</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Factor de escala (λ)"</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Producción"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(<span class="dv">0</span>, <span class="dv">3</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="bu">max</span>(produccion_creciente) <span class="op">*</span> <span class="fl">1.05</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="producción-productividad" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="producción-productividad"><span class="header-section-number">3.2.4</span> Producción: productividad</h3>
+<p>En el análisis a <strong>corto plazo</strong> vamos a considerar que el <strong>capital <span class="math inline">\((K)\)</span> es fijo</strong> y sólo <strong>varía</strong> el número de unidades de <strong>trabajo <span class="math inline">\((L)\)</span></strong>.</p>
+<p>En la siguiente tabla se observa cómo evoluciona la producción cuando uno de los factores permanece constante.</p>
+<p><strong>Tabla 5.6. Productividad total del trabajo <span class="math inline">\((PT_L)\)</span>.</strong> Se obtiene a partir de la función de producción de la Tabla 5.4 considerando que el capital es fijo, en este caso igual a 1.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Capital <span class="math inline">\((K)\)</span></th>
+<th style="text-align: right;">Trabajo <span class="math inline">\((L)\)</span></th>
+<th style="text-align: right;">Productividad total del trabajo <span class="math inline">\((PT_L)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">160</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">210</td>
+</tr>
+</tbody>
+</table>
+<p>Se observa que los incrementos de producción son cada vez menores; a esto se le denomina <strong>ley de rendimientos decrecientes</strong>.</p>
+<p><strong>Productividad total del trabajo <span class="math inline">\((PT_L)\)</span></strong>: es el producto total obtenido para cada nivel de trabajo, siendo el capital fijo. Si se tiene la función de producción, solo hay que sustituir el capital por su valor constante <span class="math inline">\((\bar K)\)</span>:</p>
+<p><span class="math display">\[
+PT_L = F(\bar K, L)
+\]</span></p>
+<p><strong>Productividad media del trabajo <span class="math inline">\((PMe_L)\)</span></strong>: es el producto medio obtenido por unidad de trabajo.</p>
+<p><span class="math display">\[
+PMe_L = \frac{PT_L}{\text{Número de unidades de trabajo }(L)}
+\]</span></p>
+<p>Siendo <span class="math inline">\(K\)</span> constante, también puede escribirse como:</p>
+<p><span class="math display">\[
+PMe_L = \frac{PT_L}{L}
+\]</span></p>
+<p><strong>Productividad marginal del trabajo <span class="math inline">\((PMg_L)\)</span></strong>: es la variación que experimenta el producto total ante una variación unitaria del factor variable utilizado.</p>
+<p><span class="math display">\[
+PMg_L = \frac{\Delta \text{Producción total}}{\Delta \text{Número de unidades de trabajo }(L)}
+\]</span></p>
+<p>Siendo <span class="math inline">\(K\)</span> constante, también puede escribirse como:</p>
+<p><span class="math display">\[
+PMg_L = \frac{\Delta PT_L}{\Delta L}
+\]</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo de productividad</th>
+<th>Definición</th>
+<th>Cálculo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Productividad <strong>total</strong> del trabajo <span class="math inline">\((PT_L)\)</span></td>
+<td>Producción que se obtiene para cada nivel de trabajo siendo el capital fijo.</td>
+<td><span class="math inline">\(PT_L = F(\bar K, L)\)</span>, siendo <span class="math inline">\(F\)</span> la función de producción y el capital <span class="math inline">\((K)\)</span> constante.</td>
+</tr>
+<tr class="even">
+<td>Productividad <strong>media</strong> del trabajo <span class="math inline">\((PMe_L)\)</span></td>
+<td>Producción que genera, en promedio, cada unidad de trabajo utilizada.</td>
+<td><span class="math inline">\(PMe_L = \frac{PT_L}{L}\)</span></td>
+</tr>
+<tr class="odd">
+<td>Productividad <strong>marginal</strong> del trabajo <span class="math inline">\((PMg_L)\)</span></td>
+<td>Incremento de la cantidad producida cuando el trabajo aumenta en una unidad.</td>
+<td><span class="math inline">\(PMg_L = \frac{\Delta PT_L}{\Delta L}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ley de rendimientos decrecientes</strong>: a partir de un punto, la <strong>productividad marginal</strong> del factor variable <strong>comienza a decrecer</strong>.</p>
+<p>No siempre decrece desde el principio. Existen tres tramos:</p>
+<ul>
+<li><strong>Productividad marginal creciente</strong>: cada unidad de trabajo aporta a la producción más que la unidad anterior.</li>
+<li><strong>Productividad marginal constante</strong>: cada unidad de trabajo aporta a la producción la misma que la unidad anterior.</li>
+<li><strong>Productividad marginal decreciente</strong>: cada unidad de trabajo aporta a la producción menos que la unidad anterior.</li>
+</ul>
+<p><strong>Tabla 5.8</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Capital <span class="math inline">\((K)\)</span></th>
+<th style="text-align: right;">Trabajo <span class="math inline">\((L)\)</span></th>
+<th style="text-align: right;">Producción <span class="math inline">\((X)\)</span> / Productividad total del trabajo <span class="math inline">\((PT)\)</span></th>
+<th style="text-align: right;">Productividad media del trabajo <span class="math inline">\((PMe_L)\)</span></th>
+<th style="text-align: right;">Productividad marginal del trabajo <span class="math inline">\((PMg_L)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0,200</td>
+<td style="text-align: right;">–</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0,222</td>
+<td style="text-align: right;">0,25</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0,250</td>
+<td style="text-align: right;">0,33</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0,285</td>
+<td style="text-align: right;">0,50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0,333</td>
+<td style="text-align: right;">1,00</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0,353</td>
+<td style="text-align: right;">0,50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0,350</td>
+<td style="text-align: right;">0,33</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0,333</td>
+<td style="text-align: right;">0,25</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0,310</td>
+<td style="text-align: right;">0,20</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0,286</td>
+<td style="text-align: right;">0,16</td>
+</tr>
+</tbody>
+</table>
+<p>Ejemplos de cálculo que aparecen sobre la tabla:</p>
+<p><span class="math display">\[
+\frac{1}{5} = 0{,}200
+\]</span></p>
+<p><span class="math display">\[
+\frac{2}{9} = 0{,}222
+\]</span></p>
+<p><span class="math display">\[
+\frac{2 - 1}{9 - 5} = \frac{1}{4} = 0{,}25
+\]</span></p>
+<p><strong>Máximo técnico</strong></p>
+<ul>
+<li>Es la cantidad de trabajo donde la <strong>productividad total es máxima</strong> y deja de crecer.</li>
+<li>En ese punto la <strong>productividad marginal es cero</strong>.</li>
+</ul>
+<p><strong>Óptimo técnico</strong></p>
+<ul>
+<li>Es la cantidad de trabajo donde la <strong>productividad media es máxima</strong>.</li>
+<li>En ese punto coinciden la <span class="math inline">\(PMg_L\)</span> y <span class="math inline">\(PMe_L\)</span>.</li>
+</ul>
+<p><strong>Gráfico de productividad total, media y marginal.</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> np.linspace(<span class="fl">0.1</span>, <span class="dv">22</span>, <span class="dv">300</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>PT <span class="op">=</span> <span class="dv">8</span> <span class="op">*</span> L <span class="op">+</span> <span class="fl">1.2</span> <span class="op">*</span> L<span class="op">**</span><span class="dv">2</span> <span class="op">-</span> <span class="fl">0.06</span> <span class="op">*</span> L<span class="op">**</span><span class="dv">3</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>PMe <span class="op">=</span> PT <span class="op">/</span> L</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>PMg <span class="op">=</span> <span class="dv">8</span> <span class="op">+</span> <span class="fl">2.4</span> <span class="op">*</span> L <span class="op">-</span> <span class="fl">0.18</span> <span class="op">*</span> L<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>L_max_tecnico <span class="op">=</span> L[np.argmax(PT)]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>L_opt_tecnico <span class="op">=</span> L[np.argmax(PMe)]</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">4</span>))</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>ax.plot(L, PT, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"$PT_L$"</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>ax.axvline(L_max_tecnico, color<span class="op">=</span><span class="st">"#d22020"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, linewidth<span class="op">=</span><span class="fl">1.5</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>ax.scatter([L_max_tecnico], [PT.<span class="bu">max</span>()], color<span class="op">=</span><span class="st">"#d22020"</span>, zorder<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>ax.text(L_max_tecnico, PT.<span class="bu">max</span>(), <span class="st">"  Máximo técnico"</span>, va<span class="op">=</span><span class="st">"bottom"</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"L"</span>)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"X"</span>)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">4</span>))</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>ax.plot(L, PMg, color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"$PMg_L$"</span>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>ax.plot(L, PMe, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"$PMe_L$"</span>)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>ax.axvline(L_opt_tecnico, color<span class="op">=</span><span class="st">"#385e9d"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, linewidth<span class="op">=</span><span class="fl">1.5</span>)</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>ax.axhline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">"black"</span>, linewidth<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>ax.scatter([L_opt_tecnico], [PMe.<span class="bu">max</span>()], color<span class="op">=</span><span class="st">"#385e9d"</span>, zorder<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>ax.text(L_opt_tecnico, PMe.<span class="bu">max</span>(), <span class="st">"  Óptimo técnico"</span>, va<span class="op">=</span><span class="st">"bottom"</span>)</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"L"</span>)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"PMg / PMe"</span>)</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="los-costes-de-producción" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="los-costes-de-producción"><span class="header-section-number">3.3</span> Los costes de producción</h2>
+<section id="los-costes-de-producción-el-concepto" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="los-costes-de-producción-el-concepto"><span class="header-section-number">3.3.1</span> Los costes de producción: el concepto</h3>
+<p>Los factores productivos conllevan unos <strong>costes de producción</strong>:</p>
+<ol type="1">
+<li><strong>Coste explícito</strong>: implica un desembolso o <strong>pago</strong> para la empresa.</li>
+<li><strong>Coste implícito</strong>: no implica un pago sino una <strong>renuncia</strong>.</li>
+</ol>
+<hr>
+<p><strong>Costes contables</strong> = costes explícitos.</p>
+<p><strong>Costes económicos</strong> = costes explícitos + costes implícitos, medidos todos los recursos por su coste de oportunidad.</p>
+<p><strong>Para los costes de producción, consideramos siempre el coste económico</strong>.</p>
+</section>
+<section id="los-costes-de-producción-la-función-de-costes" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="los-costes-de-producción-la-función-de-costes"><span class="header-section-number">3.3.2</span> Los costes de producción: la función de costes</h3>
+<p>La <strong>función de costes</strong> relaciona cada nivel de producción <span class="math inline">\(X\)</span> con el <strong>coste económico mínimo</strong> que implica generar ese nivel de producción:</p>
+<p><span class="math display">\[
+CT = CT(X)
+\]</span></p>
+<p>Esta función implica <strong>eficiencia económica</strong>: producir con el menor coste posible.</p>
+<p>Un ejemplo:</p>
+<p><span class="math display">\[
+CT = 100 + 5X
+\]</span></p>
+<p>El coste mínimo para producir 10 unidades sería:</p>
+<p><span class="math display">\[
+CT = 100 + 5 \cdot 10 = 150
+\]</span></p>
+</section>
+<section id="costes-a-corto-plazo-fijos-variables-totales" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="costes-a-corto-plazo-fijos-variables-totales"><span class="header-section-number">3.3.3</span> Costes a corto plazo: fijos, variables, totales</h3>
+<p>Tenemos dos factores:</p>
+<ol type="1">
+<li>Capital <span class="math inline">\((K)\)</span>, que será fijo: <span class="math inline">\(K = \bar K\)</span>.</li>
+<li>Trabajo <span class="math inline">\((L)\)</span>, que será variable.</li>
+</ol>
+<p>Si la empresa quiere aumentar la producción, solo podrá hacerlo contratando más trabajo.</p>
+<p><strong>Coste fijo <span class="math inline">\((CF)\)</span></strong>: es <strong>independiente del nivel de producción</strong>.<br>
+Ejemplo: el alquiler del local. Se calcula multiplicando el precio de cada unidad de capital <span class="math inline">\((v)\)</span> por la cantidad de capital utilizada.</p>
+<p><span class="math display">\[
+CF = v \cdot \bar K
+\]</span></p>
+<p><strong>Coste variable <span class="math inline">\((CV)\)</span></strong>: <strong>depende del nivel de producción</strong>.<br>
+Ejemplo: salarios de trabajadores. Se calcula multiplicando el precio de cada unidad de trabajo, es decir, el salario <span class="math inline">\((w)\)</span>, por el número de trabajadores <span class="math inline">\((L)\)</span>.</p>
+<p><span class="math display">\[
+CV = w \cdot L
+\]</span></p>
+<p><strong>Coste total</strong>: es la <strong>suma del coste fijo <span class="math inline">\((CF)\)</span></strong> más el <strong>coste variable <span class="math inline">\((CV)\)</span></strong>.</p>
+<p><span class="math display">\[
+CT = CF + CV
+\]</span></p>
+<p>También:</p>
+<p><span class="math display">\[
+CT = v \cdot \bar K + w \cdot L
+\]</span></p>
+<p>En el ejemplo anterior:</p>
+<p><span class="math display">\[
+CT = 100 + 5X
+\]</span></p>
+</section>
+<section id="costes-a-corto-plazo-medios-marginales" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="costes-a-corto-plazo-medios-marginales"><span class="header-section-number">3.3.4</span> Costes a corto plazo: medios, marginales</h3>
+<p>Para los costes asociados a cada unidad de producto se calculan los <strong>costes medios <span class="math inline">\((CMe)\)</span></strong> y los <strong>costes marginales <span class="math inline">\((CMg)\)</span></strong>.</p>
+<p><strong>Costes medios <span class="math inline">\((CMe)\)</span></strong>: miden el coste promedio por unidad de producto.</p>
+<p><strong>Costes marginales <span class="math inline">\((CMg)\)</span></strong>: miden lo que cuesta producir una unidad adicional.</p>
+<p><strong>Costes medios <span class="math inline">\((CMe)\)</span></strong>: miden el coste promedio por unidad de producto.</p>
+<p><strong>Coste total medio <span class="math inline">\((CTMe)\)</span></strong>: coste promedio por unidad de producto.</p>
+<p><span class="math display">\[
+CTMe = \frac{\text{Coste total}}{\text{N.º unidades producidas}} = \frac{CT}{X} = \frac{CV + CF}{X}
+\]</span></p>
+<p><strong>Coste variable medio <span class="math inline">\((CVMe)\)</span></strong>: coste variable promedio por unidad de producto.</p>
+<p><span class="math display">\[
+CVMe = \frac{\text{Coste variable}}{\text{N.º unidades producidas}} = \frac{CV}{X}
+\]</span></p>
+<p><strong>Coste fijo medio <span class="math inline">\((CFMe)\)</span></strong>: coste fijo promedio por unidad de producto.</p>
+<p><span class="math display">\[
+CFMe = \frac{\text{Coste fijo}}{\text{N.º unidades producidas}} = \frac{CF}{X}
+\]</span></p>
+<p><strong>Costes marginales <span class="math inline">\((CMg)\)</span></strong>: miden lo que cuesta producir una unidad adicional.</p>
+<p><span class="math display">\[
+CMg = \frac{\text{Aumento del coste total o variable}}{\text{Aumento del n.º de unidades producidas}} = \frac{\Delta CT}{\Delta X} = \frac{\Delta CV}{\Delta X}
+\]</span></p>
+<p><strong>Relación entre coste marginal y coste medio.</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.linspace(<span class="fl">0.5</span>, <span class="dv">20</span>, <span class="dv">300</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>CF <span class="op">=</span> <span class="dv">30</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>CV <span class="op">=</span> <span class="dv">12</span> <span class="op">*</span> X <span class="op">-</span> <span class="fl">1.2</span> <span class="op">*</span> X<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> <span class="fl">0.08</span> <span class="op">*</span> X<span class="op">**</span><span class="dv">3</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>CT <span class="op">=</span> CF <span class="op">+</span> CV</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>CMg <span class="op">=</span> <span class="dv">12</span> <span class="op">-</span> <span class="fl">2.4</span> <span class="op">*</span> X <span class="op">+</span> <span class="fl">0.24</span> <span class="op">*</span> X<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>CVMe <span class="op">=</span> CV <span class="op">/</span> X</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>CTMe <span class="op">=</span> CT <span class="op">/</span> X</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">4</span>))</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>ax.plot(X, CT, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"CT"</span>)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>ax.plot(X, CV, color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"CV"</span>)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>ax.hlines(CF, X.<span class="bu">min</span>(), X.<span class="bu">max</span>(), color<span class="op">=</span><span class="st">"#385e9d"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, linewidth<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>          label<span class="op">=</span><span class="st">"CF"</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"X"</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"CT / CV"</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">4</span>))</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>ax.plot(X, CMg, color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"CMg"</span>)</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>ax.plot(X, CTMe, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"CTMe"</span>)</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>ax.plot(X, CVMe, color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, label<span class="op">=</span><span class="st">"CVMe"</span>)</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>x_min_ctme <span class="op">=</span> X[np.argmin(CTMe)]</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>x_min_cvme <span class="op">=</span> X[np.argmin(CVMe)]</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>ax.scatter([x_min_ctme], [CTMe.<span class="bu">min</span>()], color<span class="op">=</span><span class="st">"#385e9d"</span>, zorder<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>ax.scatter([x_min_cvme], [CVMe.<span class="bu">min</span>()], color<span class="op">=</span><span class="st">"#385e9d"</span>, zorder<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"X"</span>)</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"CMg / CTMe / CVMe"</span>)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>ax.legend(frameon<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> [<span class="st">"top"</span>, <span class="st">"right"</span>]:</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    ax.spines[spine].set_visible(<span class="va">False</span>)</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cuando el coste marginal es</th>
+<th>El coste variable medio</th>
+<th>Consecuencia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Inferior</strong> al coste variable medio</td>
+<td><strong>Disminuye</strong>.</td>
+<td>La curva de <strong>coste marginal corta</strong> a la de <strong>coste variable medio</strong> en el <strong>mínimo</strong> de esta última.</td>
+</tr>
+<tr class="even">
+<td><strong>Igual</strong> al coste variable medio</td>
+<td>Alcanza su <strong>mínimo</strong>.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Superior</strong> al coste variable medio</td>
+<td><strong>Aumenta</strong>.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cuando el coste marginal es</th>
+<th>El coste total medio</th>
+<th>Consecuencia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Inferior</strong> al coste total medio</td>
+<td><strong>Disminuye</strong>.</td>
+<td>La curva de <strong>coste marginal corta</strong> a la de <strong>coste total medio</strong> en el <strong>mínimo</strong> de esta última.</td>
+</tr>
+<tr class="even">
+<td><strong>Igual</strong> al coste total medio</td>
+<td>Alcanza su <strong>mínimo</strong>.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Superior</strong> al coste total medio</td>
+<td><strong>Aumenta</strong>.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="relación-entre-productividades-y-costes" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="relación-entre-productividades-y-costes"><span class="header-section-number">3.4</span> Relación entre productividades y costes</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Productividad marginal del trabajo</th>
+<th>Cada trabajador adicional aumenta la producción…</th>
+<th>Para producir una unidad adicional, son necesarios…</th>
+<th>Según la producción aumenta, el coste aumenta…</th>
+<th>Coste marginal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Creciente</td>
+<td>… cada vez en <strong>mayor medida</strong></td>
+<td>… cada vez <strong>menos trabajadores adicionales</strong></td>
+<td>… cada vez en <strong>menor medida</strong></td>
+<td>Decreciente</td>
+</tr>
+<tr class="even">
+<td>Constante</td>
+<td>… siempre en la <strong>misma medida</strong></td>
+<td>… siempre los <strong>mismos trabajadores adicionales</strong></td>
+<td>… siempre en la <strong>misma medida</strong></td>
+<td>Constante</td>
+</tr>
+<tr class="odd">
+<td>Decreciente</td>
+<td>… cada vez en <strong>menor medida</strong></td>
+<td>… cada vez <strong>más trabajadores adicionales</strong></td>
+<td>… cada vez en <strong>mayor medida</strong></td>
+<td>Creciente</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Figura 5.5</strong> del libro <em>Economía: teoría y práctica</em> de J. M. Blanco, 6.ª edición.</p>
+<p>Esto implica que si la <strong>productividad marginal</strong> del trabajo alcanza un <strong>máximo</strong>, el <strong>coste marginal</strong> alcanza un <strong>mínimo</strong>.</p>
+</section>
+<section id="los-ingresos-y-el-beneficio" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="los-ingresos-y-el-beneficio"><span class="header-section-number">3.5</span> Los ingresos y el beneficio</h2>
+<section id="ingreso-vs.-beneficio" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="ingreso-vs.-beneficio"><span class="header-section-number">3.5.1</span> Ingreso vs.&nbsp;beneficio</h3>
+<p>El <strong>ingreso por ventas</strong>:</p>
+<p><span class="math display">\[
+\text{Ingreso total }(IT) = \text{Precio del producto }(P) \cdot \text{Cantidad vendida }(X)
+\]</span></p>
+<p>El <strong>beneficio</strong>:</p>
+<p><span class="math display">\[
+B^\circ = IT - CT
+\]</span></p>
+<p><strong>El beneficio contable</strong>: la diferencia entre ingresos y costes contables.</p>
+<p><strong>El beneficio económico</strong>: la diferencia entre ingresos y costes económicos.</p>
+<p>En el esquema de la diapositiva:</p>
+<ul>
+<li><strong>Costes contables</strong>: costes explícitos.</li>
+<li><strong>Costes económicos</strong>: costes explícitos + costes implícitos.</li>
+<li><strong>Beneficio contable</strong>: ingresos menos costes contables.</li>
+<li><strong>Beneficio económico</strong>: ingresos menos costes económicos.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.patches <span class="im">import</span> Rectangle</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="fl">3.8</span>))</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(<span class="dv">0</span>, <span class="dv">10</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="dv">4</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>ax.axis(<span class="st">"off"</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Bloque de ingresos completo</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>ax.add_patch(Rectangle((<span class="fl">0.5</span>, <span class="fl">0.8</span>), <span class="dv">2</span>, <span class="fl">2.6</span>, fill<span class="op">=</span><span class="va">False</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>))</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">1.5</span>, <span class="fl">2.1</span>, <span class="st">"INGRESOS"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Descomposición de ingresos</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>ax.add_patch(Rectangle((<span class="fl">3.0</span>, <span class="fl">2.5</span>), <span class="dv">2</span>, <span class="fl">0.9</span>, fill<span class="op">=</span><span class="va">False</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>))</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">4.0</span>, <span class="fl">2.95</span>, <span class="st">"COSTES</span><span class="ch">\n</span><span class="st">EXPLÍCITOS"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>ax.add_patch(Rectangle((<span class="fl">3.0</span>, <span class="fl">1.6</span>), <span class="dv">2</span>, <span class="fl">0.9</span>, fill<span class="op">=</span><span class="va">False</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>))</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">4.0</span>, <span class="fl">2.05</span>, <span class="st">"COSTES</span><span class="ch">\n</span><span class="st">IMPLÍCITOS"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>ax.add_patch(Rectangle((<span class="fl">3.0</span>, <span class="fl">0.8</span>), <span class="dv">2</span>, <span class="fl">0.8</span>, fill<span class="op">=</span><span class="va">False</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>))</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">4.0</span>, <span class="fl">1.2</span>, <span class="st">"BENEFICIO</span><span class="ch">\n</span><span class="st">ECONÓMICO"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"#385e9d"</span>)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Etiquetas de agrupación</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">6.0</span>, <span class="fl">2.95</span>, <span class="st">"COSTES</span><span class="ch">\n</span><span class="st">CONTABLES"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"#d22020"</span>)</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>ax.plot([<span class="fl">5.3</span>, <span class="fl">5.3</span>, <span class="fl">5.7</span>], [<span class="fl">2.5</span>, <span class="fl">3.4</span>, <span class="fl">3.4</span>], color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>)</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">7.6</span>, <span class="fl">2.5</span>, <span class="st">"COSTES</span><span class="ch">\n</span><span class="st">ECONÓMICOS"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"#d22020"</span>)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>ax.plot([<span class="fl">6.9</span>, <span class="fl">6.9</span>, <span class="fl">7.3</span>], [<span class="fl">1.6</span>, <span class="fl">3.4</span>, <span class="fl">3.4</span>], color<span class="op">=</span><span class="st">"#d22020"</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>)</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">6.0</span>, <span class="fl">1.45</span>, <span class="st">"BENEFICIO</span><span class="ch">\n</span><span class="st">CONTABLE"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"#385e9d"</span>)</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>ax.plot([<span class="fl">5.3</span>, <span class="fl">5.3</span>, <span class="fl">5.7</span>], [<span class="fl">0.8</span>, <span class="fl">2.5</span>, <span class="fl">2.5</span>], color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>)</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">7.6</span>, <span class="fl">1.0</span>, <span class="st">"BENEFICIO</span><span class="ch">\n</span><span class="st">ECONÓMICO"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">"#385e9d"</span>)</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>ax.plot([<span class="fl">6.9</span>, <span class="fl">6.9</span>, <span class="fl">7.3</span>], [<span class="fl">0.8</span>, <span class="fl">1.6</span>, <span class="fl">1.6</span>], color<span class="op">=</span><span class="st">"#385e9d"</span>, linewidth<span class="op">=</span><span class="fl">1.8</span>)</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Si el beneficio económico es</th>
+<th>Se denomina</th>
+<th>Y significa que</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Negativo</td>
+<td>Pérdida</td>
+<td>Lo que obtiene la empresa es <strong>inferior a lo que podrían obtener</strong> los recursos si se utilizasen <strong>en su mejor opción alternativa</strong>.</td>
+</tr>
+<tr class="even">
+<td>Cero</td>
+<td>Beneficio nulo o normal</td>
+<td>Lo que obtiene la empresa es <strong>igual que lo que podrían obtener</strong> los recursos si se utilizasen <strong>en su mejor opción alternativa</strong>.</td>
+</tr>
+<tr class="odd">
+<td>Positivo</td>
+<td>Beneficio extraordinario</td>
+<td>Lo que obtiene la empresa es <strong>superior a lo que podrían obtener</strong> los recursos si se utilizasen <strong>en su mejor opción alternativa</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
