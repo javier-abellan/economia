@@ -25,8 +25,3 @@ h4 {
 h4 .header-section-number {
   display: none;  /* oculta la numeración */
 }
-
-/* Ocultar el texto del título en el menú lateral */
-.quarto-sidebar-header .sidebar-title {
-    display: none !important;
-}
