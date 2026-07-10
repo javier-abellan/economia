@@ -213,7 +213,7 @@ window.Quarto = {
   <li><a href="#el-concepto-de-coste-de-producción" id="toc-el-concepto-de-coste-de-producción" class="nav-link" data-scroll-target="#el-concepto-de-coste-de-producción"><span class="header-section-number">3.3.1</span> El concepto de coste de producción</a></li>
   <li><a href="#la-función-de-costes" id="toc-la-función-de-costes" class="nav-link" data-scroll-target="#la-función-de-costes"><span class="header-section-number">3.3.2</span> La función de costes</a></li>
   <li><a href="#costes-a-corto-plazo-fijos-variables-totales" id="toc-costes-a-corto-plazo-fijos-variables-totales" class="nav-link" data-scroll-target="#costes-a-corto-plazo-fijos-variables-totales"><span class="header-section-number">3.3.3</span> Costes a corto plazo: fijos, variables, totales</a></li>
-  <li><a href="#costes-a-corto-plazo-medios-marginales" id="toc-costes-a-corto-plazo-medios-marginales" class="nav-link" data-scroll-target="#costes-a-corto-plazo-medios-marginales"><span class="header-section-number">3.3.4</span> Costes a corto plazo: medios, marginales</a></li>
+  <li><a href="#costes-a-corto-plazo-medios-marginal" id="toc-costes-a-corto-plazo-medios-marginal" class="nav-link" data-scroll-target="#costes-a-corto-plazo-medios-marginal"><span class="header-section-number">3.3.4</span> Costes a corto plazo: medios, marginal</a></li>
   </ul></li>
   <li><a href="#relación-entre-productividades-y-costes" id="toc-relación-entre-productividades-y-costes" class="nav-link" data-scroll-target="#relación-entre-productividades-y-costes"><span class="header-section-number">3.4</span> Relación entre productividades y costes</a></li>
   <li><a href="#los-ingresos-y-el-beneficio" id="toc-los-ingresos-y-el-beneficio" class="nav-link" data-scroll-target="#los-ingresos-y-el-beneficio"><span class="header-section-number">3.5</span> Los ingresos y el beneficio</a>
@@ -681,7 +681,7 @@ PMg_L = \frac{\Delta PT_L}{\Delta \text{Número de unidades de trabajo }(L)}
 </div>
 </div>
 <div class="cell-output cell-output-display">
-<div id="fig-productividad-2" class="quarto-float quarto-figure quarto-figure-center anchored" height="356" width="587">
+<div id="fig-productividad-2" class="quarto-float quarto-figure quarto-figure-center anchored" width="587" height="356">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-productividad-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="produccion_files/figure-html/fig-productividad-output-2.png" id="fig-productividad-2" data-ref-parent="fig-productividad" width="587" height="356" class="figure-img">
@@ -754,22 +754,18 @@ CV = w \cdot L
 \]</span></p>
 <p><strong>Coste total</strong>: es la <strong>suma del coste fijo <span class="math inline">\((CF)\)</span></strong> más el <strong>coste variable <span class="math inline">\((CV)\)</span></strong>.</p>
 <p><span class="math display">\[
-CT = CF + CV
-\]</span></p>
-<p>También:</p>
-<p><span class="math display">\[
-CT = v \cdot \bar K + w \cdot L
+CT = CF + CV = v \cdot \bar K + w \cdot L
 \]</span></p>
 <p>En el ejemplo anterior:</p>
 <p><span class="math display">\[
 CT = 100 + 5X
 \]</span></p>
 </section>
-<section id="costes-a-corto-plazo-medios-marginales" class="level3" data-number="3.3.4">
-<h3 data-number="3.3.4" class="anchored" data-anchor-id="costes-a-corto-plazo-medios-marginales"><span class="header-section-number">3.3.4</span> Costes a corto plazo: medios, marginales</h3>
-<p>Para los costes asociados a cada unidad de producto se calculan los <strong>costes medios <span class="math inline">\((CMe)\)</span></strong> y los <strong>costes marginales <span class="math inline">\((CMg)\)</span></strong>.</p>
-<p><strong>Costes medios <span class="math inline">\((CMe)\)</span></strong>: miden el coste promedio por unidad de producto.</p>
-<p><strong>Costes marginales <span class="math inline">\((CMg)\)</span></strong>: miden lo que cuesta producir una unidad adicional.</p>
+<section id="costes-a-corto-plazo-medios-marginal" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="costes-a-corto-plazo-medios-marginal"><span class="header-section-number">3.3.4</span> Costes a corto plazo: medios, marginal</h3>
+<p>Para los costes asociados a cada unidad de producto se calculan los <strong>costes medios <span class="math inline">\((CMe)\)</span></strong> y el <strong>coste marginal <span class="math inline">\((CMg)\)</span></strong>.</p>
+<section id="costes-medios" class="level4" data-number="3.3.4.1">
+<h4 data-number="3.3.4.1" class="anchored" data-anchor-id="costes-medios"><span class="header-section-number">3.3.4.1</span> Costes medios</h4>
 <p><strong>Costes medios <span class="math inline">\((CMe)\)</span></strong>: miden el coste promedio por unidad de producto.</p>
 <p><strong>Coste total medio <span class="math inline">\((CTMe)\)</span></strong>: coste promedio por unidad de producto.</p>
 <p><span class="math display">\[
@@ -783,10 +779,16 @@ CVMe = \frac{\text{Coste variable}}{\text{N.º unidades producidas}} = \frac{CV}
 <p><span class="math display">\[
 CFMe = \frac{\text{Coste fijo}}{\text{N.º unidades producidas}} = \frac{CF}{X}
 \]</span></p>
-<p><strong>Costes marginales <span class="math inline">\((CMg)\)</span></strong>: miden lo que cuesta producir una unidad adicional.</p>
+</section>
+<section id="coste-marginal" class="level4" data-number="3.3.4.2">
+<h4 data-number="3.3.4.2" class="anchored" data-anchor-id="coste-marginal"><span class="header-section-number">3.3.4.2</span> Coste marginal</h4>
+<p><strong>Coste marginal <span class="math inline">\((CMg)\)</span></strong>: mide lo que cuesta producir una unidad adicional.</p>
 <p><span class="math display">\[
 CMg = \frac{\text{Aumento del coste total o variable}}{\text{Aumento del n.º de unidades producidas}} = \frac{\Delta CT}{\Delta X} = \frac{\Delta CV}{\Delta X}
 \]</span></p>
+</section>
+<section id="relación-entre-coste-marginal-y-costes-medios" class="level4" data-number="3.3.4.3">
+<h4 data-number="3.3.4.3" class="anchored" data-anchor-id="relación-entre-coste-marginal-y-costes-medios"><span class="header-section-number">3.3.4.3</span> Relación entre coste marginal y costes medios</h4>
 <div class="cell" data-execution_count="3">
 <div id="fig-costemg-costeme" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="3">
 <figure class="quarto-float quarto-float-fig figure">
@@ -798,13 +800,13 @@ CMg = \frac{\text{Aumento del coste total o variable}}{\text{Aumento del n.º de
 <img src="produccion_files/figure-html/fig-costemg-costeme-output-1.png" data-ref-parent="fig-costemg-costeme" width="593" height="356" class="figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-costemg-costeme-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) Relación entre coste marginal y coste medio
+(a) Relación entre coste marginal y costes medios
 </figcaption>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
-<div id="fig-costemg-costeme-2" class="quarto-float quarto-figure quarto-figure-center anchored" height="356" width="585">
+<div id="fig-costemg-costeme-2" class="quarto-float quarto-figure quarto-figure-center anchored" width="585" height="356">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-costemg-costeme-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="produccion_files/figure-html/fig-costemg-costeme-output-2.png" id="fig-costemg-costeme-2" data-ref-parent="fig-costemg-costeme" width="585" height="356" class="figure-img">
@@ -884,6 +886,7 @@ Figura&nbsp;3.3
 </tr>
 </tbody>
 </table>
+</section>
 </section>
 </section>
 <section id="relación-entre-productividades-y-costes" class="level2" data-number="3.4">
