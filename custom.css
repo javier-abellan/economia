@@ -25,3 +25,12 @@ h4 {
 h4 .header-section-number {
   display: none;  /* oculta la numeración */
 }
+
+/* Enlaces sin subrayado */
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
