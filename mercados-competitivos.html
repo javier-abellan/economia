@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Mercados competitivos – Economía: una introducción</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./poder-de-mercado.html" rel="next">
+<link href="./produccion.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mercados-competitivos.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mercados competitivos</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./portada.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./portada.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Economía: una introducción</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefacio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Las decisiones económicas</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mercado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">La demanda, la oferta y el mercado</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./produccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La empresa: producción, costes y beneficio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mercados-competitivos.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mercados competitivos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./poder-de-mercado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Poder de mercado</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referencias</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#la-competencia-perfecta-características" id="toc-la-competencia-perfecta-características" class="nav-link active" data-scroll-target="#la-competencia-perfecta-características"><span class="header-section-number">4.1</span> La competencia perfecta: características</a></li>
+  <li><a href="#los-ingresos-de-la-empresa-competitiva" id="toc-los-ingresos-de-la-empresa-competitiva" class="nav-link" data-scroll-target="#los-ingresos-de-la-empresa-competitiva"><span class="header-section-number">4.2</span> Los ingresos de la empresa competitiva</a>
+  <ul class="collapse">
+  <li><a href="#los-ingresos-de-la-empresa-una-visión-general" id="toc-los-ingresos-de-la-empresa-una-visión-general" class="nav-link" data-scroll-target="#los-ingresos-de-la-empresa-una-visión-general"><span class="header-section-number">4.2.1</span> Los ingresos de la empresa: una visión general</a></li>
+  <li><a href="#los-ingresos-de-la-empresa-competitiva-1" id="toc-los-ingresos-de-la-empresa-competitiva-1" class="nav-link" data-scroll-target="#los-ingresos-de-la-empresa-competitiva-1"><span class="header-section-number">4.2.2</span> Los ingresos de la empresa competitiva</a></li>
+  </ul></li>
+  <li><a href="#cuánto-producir-para-maximizar-el-beneficio" id="toc-cuánto-producir-para-maximizar-el-beneficio" class="nav-link" data-scroll-target="#cuánto-producir-para-maximizar-el-beneficio"><span class="header-section-number">4.3</span> Cuánto producir para maximizar el beneficio</a></li>
+  <li><a href="#el-beneficio-de-la-empresa-a-corto-plazo" id="toc-el-beneficio-de-la-empresa-a-corto-plazo" class="nav-link" data-scroll-target="#el-beneficio-de-la-empresa-a-corto-plazo"><span class="header-section-number">4.4</span> El beneficio de la empresa a corto plazo</a></li>
+  <li><a href="#la-curva-de-oferta-de-la-empresa-a-corto-plazo" id="toc-la-curva-de-oferta-de-la-empresa-a-corto-plazo" class="nav-link" data-scroll-target="#la-curva-de-oferta-de-la-empresa-a-corto-plazo"><span class="header-section-number">4.5</span> La curva de oferta de la empresa a corto plazo</a></li>
+  <li><a href="#la-curva-de-oferta-del-mercado-a-corto-plazo" id="toc-la-curva-de-oferta-del-mercado-a-corto-plazo" class="nav-link" data-scroll-target="#la-curva-de-oferta-del-mercado-a-corto-plazo"><span class="header-section-number">4.6</span> La curva de oferta del mercado a corto plazo</a></li>
+  <li><a href="#el-excedente-de-consumidores-y-productores" id="toc-el-excedente-de-consumidores-y-productores" class="nav-link" data-scroll-target="#el-excedente-de-consumidores-y-productores"><span class="header-section-number">4.7</span> El excedente de consumidores y productores</a>
+  <ul class="collapse">
+  <li><a href="#excedente-del-consumidor" id="toc-excedente-del-consumidor" class="nav-link" data-scroll-target="#excedente-del-consumidor"><span class="header-section-number">4.7.1</span> Excedente del consumidor</a></li>
+  <li><a href="#excedente-del-productor" id="toc-excedente-del-productor" class="nav-link" data-scroll-target="#excedente-del-productor"><span class="header-section-number">4.7.2</span> Excedente del productor</a></li>
+  </ul></li>
+  <li><a href="#la-eficiencia-del-equilibrio-competitivo" id="toc-la-eficiencia-del-equilibrio-competitivo" class="nav-link" data-scroll-target="#la-eficiencia-del-equilibrio-competitivo"><span class="header-section-number">4.8</span> La eficiencia del equilibrio competitivo</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-mercados-competitivos" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mercados competitivos</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="la-competencia-perfecta-características" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="la-competencia-perfecta-características"><span class="header-section-number">4.1</span> La competencia perfecta: características</h2>
+<p>Cuando se analiza el funcionamiento de distintos mercados en función del <strong>grado de competencia</strong>, el análisis se centra en <strong>cuatro cuestiones fundamentales</strong>:</p>
+<ul>
+<li>¿Cuántas empresas participan en el mercado?</li>
+<li>¿El producto obtenido por todas las empresas es idéntico?</li>
+<li>¿Qué grado de capacidad tiene cada empresa para fijas el precio del producto cuando actúa individualmente?</li>
+<li>¿Existen barreras de entrada o salida del sector?</li>
+</ul>
+<p>A continuación responderemos cada una de estas preguntas para el caso de un mercado con competencia perfecta. Para simplificar, en el mercado de competencia perfecta se darán siempre dos supuestos: existe información perfecta y las empresas son idénticas.</p>
+<section id="cuántas-empresas-participan-en-el-mercado" class="level4" data-number="4.1.0.1">
+<h4 data-number="4.1.0.1" class="anchored" data-anchor-id="cuántas-empresas-participan-en-el-mercado"><span class="header-section-number">4.1.0.1</span> ¿Cuántas empresas participan en el mercado?</h4>
+<p>En competencia perfecta actúa un <strong>gran número de empresas</strong> y cada una aporta una porción pequeña de la producción total. En una situación como esta, se dice que <strong>el mercado está atomizado</strong>.</p>
+</section>
+<section id="el-producto-obtenido-por-todas-las-empresas-es-idéntico" class="level4" data-number="4.1.0.2">
+<h4 data-number="4.1.0.2" class="anchored" data-anchor-id="el-producto-obtenido-por-todas-las-empresas-es-idéntico"><span class="header-section-number">4.1.0.2</span> ¿El producto obtenido por todas las empresas es idéntico?</h4>
+<p>En competencia perfecta, el producto obtenido por todas las empresas es <strong>idéntico</strong>. Son <strong>bienes homogéneos</strong>.</p>
+</section>
+<section id="qué-grado-de-capacidad-tiene-cada-empresa-para-fijar-el-precio-del-producto-cuando-actúa-individualmente" class="level4" data-number="4.1.0.3">
+<h4 data-number="4.1.0.3" class="anchored" data-anchor-id="qué-grado-de-capacidad-tiene-cada-empresa-para-fijar-el-precio-del-producto-cuando-actúa-individualmente"><span class="header-section-number">4.1.0.3</span> ¿Qué grado de capacidad tiene cada empresa para fijar el precio del producto cuando actúa individualmente?</h4>
+<p>En competencia perfecta, la empresa <strong>no tiene ninguna capacidad</strong> para fijar el precio cuando actúa individualmente. Por tanto, <strong>el precio lo fija el mercado</strong>. Si una empresa intenta vender a un precio superior al de mercado, no venderá nada.</p>
+<p>En el ejemplo que se muestra a continuación, las 100 toneladas que puede cultivar Pérez son insignificantes dentro de las 500.000 toneladas del mercado, por lo que no tiene capacidad para influir en el precio. En consecuencia, el mercado fija el precio, la empresa solo es capaz de vender a ese precio, y <strong>la curva de demanda a la que se enfrenta la empresa individual es horizontal</strong>.</p>
+<div id="cell-fig-mercado-tomates-empresa-competitiva" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div id="fig-mercado-tomates-empresa-competitiva" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mercado-tomates-empresa-competitiva-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados-competitivos_files/figure-html/fig-mercado-tomates-empresa-competitiva-output-1.png" width="652" height="381" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mercado-tomates-empresa-competitiva-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.1: Mercado de tomates y demanda horizontal de una empresa competitiva.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="existen-barreras-de-entrada-o-salida-del-sector" class="level4" data-number="4.1.0.4">
+<h4 data-number="4.1.0.4" class="anchored" data-anchor-id="existen-barreras-de-entrada-o-salida-del-sector"><span class="header-section-number">4.1.0.4</span> ¿Existen barreras de entrada o salida del sector?</h4>
+<p>En competencia perfecta <strong>no existen barreras de entrada o salida</strong>. Esto se conoce como <strong>libre concurrencia</strong>.</p>
+<p>En el corto plazo, las empresas no pueden entrar o salir instantáneamente. En el largo plazo, sí pueden entrar o salir.</p>
+</section>
+</section>
+<section id="los-ingresos-de-la-empresa-competitiva" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="los-ingresos-de-la-empresa-competitiva"><span class="header-section-number">4.2</span> Los ingresos de la empresa competitiva</h2>
+<p>Como vimos en el Capítulo 3, el <a href="./produccion.html#los-ingresos-y-el-beneficio">beneficio de la empresa</a> se define como la diferencia entre el ingreso total y el coste total:</p>
+<p><span class="math display">\[
+\text{Beneficio} = \text{Ingreso total ($IT$)} - \text{Coste total ($CT$)}
+\]</span></p>
+<p>En el Capítulo 3 ya analizamos los <a href="./produccion.html#los-costes-de-producción">costes de la empresa</a>. Ha llegado ahora el momento de prestar atención a los ingresos, centrándonos en el caso de la empresa en el mercado de competencia perfecta.</p>
+<section id="los-ingresos-de-la-empresa-una-visión-general" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="los-ingresos-de-la-empresa-una-visión-general"><span class="header-section-number">4.2.1</span> Los ingresos de la empresa: una visión general</h3>
+<section id="ingreso-total" class="level4" data-number="4.2.1.1">
+<h4 data-number="4.2.1.1" class="anchored" data-anchor-id="ingreso-total"><span class="header-section-number">4.2.1.1</span> Ingreso total</h4>
+<p>El <strong>ingreso total</strong> (<span class="math inline">\(IT\)</span>) se obtiene multiplicando el precio de una unidad de producto por la cantidad de producto vendida. En competencia perfecta, la empresa no tiene poder para fijar el precio <span class="math inline">\(P\)</span>. Por tanto, <span class="math inline">\(P\)</span> se considera una constante y no depende de la cantidad <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+IT = P \cdot X
+\]</span></p>
+</section>
+<section id="ingreso-medio" class="level4" data-number="4.2.1.2">
+<h4 data-number="4.2.1.2" class="anchored" data-anchor-id="ingreso-medio"><span class="header-section-number">4.2.1.2</span> Ingreso medio</h4>
+<p>El <strong>ingreso medio</strong> (<span class="math inline">\(IMe\)</span>) se obtiene dividiendo el ingreso total entre la cantidad de producto vendida:</p>
+<p><span class="math display">\[
+IMe = \frac{IT}{X}=\frac{P\cdot X}{X}=P
+\]</span></p>
+<p>El <strong>ingreso medio coincide con el precio</strong>.</p>
+</section>
+<section id="ingreso-marginal" class="level4" data-number="4.2.1.3">
+<h4 data-number="4.2.1.3" class="anchored" data-anchor-id="ingreso-marginal"><span class="header-section-number">4.2.1.3</span> Ingreso marginal</h4>
+<p>El <strong>ingreso marginal</strong> es la cantidad en la que se incrementa el ingreso total (<span class="math inline">\(IT\)</span>) cuando la producción aumenta en una unidad:</p>
+<p><span class="math display">\[
+IMg = \frac{\Delta IT}{\Delta X}
+     = \frac{\Delta(P\cdot X)}{\Delta X}
+\]</span></p>
+<p>En términos continuos:</p>
+<p><span class="math display">\[
+IMg = \frac{dIT}{dX}
+     = \frac{d(P\cdot X)}{dX}
+\]</span></p>
+</section>
+</section>
+<section id="los-ingresos-de-la-empresa-competitiva-1" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="los-ingresos-de-la-empresa-competitiva-1"><span class="header-section-number">4.2.2</span> Los ingresos de la empresa competitiva</h3>
+<p>En un mercado con competencia perfecta, el precio <span class="math inline">\(P\)</span> no depende de la cantidad <span class="math inline">\(X\)</span> producida por la empresa. En consecuencia, el <strong>ingreso medio</strong> (<span class="math inline">\(IMe\)</span>) y el <strong>ingreso marginal</strong> (<span class="math inline">\(IMg\)</span>) de la empresa en competencia perfecta coinciden con el precio y con la curva de demanda horizontal a la que se enfrenta la empresa competitiva.</p>
+<p><span class="math display">\[
+IMg = \frac{\Delta IT}{\Delta X}
+     = \frac{\Delta(P\cdot X)}{\Delta X}
+     = \frac{P\cdot \Delta X}{\Delta X}
+     = P
+\]</span></p>
+<p>En términos continuos:</p>
+<p><span class="math display">\[
+IMg = \frac{dIT}{dX}
+     = \frac{d(P\cdot X)}{dX}
+     = P
+\]</span></p>
+<div id="cell-fig-ingreso-medio-marginal" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-ingreso-medio-marginal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ingreso-medio-marginal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados-competitivos_files/figure-html/fig-ingreso-medio-marginal-output-1.png" width="552" height="330" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ingreso-medio-marginal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.2: Ingreso medio e ingreso marginal de la empresa en competencia perfecta.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="cuánto-producir-para-maximizar-el-beneficio" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="cuánto-producir-para-maximizar-el-beneficio"><span class="header-section-number">4.3</span> Cuánto producir para maximizar el beneficio</h2>
+<p>Vamos a ver el supuesto en el corto plazo, con un precio fijado por un mercado competitivo para el producto y un número fijo de empresas.</p>
+<p><span class="math display">\[
+B^{\circ}(X)=IT(X)-CT(X)
+\]</span></p>
+<p>La empresa individual <strong>toma el precio como dado</strong> y solo puede elegir el nivel de producción. Por tanto, establecerá el nivel de producción que haga máximo su beneficio, es decir, buscará su <strong>nivel de producción óptimo</strong>.</p>
+<p>Matemáticamente, el problema del productor consiste en encontrar el valor de <span class="math inline">\(X\)</span> que maximiza la función <span class="math inline">\(B^{\circ}(X)\)</span>?.</p>
+<p>La <strong>condición de primer orden</strong> para maximizar el beneficio exige que la primera derivada de <span class="math inline">\(B^{\circ}\)</span> respecto de <span class="math inline">\(X\)</span> sea cero:</p>
+<p><span class="math display">\[
+\frac{dB^{\circ}}{dX}
+=\frac{d(IT)}{dX}-\frac{d(CT)}{dX}=0
+\]</span></p>
+<p>Como <span class="math inline">\(\frac{d(IT)}{dX}=IMg\)</span> y <span class="math inline">\(\frac{d(CT)}{dX}=CMg\)</span>:</p>
+<p><span class="math display">\[
+\frac{dB^{\circ}}{dX}=IMg-CMg=0
+\quad \Rightarrow \quad
+IMg=CMg
+\]</span></p>
+<p>Toda empresa maximiza el beneficio en el nivel de producción para el que el coste marginal se iguala al ingreso marginal. En competencia perfecta, el ingreso marginal coincide con el precio. Por tanto:</p>
+<p><span class="math display">\[
+\frac{dB^{\circ}}{dX}
+=\frac{d(P\cdot X)}{dX}-CMg=0
+\]</span></p>
+<p><span class="math display">\[
+\frac{dB^{\circ}}{dX}=P-CMg=0
+\quad \Rightarrow \quad
+P=CMg
+\]</span></p>
+<p>La empresa que actúa en un mercado competitivo establecerá el nivel de producción en el punto en el que el <strong>precio</strong> es igual al <strong>coste marginal</strong>. Lo denominaremos <strong>punto óptimo</strong> o <strong>punto de equilibrio de la empresa</strong>.</p>
+<p>Para garantizar que se trata de un máximo, y no de un mínimo, es necesario obtener la <strong>condición de segundo orden</strong>. Es decir, la segunda derivada del beneficio respecto a la cantidad producida debe ser negativa:</p>
+<p><span class="math display">\[
+\frac{d^2 B^{\circ}}{dX^2}
+=\frac{d(P-CMg)}{dX}
+=\frac{dP}{dX}-\frac{dCMg}{dX}&lt;0
+\quad \Rightarrow \quad
+\frac{dCMg}{dX}&gt;0
+\]</span></p>
+<p>La tabla siguiente recoge el cálculo de las variables relevantes. La producción está medida en toneladas y las magnitudes monetarias están expresadas en miles de euros.</p>
+<p>En la tabla a continuación se muestra un ejemplo ilustrativo donde se ve que el beneficio es máximo cuando el nivel de producción es igual a 9 toneladas, pues es este nivel de producción el que iguala el coste marginal al ingreso marginal, que en competencia perfecta es igual al precio (5 mil euros).</p>
+<div id="tbl-eleccion-produccion-beneficio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-eleccion-produccion-beneficio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;4.1: Costes, ingresos y beneficio de la empresa competitiva
+</figcaption>
+<div aria-describedby="tbl-eleccion-produccion-beneficio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(PT\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(CT\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(CTMe\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(CMg\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(P\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(IT\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(IMg\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(B^{\circ}\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\Delta B^{\circ}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">-9</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">9.5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-9</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">7.33</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-7</td>
+<td style="text-align: right;">+2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-4</td>
+<td style="text-align: right;">+3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">+4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">+3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4.29</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">+2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">4.25</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">+1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">4.33</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">4.73</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">5.31</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-4</td>
+<td style="text-align: right;">-4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">5.64</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-9</td>
+<td style="text-align: right;">-5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-15</td>
+<td style="text-align: right;">-6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Producción total medida en toneladas. Variables monetarias medidas en miles de euros.</p>
+</section>
+<section id="el-beneficio-de-la-empresa-a-corto-plazo" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="el-beneficio-de-la-empresa-a-corto-plazo"><span class="header-section-number">4.4</span> El beneficio de la empresa a corto plazo</h2>
+<p>En el nivel de producción óptimo, el beneficio de la empresa puede ser positivo, nulo o negativo. Es posible que, dada la función de costes de la empresa, cualquier nivel de producción tenga asociado un beneficio negativo. En este caso, al maximizar la función de beneficio, lo que hace la empresa es minimizar pérdidas.</p>
+<ul>
+<li><strong>Beneficio positivo o extraordinario.</strong> En el nivel de producción óptimo, el precio es mayor que el coste total medio:</li>
+</ul>
+<p><span class="math display">\[
+IT&gt;CT
+\quad \Rightarrow \quad
+\frac{IT}{X}&gt;\frac{CT}{X}
+\quad \Rightarrow \quad
+P&gt;CTMe
+\]</span></p>
+<ul>
+<li><strong>Beneficio nulo o normal.</strong> En el nivel de producción óptimo, el precio es igual al coste total medio:</li>
+</ul>
+<p><span class="math display">\[
+IT=CT
+\quad \Rightarrow \quad
+\frac{IT}{X}=\frac{CT}{X}
+\quad \Rightarrow \quad
+P=CTMe
+\]</span></p>
+<ul>
+<li><strong>Beneficio negativo o pérdidas.</strong> En el nivel de producción óptimo, el precio es menor que el coste total medio:</li>
+</ul>
+<p><span class="math display">\[
+IT&lt;CT
+\quad \Rightarrow \quad
+\frac{IT}{X}&lt;\frac{CT}{X}
+\quad \Rightarrow \quad
+P&lt;CTMe
+\]</span></p>
+<p>Por tanto, la relación entre el precio y el coste total medio indica si la empresa obtiene un beneficio positivo, nulo o negativo.</p>
+</section>
+<section id="la-curva-de-oferta-de-la-empresa-a-corto-plazo" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="la-curva-de-oferta-de-la-empresa-a-corto-plazo"><span class="header-section-number">4.5</span> La curva de oferta de la empresa a corto plazo</h2>
+<p>La <a href="./mercado.html#curva-de-oferta">curva de oferta de mercado</a> muestra la cantidad máxima que los vendedores están dispuestos a vender a cada precio. La curva de coste marginal de la empresa competitiva recoge la misma información, pero para una empresa individual.</p>
+<p>La empresa ofrece el nivel de producción que iguala el <strong>precio</strong> al <strong>coste marginal</strong>. En el gráfico a continuación, si el precio de mercado es <span class="math inline">\(P_1\)</span>, la empresa ofrece <span class="math inline">\(X_1\)</span> (punto A). Si el precio de mercado es <span class="math inline">\(P_2\)</span>, la empresa ofrece <span class="math inline">\(X_2\)</span> (punto B).</p>
+<div id="cell-fig-precio-coste-marginal" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-precio-coste-marginal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-precio-coste-marginal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados-competitivos_files/figure-html/fig-precio-coste-marginal-output-1.png" width="466" height="389" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-precio-coste-marginal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.3: La empresa fija el nivel de producción que iguala el precio al coste marginal.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>No obstante, algunos tramos de la curva de coste marginal pueden no formar parte de la curva de oferta de la empresa.</p>
+<p>La curva de coste marginal es la curva de oferta de la empresa en competencia perfecta, pero solo en el tramo en el que el coste marginal supera al coste variable medio.</p>
+<div id="cell-fig-curva-oferta-empresa" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-curva-oferta-empresa" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-curva-oferta-empresa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mercados-competitivos_files/figure-html/fig-curva-oferta-empresa-output-1.png" width="644" height="539" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-curva-oferta-empresa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.4: Curva de oferta de la empresa y niveles de beneficio
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="la-curva-de-oferta-del-mercado-a-corto-plazo" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="la-curva-de-oferta-del-mercado-a-corto-plazo"><span class="header-section-number">4.6</span> La curva de oferta del mercado a corto plazo</h2>
+<p>La <strong>curva de oferta del mercado</strong> a corto plazo se obtiene como la <strong>suma de las ofertas individuales</strong> de las empresas que producen ese bien.</p>
+<p>Supongamos una misma tecnología de producción y, por tanto, la misma curva de <span class="math inline">\(CMg\)</span> y la misma curva de oferta. Si conocemos una de las curvas individuales, se puede conocer la curva de mercado multiplicando las cantidades ofrecidas por una empresa por el número de empresas. En la tabla a continuación se presenta un ejemplo en el que existen 2000 empresas con la misma tecnología que la empresa <span class="math inline">\(i\)</span>.</p>
+<div id="tbl-oferta-mercado-corto-plazo" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-oferta-mercado-corto-plazo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;4.2: Oferta de mercado a corto plazo con 2000 empresas idénticas.
+</figcaption>
+<div aria-describedby="tbl-oferta-mercado-corto-plazo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Precio (miles de euros)</th>
+<th style="text-align: right;">Oferta de la empresa <span class="math inline">\(i\)</span> (toneladas de helado)</th>
+<th style="text-align: right;">Oferta de mercado (toneladas de helado)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0\cdot 2000 = 0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(2\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0\cdot 2000 = 0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(3\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(20\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(20\cdot 2000 = 40\ 000\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(4\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(25\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(25\cdot 2000 = 50\ 000\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(5\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(30\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(30\cdot 2000 = 60\ 000\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(6\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(35\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(35\cdot 2000 = 70\ 000\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(7\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(40\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(40\cdot 2000 = 80\ 000\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="el-excedente-de-consumidores-y-productores" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="el-excedente-de-consumidores-y-productores"><span class="header-section-number">4.7</span> El excedente de consumidores y productores</h2>
+<p>El <strong>excedente</strong> mide la diferencia entre lo que un agente está <strong>dispuesto a dar o recibir</strong> en el mercado y lo que <strong>realmente da o recibe</strong>. Se mide en unidades monetarias.</p>
+<section id="excedente-del-consumidor" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="excedente-del-consumidor"><span class="header-section-number">4.7.1</span> Excedente del consumidor</h3>
+<p>El <strong>excedente del consumidor</strong> (<span class="math inline">\(ec\)</span>) es la diferencia entre la cantidad de dinero que el consumidor está dispuesto a pagar y la que realmente paga:</p>
+<p><span class="math display">\[
+ec=\text{disposición a pagar}-\text{precio pagado}
+\]</span></p>
+<p>Es una medida de <strong>bienestar</strong> o <strong>satisfacción</strong> del consumidor. Será positivo o cero, pero nunca será negativo.</p>
+<p>Por ejemplo, consideremos el caso de Juanito. Juanito es un amante de las empanadas y está dispuesto a pagar hasta 10 euros por una. Al ir a la tienda, descubre que cuestan solo 5 euros. Juanito tiene un “extra” de 5 euros de satisfacción en comparación con lo que pagó. Ese “extra” es lo que llamamos <strong>excedente del consumidor</strong>.</p>
+</section>
+<section id="excedente-del-productor" class="level3" data-number="4.7.2">
+<h3 data-number="4.7.2" class="anchored" data-anchor-id="excedente-del-productor"><span class="header-section-number">4.7.2</span> Excedente del productor</h3>
+<p>El <strong>excedente del productor</strong> (<span class="math inline">\(ep\)</span>) es la <strong>diferencia</strong> entre el ingreso que el vendedor obtiene por esa unidad, es decir, el <strong>precio</strong>, y lo que cuesta producir esa unidad en términos incrementales, es decir, el <strong>coste marginal</strong>.</p>
+<p>El excedente del productor coincide con el <strong>beneficio marginal</strong>, que es el incremento del beneficio que proporciona esa unidad.</p>
+<p>El excedente del productor será positivo si el precio es superior al coste marginal, o será cero, pero nunca producirá una unidad cuyo coste marginal sea superior al precio que le pagan.</p>
+<p>Consideremos un ejemplo numérico. Un fabricante observa que puede vender sus productos a 10 euros y que la unidad 450 tiene un coste marginal de producción de 7 euros. El <span class="math inline">\(ep\)</span> por la unidad 450 será 10 <span class="math inline">\(-\)</span> 7 <span class="math inline">\(=\)</span> 3 euros.</p>
+</section>
+</section>
+<section id="la-eficiencia-del-equilibrio-competitivo" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="la-eficiencia-del-equilibrio-competitivo"><span class="header-section-number">4.8</span> La eficiencia del equilibrio competitivo</h2>
+<p>El <strong>excedente total</strong> (<span class="math inline">\(et\)</span>) es la suma del excedente del consumidor y del productor:</p>
+<p><span class="math display">\[
+et=ec+ep
+\]</span></p>
+<p>Recordemos que el excedente del consumidor es la disposición a pagar menos el precio pagado, y el excedente del productor es el precio cobrado menos el coste marginal. Por definición, el precio pagado es igual al precio cobrado. Por tanto:</p>
+<p><span class="math display">\[
+et=ec+ep
+=\text{disposición a pagar}-\text{precio}+\text{precio}-\text{coste marginal}
+\]</span></p>
+<p><span class="math display">\[
+et=\text{disposición a pagar}-\text{coste marginal}
+\]</span></p>
+<p>En el mercado libre con competencia perfecta, el excedente total es mayor que:</p>
+<ul>
+<li>En un mercado intervenido por el sector público, a no ser que existan “fallos de mercado”.</li>
+<li>En un mercado con competencia imperfecta.</li>
+</ul>
+<p>Decimos que existe <strong>eficiencia económica</strong> cuando el excedente total es el máximo posible. Al pasar de la libre competencia perfecta a otra situación alternativa, se produce una disminución del excedente total. Esa disminución se denomina <strong>pérdida irrecuperable de eficiencia</strong>.</p>
+<p>Los economistas suelen usar los conceptos de <strong>excedente total</strong> y <strong>eficiencia económica</strong> para emitir juicios de valor. Se dice que un sistema de asignación que da lugar a un mayor excedente total es mejor o más deseable que otros sistemas.</p>
+<p>Cuando se emiten <strong>juicios de valor</strong>, se trata sobre <em>lo que debe ser</em>: recomendaciones de política. En este caso, se está haciendo <strong>economía normativa</strong>.</p>
+<p>Para poder establecer juicios normativos, la <strong>economía del bienestar</strong> estudia el efecto de la asignación de los recursos sobre el bienestar de individuos y empresas.</p>
+<p>Cuando <strong>no</strong> se emiten juicios de valor, se trata sobre <em>lo que es</em>. En este caso, se está haciendo <strong>economía positiva</strong>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./produccion.html" class="pagination-link" aria-label="La empresa: producción, costes y beneficio">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La empresa: producción, costes y beneficio</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./poder-de-mercado.html" class="pagination-link" aria-label="Poder de mercado">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Poder de mercado</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
