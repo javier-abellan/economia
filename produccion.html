@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./mercados-competitivos.html" rel="next">
+<link href="./references.html" rel="next">
 <link href="./mercado.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -170,18 +170,6 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mercados-competitivos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mercados competitivos</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./poder-de-mercado.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Poder de mercado</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Referencias</span></a>
   </div>
@@ -260,7 +248,7 @@ B^o = IT - CT
 <p><span class="math display">\[
 \text{Ingreso total }(IT) = \text{Precio del producto }(P) \cdot \text{Cantidad vendida }(X)
 \]</span></p>
-<p>El ingreso de la empresa —y, por tanto, también su beneficio— depende, pues, del nivel de producción de la empresa. Cómo evoluciona el ingreso al variar la producción depende del tipo de mercado en el que actúa la empresa. En el <a href="mercados-competitivos.html" class="quarto-xref"><span>Capítulo 4</span></a> analizaremos el caso de la empresa que actúa en un mercado con competencia perfecta, mientras que en el <a href="poder-de-mercado.html" class="quarto-xref"><span>Capítulo 5</span></a> analizaremos el caso de la empresa que actúa en mercados no competitivos. Por el momento, dedicaremos el presente capítulo al análisis de la producción y de los costes. Pero antes resulta obligado establecer una importante distinción entre dos concepciones diferentes del beneficio.</p>
+<p>El ingreso de la empresa —y, por tanto, también su beneficio— depende, pues, del nivel de producción de la empresa. Cómo evoluciona el ingreso al variar la producción depende del tipo de mercado en el que actúa la empresa. En el <span class="quarto-unresolved-ref">?sec-mercados-competitivos</span> analizaremos el caso de la empresa que actúa en un mercado con competencia perfecta, mientras que en el <span class="quarto-unresolved-ref">?sec-poder-de-mercado</span> analizaremos el caso de la empresa que actúa en mercados no competitivos. Por el momento, dedicaremos el presente capítulo al análisis de la producción y de los costes. Pero antes resulta obligado establecer una importante distinción entre dos concepciones diferentes del beneficio.</p>
 </section>
 <section id="beneficio-contable-y-beneficio-económico" class="level3" data-number="3.1.3">
 <h3 data-number="3.1.3" class="anchored" data-anchor-id="beneficio-contable-y-beneficio-económico"><span class="header-section-number">3.1.3</span> Beneficio contable y beneficio económico</h3>
@@ -555,17 +543,21 @@ Tabla&nbsp;3.2: Productividad total del trabajo <span class="math inline">\((PT_
 <p>En la tabla se observa que los incrementos de producción son cada vez menores; a esto se le denomina <strong>ley de rendimientos decrecientes</strong>.</p>
 <section id="productividad-total-media-y-marginal" class="level4" data-number="3.2.4.1">
 <h4 data-number="3.2.4.1" class="anchored" data-anchor-id="productividad-total-media-y-marginal"><span class="header-section-number">3.2.4.1</span> Productividad total, media y marginal</h4>
-<p><strong>Productividad total del trabajo <span class="math inline">\((PT_L)\)</span></strong>: es el producto total obtenido para cada nivel de trabajo, siendo el capital fijo. Si se tiene la función de producción, solo hay que sustituir el capital por su valor constante <span class="math inline">\((\bar K)\)</span>:</p>
+<p><strong>Productividad total del trabajo <span class="math inline">\((PT_L)\)</span></strong>: es el producto total obtenido para cada nivel de trabajo, siendo el capital fijo. Si se conoce la función de producción, para obtener la función de productividad total del trabajo solo hay que sustituir la variable capital <span class="math inline">\((K)\)</span> por su valor constante <span class="math inline">\((\bar K)\)</span>:</p>
 <p><span class="math display">\[
 PT_L = F(\bar K, L)
 \]</span></p>
-<p><strong>Productividad media del trabajo <span class="math inline">\((PMe_L)\)</span></strong>: es el producto medio obtenido por unidad de trabajo, siendo <span class="math inline">\(K\)</span> constante.</p>
+<p><strong>Productividad media del trabajo <span class="math inline">\((PMe_L)\)</span></strong>: es el producto medio obtenido por unidad de trabajo, siendo <span class="math inline">\(K\)</span> constante. Si se conoce la función de productividad total del trabajo, para obtener la función de productividad media del trabajo solo hay que dividir la función de productividad total del trabajo entre el número de unidades de trabajo <span class="math inline">\((L)\)</span>:</p>
 <p><span class="math display">\[
 PMe_L = \frac{PT_L}{\text{Número de unidades de trabajo }(L)}
 \]</span></p>
 <p><strong>Productividad marginal del trabajo <span class="math inline">\((PMg_L)\)</span></strong>: es la variación que experimenta el producto total ante una variación unitaria del trabajo, siendo <span class="math inline">\(K\)</span> constante.</p>
 <p><span class="math display">\[
 PMg_L = \frac{\Delta PT_L}{\Delta \text{Número de unidades de trabajo }(L)}
+\]</span></p>
+<p>La función de productividad marginal del trabajo se define como la derivada de la función de productividad total del trabajo respecto al trabajo <span class="math inline">\((L)\)</span>:</p>
+<p><span class="math display">\[
+PMg_L = \frac{d PT_LX}{d L}
 \]</span></p>
 <table class="caption-top table">
 <colgroup>
@@ -719,7 +711,7 @@ PMg_L = \frac{\Delta PT_L}{\Delta \text{Número de unidades de trabajo }(L)}
 </div>
 </div>
 <div class="cell-output cell-output-display">
-<div id="fig-productividad-2" class="quarto-float quarto-figure quarto-figure-center anchored" width="587" height="356">
+<div id="fig-productividad-2" class="quarto-float quarto-figure quarto-figure-center anchored" height="356" width="587">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-productividad-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="produccion_files/figure-html/fig-productividad-output-2.png" id="fig-productividad-2" data-ref-parent="fig-productividad" width="587" height="356" class="figure-img">
@@ -1338,8 +1330,8 @@ Figura&nbsp;3.5: Relación entre coste marginal y costes medios
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./mercados-competitivos.html" class="pagination-link" aria-label="Mercados competitivos">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mercados competitivos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="Referencias">
+        <span class="nav-page-text">Referencias</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
