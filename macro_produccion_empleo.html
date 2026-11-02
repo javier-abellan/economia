@@ -212,9 +212,8 @@ window.Quarto = {
   </ul></li>
   <li><a href="#empleo" id="toc-empleo" class="nav-link" data-scroll-target="#empleo"><span class="header-section-number">6.2</span> Empleo</a>
   <ul class="collapse">
-  <li><a href="#por-qué-se-presta-atención-al-empleo-y-al-desempleo" id="toc-por-qué-se-presta-atención-al-empleo-y-al-desempleo" class="nav-link" data-scroll-target="#por-qué-se-presta-atención-al-empleo-y-al-desempleo"><span class="header-section-number">6.2.1</span> ¿Por qué se presta atención al empleo y al desempleo?</a></li>
-  <li><a href="#principales-magnitudes" id="toc-principales-magnitudes" class="nav-link" data-scroll-target="#principales-magnitudes"><span class="header-section-number">6.2.2</span> Principales magnitudes</a></li>
-  <li><a href="#cómo-se-miden-los-desempleados" id="toc-cómo-se-miden-los-desempleados" class="nav-link" data-scroll-target="#cómo-se-miden-los-desempleados"><span class="header-section-number">6.2.3</span> Cómo se miden los desempleados</a></li>
+  <li><a href="#principales-magnitudes" id="toc-principales-magnitudes" class="nav-link" data-scroll-target="#principales-magnitudes"><span class="header-section-number">6.2.1</span> Principales magnitudes</a></li>
+  <li><a href="#cómo-se-miden-los-desempleados" id="toc-cómo-se-miden-los-desempleados" class="nav-link" data-scroll-target="#cómo-se-miden-los-desempleados"><span class="header-section-number">6.2.2</span> Cómo se miden los desempleados</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -387,7 +386,7 @@ window.Quarto = {
 <p>El PIB puede medirse como el gasto total (agregado) que se realiza en un país. Intervienen las familias (<strong>consumo</strong>), las empresas (<strong>inversión</strong>), el Estado (<strong>gasto público</strong>) y el sector exterior (<strong>exportaciones netas</strong>).</p>
 <p><span class="math display">\[PIB = C + I + G + XN\]</span></p>
 <p>Aquí, <span class="math inline">\(G\)</span> comprende <strong>consumo público e inversión pública</strong>. Si se agrupan la inversión privada y la pública, se obtiene la <strong>formación bruta de capital</strong>:</p>
-<p><span class="math display">\[PIB = \text{Consumo privado} + \text{Consumo público} + \text{Formación bruta de capital} + \text{Exportaciones netas}\]</span></p>
+<p><span class="math display">\[PIB = \text{Consumo privado} + \text{Consumo público} + \text{Formación bruta de capital} + XN\]</span></p>
 </section>
 <section id="enfoque-de-las-rentas-o-de-los-ingresos" class="level4" data-number="6.1.3.3">
 <h4 data-number="6.1.3.3" class="anchored" data-anchor-id="enfoque-de-las-rentas-o-de-los-ingresos"><span class="header-section-number">6.1.3.3</span> Enfoque de las rentas (o de los ingresos)</h4>
@@ -469,51 +468,54 @@ PNN = PNB - \text{Reposición} = PNB - \text{Depreciación}
 </section>
 <section id="renta-nacional-rn" class="level4" data-number="6.1.5.4">
 <h4 data-number="6.1.5.4" class="anchored" data-anchor-id="renta-nacional-rn"><span class="header-section-number">6.1.5.4</span> Renta nacional (RN)</h4>
-<p><strong>Renta Nacional (RN):</strong> mide la suma total de todas las rentas generadas a favor de los poseedores de los factores productivos por su aportación al proceso productivo.</p>
+<p>La <strong>renta nacional (RN)</strong> mide la suma total de todas las rentas generadas a favor de los poseedores de los factores productivos por su aportación al proceso productivo. El paso de magnitudes a precios de mercado a magnitudes a coste de factores implica descontar los impuestos indirectos y añadir las subvenciones (pagos que perciben las empresas del Estado).</p>
+<p><span class="math display">\[
+RN = PNN - \text{impuestos indirectos} + \text{subvenciones}
+\]</span></p>
 </section>
 <section id="renta-personal-rp" class="level4" data-number="6.1.5.5">
 <h4 data-number="6.1.5.5" class="anchored" data-anchor-id="renta-personal-rp"><span class="header-section-number">6.1.5.5</span> Renta personal (RP)</h4>
-<p><strong>Renta Personal (RP):</strong> suma de las rentas que reciben las personas.</p>
+<p>La <strong>renta personal (RP):</strong> suma de las rentas que reciben las personas. Se obtiene restando a la renta nacional los beneficios no distribuidos (BND), los impuestos sobre beneficios (TSB) y los impuestos de Seguridad Social (TSS), y sumando las transferencias netas del Estado (TNE) y los intereses de deuda pública (IDP):</p>
+<p><span class="math display">\[
+RP = RN - BND - TSB - TSS + TNE + IDP
+\]</span></p>
 </section>
 <section id="renta-personal-disponible-rpd" class="level4" data-number="6.1.5.6">
 <h4 data-number="6.1.5.6" class="anchored" data-anchor-id="renta-personal-disponible-rpd"><span class="header-section-number">6.1.5.6</span> Renta personal disponible (RPD)</h4>
-<p><strong>Renta Personal Disponible (RPD):</strong> es la renta personal menos los impuestos directos sobre las personas (TDP). Se puede usar para consumo o ahorro privados.</p>
+<p>La <strong>renta personal disponible (RPD)</strong> es igual a la renta personal menos los impuestos directos sobre las personas (TDP).</p>
+<p><span class="math display">\[
+RPD = RP - TDP
+\]</span></p>
+<p>Esta es la parte de la renta personal que los individuos pueden destinar a consumo o ahorro privados.</p>
+<p><span class="math display">\[
+RPD = \text{consumo privado} - \text{ahorro privado}
+\]</span></p>
 </section>
 </section>
 </section>
 <section id="empleo" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="empleo"><span class="header-section-number">6.2</span> Empleo</h2>
-<section id="por-qué-se-presta-atención-al-empleo-y-al-desempleo" class="level3" data-number="6.2.1">
-<h3 data-number="6.2.1" class="anchored" data-anchor-id="por-qué-se-presta-atención-al-empleo-y-al-desempleo"><span class="header-section-number">6.2.1</span> ¿Por qué se presta atención al empleo y al desempleo?</h3>
-<p>El desempleo tiene importantes costes.</p>
-<p><strong>A nivel individual:</strong></p>
-<ul>
-<li>Efectos en la salud física y mental.</li>
-<li>Reduce el bienestar individual.</li>
-</ul>
-<p><strong>A nivel social:</strong></p>
-<ul>
-<li>Puede generar tensiones sociales (desigualdad).</li>
-<li>Implica recursos sin utilizar y menor crecimiento económico.</li>
-</ul>
+<p>Junto con la producción agregada, el nivel de empleo es otra de las macromagnitudes de especial interés. Esto se debe en buena medida a que el desempleo tiene importantes costes.</p>
+<p>A nivel individual, el desempleo tiene efectos en la salud física y mental, y reduce el bienestar individual.</p>
+<p>A nivel social, el desempleo puede generar tensiones sociales (desigualdad) e implica que existen recursos sin utilizar, lo que reduce el crecimiento económico.</p>
+<section id="principales-magnitudes" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="principales-magnitudes"><span class="header-section-number">6.2.1</span> Principales magnitudes</h3>
+<section id="clasificación-de-la-población-según-su-relación-con-el-mundo-laboral" class="level4" data-number="6.2.1.1">
+<h4 data-number="6.2.1.1" class="anchored" data-anchor-id="clasificación-de-la-población-según-su-relación-con-el-mundo-laboral"><span class="header-section-number">6.2.1.1</span> Clasificación de la población según su relación con el mundo laboral</h4>
+<p>La población de un país se clasifica según su relación con el mundo laboral. La situación en relación con la actividad económica se basa en criterios de la Organización Internacional del Trabajo (OIT).</p>
+<p>Con base en los criterios de la OIT, la población se divide en personas <strong>en edad de trabajar</strong> y <strong>en edad de no trabajar</strong>. Entre las primeras se distinguen <strong>activas</strong> e <strong>inactivas</strong>. La población activa comprende <strong>ocupados</strong> y <strong>desempleados</strong>; los ocupados pueden trabajar por <strong>cuenta propia</strong> o <strong>por cuenta ajena</strong>. En España, la edad legal para trabajar es de 16 años.</p>
+<p>flowchart LR A[“Población total”] –&gt; B[“En edad de trabajar”] A –&gt; C[“En edad de no trabajar”] B –&gt; D[“Inactivos”] B –&gt; E[“Activos”] E –&gt; F[“Ocupados”] E –&gt; G[“Desempleados”] F –&gt; H[“Por cuenta propia”] F –&gt; I[“Por cuenta ajena”]</p>
 </section>
-<section id="principales-magnitudes" class="level3" data-number="6.2.2">
-<h3 data-number="6.2.2" class="anchored" data-anchor-id="principales-magnitudes"><span class="header-section-number">6.2.2</span> Principales magnitudes</h3>
-<section id="clasificación-de-la-población-según-su-relación-con-el-mundo-laboral" class="level4" data-number="6.2.2.1">
-<h4 data-number="6.2.2.1" class="anchored" data-anchor-id="clasificación-de-la-población-según-su-relación-con-el-mundo-laboral"><span class="header-section-number">6.2.2.1</span> Clasificación de la población según su relación con el mundo laboral</h4>
-<p>La población de un país se clasifica según su relación con el mundo laboral. La situación en relación con la actividad económica se basa en criterios de la OIT.</p>
-<p>En España, la edad legal para poder trabajar es de 16 años.</p>
-</section>
-<section id="tasa-de-actividad" class="level4" data-number="6.2.2.2">
-<h4 data-number="6.2.2.2" class="anchored" data-anchor-id="tasa-de-actividad"><span class="header-section-number">6.2.2.2</span> Tasa de actividad</h4>
+<section id="tasa-de-actividad" class="level4" data-number="6.2.1.2">
+<h4 data-number="6.2.1.2" class="anchored" data-anchor-id="tasa-de-actividad"><span class="header-section-number">6.2.1.2</span> Tasa de actividad</h4>
 <p><strong>Tasa de actividad:</strong> cociente entre la población activa y la población en edad de trabajar.</p>
 <p><span class="math display">\[
 \text{Tasa de actividad}
 =\frac{\text{Poblacion activa}}{\text{Poblacion en edad de trabajar}}
 \]</span></p>
 </section>
-<section id="tasa-de-desempleo" class="level4" data-number="6.2.2.3">
-<h4 data-number="6.2.2.3" class="anchored" data-anchor-id="tasa-de-desempleo"><span class="header-section-number">6.2.2.3</span> Tasa de desempleo</h4>
+<section id="tasa-de-desempleo" class="level4" data-number="6.2.1.3">
+<h4 data-number="6.2.1.3" class="anchored" data-anchor-id="tasa-de-desempleo"><span class="header-section-number">6.2.1.3</span> Tasa de desempleo</h4>
 <p><strong>Tasa de desempleo:</strong> cociente entre los desempleados y los activos; es decir, la proporción de activos que buscan pero no encuentran un puesto de trabajo.</p>
 <p><span class="math display">\[
 \text{Tasa de desempleo}
@@ -521,10 +523,10 @@ PNN = PNB - \text{Reposición} = PNB - \text{Depreciación}
 \]</span></p>
 </section>
 </section>
-<section id="cómo-se-miden-los-desempleados" class="level3" data-number="6.2.3">
-<h3 data-number="6.2.3" class="anchored" data-anchor-id="cómo-se-miden-los-desempleados"><span class="header-section-number">6.2.3</span> Cómo se miden los desempleados</h3>
-<section id="desempleo-medido-mediante-una-encuesta-epa" class="level4" data-number="6.2.3.1">
-<h4 data-number="6.2.3.1" class="anchored" data-anchor-id="desempleo-medido-mediante-una-encuesta-epa"><span class="header-section-number">6.2.3.1</span> Desempleo medido mediante una encuesta: EPA</h4>
+<section id="cómo-se-miden-los-desempleados" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="cómo-se-miden-los-desempleados"><span class="header-section-number">6.2.2</span> Cómo se miden los desempleados</h3>
+<section id="desempleo-medido-mediante-una-encuesta-epa" class="level4" data-number="6.2.2.1">
+<h4 data-number="6.2.2.1" class="anchored" data-anchor-id="desempleo-medido-mediante-una-encuesta-epa"><span class="header-section-number">6.2.2.1</span> Desempleo medido mediante una encuesta: EPA</h4>
 <p>El desempleo medido con una encuesta —en España, la <strong>Encuesta de Población Activa (EPA)</strong>— computa como desempleadas a las personas que:</p>
 <ul>
 <li>No hayan tenido un empleo por cuenta ajena ni por cuenta propia durante la semana de referencia.</li>
@@ -532,8 +534,8 @@ PNN = PNB - \text{Reposición} = PNB - \text{Depreciación}
 <li>Hayan tomado medidas concretas para buscar un trabajo por cuenta ajena o hayan hecho gestiones para establecerse por su cuenta durante el mes precedente.</li>
 </ul>
 </section>
-<section id="desempleo-registrado-sepe" class="level4" data-number="6.2.3.2">
-<h4 data-number="6.2.3.2" class="anchored" data-anchor-id="desempleo-registrado-sepe"><span class="header-section-number">6.2.3.2</span> Desempleo registrado: SEPE</h4>
+<section id="desempleo-registrado-sepe" class="level4" data-number="6.2.2.2">
+<h4 data-number="6.2.2.2" class="anchored" data-anchor-id="desempleo-registrado-sepe"><span class="header-section-number">6.2.2.2</span> Desempleo registrado: SEPE</h4>
 <p>El <strong>desempleo registrado</strong> es el total de demandas de empleo en alta —en España, en el Servicio Público de Empleo Estatal (SEPE)— existentes el último día de cada mes, excluyendo ciertas situaciones.</p>
 <p>La metodología estadística es diferente:</p>
 <ul>
@@ -541,8 +543,8 @@ PNN = PNB - \text{Reposición} = PNB - \text{Depreciación}
 <li>El desempleo registrado del SEPE es un registro administrativo.</li>
 </ul>
 </section>
-<section id="paro-estimado-epa-cómo-se-mide" class="level4" data-number="6.2.3.3">
-<h4 data-number="6.2.3.3" class="anchored" data-anchor-id="paro-estimado-epa-cómo-se-mide"><span class="header-section-number">6.2.3.3</span> Paro estimado (EPA): ¿cómo se mide?</h4>
+<section id="paro-estimado-epa-cómo-se-mide" class="level4" data-number="6.2.2.3">
+<h4 data-number="6.2.2.3" class="anchored" data-anchor-id="paro-estimado-epa-cómo-se-mide"><span class="header-section-number">6.2.2.3</span> Paro estimado (EPA): ¿cómo se mide?</h4>
 <p>La definición operativa de búsqueda activa de trabajo incluye:</p>
 <ul>
 <li>Oficina pública de empleo.</li>
@@ -556,8 +558,8 @@ PNN = PNB - \text{Reposición} = PNB - \text{Depreciación}
 </ul>
 <p><strong>No basta solo con inscribirse.</strong></p>
 </section>
-<section id="paro-registrado-sepe-cómo-se-mide" class="level4" data-number="6.2.3.4">
-<h4 data-number="6.2.3.4" class="anchored" data-anchor-id="paro-registrado-sepe-cómo-se-mide"><span class="header-section-number">6.2.3.4</span> Paro registrado (SEPE): ¿cómo se mide?</h4>
+<section id="paro-registrado-sepe-cómo-se-mide" class="level4" data-number="6.2.2.4">
+<h4 data-number="6.2.2.4" class="anchored" data-anchor-id="paro-registrado-sepe-cómo-se-mide"><span class="header-section-number">6.2.2.4</span> Paro registrado (SEPE): ¿cómo se mide?</h4>
 <p>Se consideran las demandas de empleo registradas el último día de cada mes, excluyendo ciertas situaciones:</p>
 <ul>
 <li>Pluriempleo.</li>
