@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Variables y conceptos macroeconómicos (II): Precios – Economía: una introducción</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./macro_produccion_empleo.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./macro_precios.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Variables y conceptos macroeconómicos (II): Precios</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./portada.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./portada.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Economía: una introducción</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contenidos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Decisiones económicas</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mercado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Demanda y oferta</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./produccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Producción y costes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mercados-competitivos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mercados competitivos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./poder-de-mercado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Poder de mercado</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_produccion_empleo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Macromagnitudes (I): producción y empleo</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_precios.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Variables y conceptos macroeconómicos (II): Precios</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referencias</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#medición-del-nivel-general-de-precios" id="toc-medición-del-nivel-general-de-precios" class="nav-link active" data-scroll-target="#medición-del-nivel-general-de-precios">Medición del nivel general de precios</a>
+  <ul class="collapse">
+  <li><a href="#el-índice-de-precios-de-consumo-ipc" id="toc-el-índice-de-precios-de-consumo-ipc" class="nav-link" data-scroll-target="#el-índice-de-precios-de-consumo-ipc">El índice de precios de consumo (IPC)</a>
+  <ul class="collapse">
+  <li><a href="#índice-de-laspeyres-convencional" id="toc-índice-de-laspeyres-convencional" class="nav-link" data-scroll-target="#índice-de-laspeyres-convencional">Índice de Laspeyres convencional</a></li>
+  <li><a href="#ejemplo-de-cálculo" id="toc-ejemplo-de-cálculo" class="nav-link" data-scroll-target="#ejemplo-de-cálculo">Ejemplo de cálculo</a></li>
+  <li><a href="#debilidades-del-índice-y-laspeyres-encadenado" id="toc-debilidades-del-índice-y-laspeyres-encadenado" class="nav-link" data-scroll-target="#debilidades-del-índice-y-laspeyres-encadenado">Debilidades del índice y Laspeyres encadenado</a></li>
+  <li><a href="#ipc-en-españa" id="toc-ipc-en-españa" class="nav-link" data-scroll-target="#ipc-en-españa">IPC en España</a></li>
+  </ul></li>
+  <li><a href="#el-deflactor-del-pib" id="toc-el-deflactor-del-pib" class="nav-link" data-scroll-target="#el-deflactor-del-pib">El deflactor del PIB</a>
+  <ul class="collapse">
+  <li><a href="#diferencias-entre-el-ipc-y-el-deflactor-del-pib" id="toc-diferencias-entre-el-ipc-y-el-deflactor-del-pib" class="nav-link" data-scroll-target="#diferencias-entre-el-ipc-y-el-deflactor-del-pib">Diferencias entre el IPC y el deflactor del PIB</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#variación-de-precios-y-poder-adquisitivo" id="toc-variación-de-precios-y-poder-adquisitivo" class="nav-link" data-scroll-target="#variación-de-precios-y-poder-adquisitivo">Variación de precios y poder adquisitivo</a>
+  <ul class="collapse">
+  <li><a href="#ejemplo-salario-nominal-y-salario-real" id="toc-ejemplo-salario-nominal-y-salario-real" class="nav-link" data-scroll-target="#ejemplo-salario-nominal-y-salario-real">Ejemplo: salario nominal y salario real</a></li>
+  <li><a href="#salarios-expresados-en-euros-de-otro-año" id="toc-salarios-expresados-en-euros-de-otro-año" class="nav-link" data-scroll-target="#salarios-expresados-en-euros-de-otro-año">Salarios expresados en euros de otro año</a></li>
+  </ul></li>
+  <li><a href="#la-inflación" id="toc-la-inflación" class="nav-link" data-scroll-target="#la-inflación">La inflación</a>
+  <ul class="collapse">
+  <li><a href="#la-tasa-de-inflación" id="toc-la-tasa-de-inflación" class="nav-link" data-scroll-target="#la-tasa-de-inflación">La tasa de inflación</a></li>
+  <li><a href="#los-efectos-de-la-inflación" id="toc-los-efectos-de-la-inflación" class="nav-link" data-scroll-target="#los-efectos-de-la-inflación">Los efectos de la inflación</a>
+  <ul class="collapse">
+  <li><a href="#inflación-y-operaciones-de-préstamo" id="toc-inflación-y-operaciones-de-préstamo" class="nav-link" data-scroll-target="#inflación-y-operaciones-de-préstamo">Inflación y operaciones de préstamo</a></li>
+  <li><a href="#hiperinflación" id="toc-hiperinflación" class="nav-link" data-scroll-target="#hiperinflación">Hiperinflación</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Variables y conceptos macroeconómicos (II): Precios</span></h1>
+<p class="subtitle lead">Introducción a la Economía · Tema 7</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="medición-del-nivel-general-de-precios" class="level1">
+<h1>Medición del nivel general de precios</h1>
+<p>El <strong>nivel general de precios</strong> (NGP) es una medida que representa a los diversos bienes y servicios de un país. Dado que los <strong>bienes</strong> son <strong>múltiples</strong> y <strong>variados</strong>, es necesario desarrollar <strong>métodos de agregación</strong> de sus precios.</p>
+<p>¿Cuáles son las dos medidas más importantes del NGP?</p>
+<ul>
+<li>El <strong>índice de precios de consumo</strong> (<strong>IPC</strong>).</li>
+<li>El <strong>deflactor</strong> del producto interior bruto.</li>
+</ul>
+<p>La <strong>tasa de variación del nivel general de precios</strong> se denomina <strong>tasa de inflación</strong>.</p>
+<section id="el-índice-de-precios-de-consumo-ipc" class="level2">
+<h2 class="anchored" data-anchor-id="el-índice-de-precios-de-consumo-ipc">El índice de precios de consumo (IPC)</h2>
+<p>El <strong>índice de precios de consumo</strong> (<strong>IPC</strong>) mide los precios totales de una cesta de bienes y servicios de consumo final que compran las familias de un país. No incluye bienes de capital.</p>
+<p>Consideremos los precios de la <a href="#tbl-precios-cesta" class="quarto-xref">Tabla&nbsp;<span>8.1</span></a>.</p>
+<div id="tbl-precios-cesta" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-precios-cesta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;8.1: Precios de los bienes y servicios de la cesta.
+</figcaption>
+<div aria-describedby="tbl-precios-cesta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Bien o servicio</th>
+<th style="text-align: right;">Año 0 (31 de diciembre)</th>
+<th style="text-align: right;">Año 1 (31 de diciembre)</th>
+<th style="text-align: right;">Año 2 (31 de diciembre)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: right;">2 €</td>
+<td style="text-align: right;">1,75 €</td>
+<td style="text-align: right;">2,25 €</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Vestido</td>
+<td style="text-align: right;">50 €</td>
+<td style="text-align: right;">60 €</td>
+<td style="text-align: right;">55 €</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vivienda</td>
+<td style="text-align: right;">300 €</td>
+<td style="text-align: right;">400 €</td>
+<td style="text-align: right;">500 €</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ocio</td>
+<td style="text-align: right;">4 €</td>
+<td style="text-align: right;">6 €</td>
+<td style="text-align: right;">6 €</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>¿Calculamos la media aritmética o una media ponderada? El IPC se <strong>calcula como su media ponderada</strong>, a través del <strong>índice de Laspeyres</strong> convencional.</p>
+<section id="índice-de-laspeyres-convencional" class="level3">
+<h3 class="anchored" data-anchor-id="índice-de-laspeyres-convencional">Índice de Laspeyres convencional</h3>
+<p>Para calcular este índice se siguen los siguientes pasos:</p>
+<ol type="1">
+<li>Se toma un <strong>año base</strong> y se mide el <strong>porcentaje del gasto</strong> de una familia «media» en <strong>cada bien <span class="math inline">\(i\)</span> de todos los <span class="math inline">\(n\)</span> bienes</strong>, <span class="math inline">\(g_i^0\)</span>. Esos porcentajes se utilizarán como ponderaciones.</li>
+<li>Se mide el <strong>precio de cada bien <span class="math inline">\(i\)</span></strong> en <strong>cada año <span class="math inline">\(t\)</span></strong>, incluido el año base (<span class="math inline">\(t=0\)</span>).</li>
+<li>Se calcula, para cada producto, el <strong>cociente</strong> entre el <strong>precio en el año <span class="math inline">\(t\)</span></strong> y el <strong>precio en el año base</strong>. El IPC es la media ponderada de estos cocientes.</li>
+</ol>
+<p>La expresión del índice es:</p>
+<p><span class="math display">\[
+\begin{aligned}
+IPC_t &amp;= g_1^0\frac{P_1^t}{P_1^0}
+       + g_2^0\frac{P_2^t}{P_2^0}
+       + g_3^0\frac{P_3^t}{P_3^0}
+       + \cdots + g_n^0\frac{P_n^t}{P_n^0} \\
+      &amp;= \sum_{i=1}^{n}g_i^0\frac{P_i^t}{P_i^0}.
+\end{aligned}
+\]</span></p>
+<p>En esta expresión:</p>
+<ul>
+<li><span class="math inline">\(IPC_t\)</span> es el valor del IPC en el año <span class="math inline">\(t\)</span>.</li>
+<li><span class="math inline">\(P_i^t\)</span> es el precio del bien <span class="math inline">\(i\)</span> en el año <span class="math inline">\(t\)</span>.</li>
+<li><span class="math inline">\(n\)</span> es el número de bienes en la cesta de la compra.</li>
+<li><span class="math inline">\(g_i^0\)</span> es el porcentaje del gasto de la familia «media» en el bien <span class="math inline">\(i\)</span> en el año base.</li>
+</ul>
+</section>
+<section id="ejemplo-de-cálculo" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplo-de-cálculo">Ejemplo de cálculo</h3>
+<p>Utilizamos los precios de la <a href="#tbl-precios-cesta" class="quarto-xref">Tabla&nbsp;<span>8.1</span></a> y los porcentajes de gasto de la <a href="#tbl-ponderaciones-cesta" class="quarto-xref">Tabla&nbsp;<span>8.2</span></a>.</p>
+<div id="tbl-ponderaciones-cesta" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ponderaciones-cesta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;8.2: Ponderaciones de la cesta en el año base.
+</figcaption>
+<div aria-describedby="tbl-ponderaciones-cesta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Bien o servicio</th>
+<th style="text-align: right;">Porcentaje del gasto en el año 0 (base)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: right;">30 %</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Vestido</td>
+<td style="text-align: right;">25 %</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vivienda</td>
+<td style="text-align: right;">35 %</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ocio</td>
+<td style="text-align: right;">10 %</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>TOTAL</strong></td>
+<td style="text-align: right;"><strong>100 %</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Aplicando el índice de Laspeyres convencional a cada año:</p>
+<p><span class="math display">\[
+IPC_0 = 30\frac{2}{2}+25\frac{50}{50}
++35\frac{300}{300}+10\frac{4}{4}=100.
+\]</span></p>
+<p><span class="math display">\[
+IPC_1 = 30\frac{1{,}75}{2}+25\frac{60}{50}
++35\frac{400}{300}+10\frac{6}{4}\approx117{,}9.
+\]</span></p>
+<p><span class="math display">\[
+IPC_2 = 30\frac{2{,}25}{2}+25\frac{55}{50}
++35\frac{500}{300}+10\frac{6}{4}\approx134{,}6.
+\]</span></p>
+<p>¿Qué significan los resultados?</p>
+</section>
+<section id="debilidades-del-índice-y-laspeyres-encadenado" class="level3">
+<h3 class="anchored" data-anchor-id="debilidades-del-índice-y-laspeyres-encadenado">Debilidades del índice y Laspeyres encadenado</h3>
+<p>Las <strong>debilidades del índice de Laspeyres convencional</strong> son:</p>
+<ul>
+<li>Las subidas de precios que son mejoras en la calidad.</li>
+<li>El sesgo de sustitución.</li>
+</ul>
+<p>La <strong>solución al sesgo de sustitución</strong> es el índice de Laspeyres encadenado:</p>
+<p><span class="math display">\[
+\begin{aligned}
+IPC_t ={}&amp; \left(
+g_1^{t-1}\frac{P_1^t}{P_1^{t-1}}
++g_2^{t-1}\frac{P_2^t}{P_2^{t-1}}
++g_3^{t-1}\frac{P_3^t}{P_3^{t-1}}
++\cdots+g_n^{t-1}\frac{P_n^t}{P_n^{t-1}}
+\right)\frac{IPC_{t-1}}{100} \\
+={}&amp; \frac{IPC_{t-1}}{100}
+\sum_{i=1}^{n}g_i^{t-1}\frac{P_i^t}{P_i^{t-1}}.
+\end{aligned}
+\]</span></p>
+<p>En el año base, <span class="math inline">\(IPC_0=100\)</span>. La ponderación <span class="math inline">\(g_i^{t-1}\)</span> es el porcentaje del gasto de la familia media en el bien <span class="math inline">\(i\)</span> en el año <span class="math inline">\(t-1\)</span>.</p>
+</section>
+<section id="ipc-en-españa" class="level3">
+<h3 class="anchored" data-anchor-id="ipc-en-españa">IPC en España</h3>
+<p>Desde 2002, el <strong>Instituto Nacional de Estadística</strong> (<strong>INE</strong>) calcula el IPC utilizando <strong>el índice de Laspeyres encadenado</strong>.</p>
+<p>Los <strong>gastos de los hogares</strong> se obtienen de la <strong>Encuesta de Presupuestos Familiares (EPF)</strong>. La <strong>cesta de bienes</strong> está compuesta por <strong>12 grupos</strong> ECOICOP (<em>European Classification of Individual Consumption by Purpose</em>) con diferentes ponderaciones.</p>
+<p>Enlace incluido en la presentación: <a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&amp;cid=1254736176802&amp;menu=resultados&amp;idp=1254735976607#_tabs-1254736195158">Resultados del IPC en el INE</a>.</p>
+</section>
+</section>
+<section id="el-deflactor-del-pib" class="level2">
+<h2 class="anchored" data-anchor-id="el-deflactor-del-pib">El deflactor del PIB</h2>
+<p>El <strong>deflactor del PIB</strong> es un índice de precios que se obtiene <strong>dividiendo</strong>, para cada año, <strong>el PIB nominal entre el PIB real</strong>:</p>
+<p><span class="math display">\[
+\text{Deflactor del PIB}_t
+=\frac{\text{PIB nominal}_t}{\text{PIB real}_t}\cdot100
+=\frac{\sum_{i=1}^{n}P_i^tq_i^t}
+{\sum_{i=1}^{n}P_i^0q_i^t}\cdot100.
+\]</span></p>
+<p>El denominador es el PIB real del año <span class="math inline">\(t\)</span> con base en el año 0. Multiplicando cada sumando del numerador por <span class="math inline">\(P_i^0/P_i^0\)</span>, se obtiene:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{Deflactor}_t
+&amp;=h_1^t\frac{P_1^t}{P_1^0}
++h_2^t\frac{P_2^t}{P_2^0}
++h_3^t\frac{P_3^t}{P_3^0}
++\cdots+h_n^t\frac{P_n^t}{P_n^0} \\
+&amp;=\sum_{i=1}^{n}h_i^t\frac{P_i^t}{P_i^0},
+\end{aligned}
+\]</span></p>
+<p>donde:</p>
+<p><span class="math display">\[
+h_i^t=\frac{P_i^0q_i^t}{\sum_{i=1}^{n}P_i^0q_i^t}\cdot100.
+\]</span></p>
+<p>El deflactor es equivalente a un <strong>índice de Paasche</strong>, o <strong>ponderado en el año corriente</strong>, a diferencia del índice de Laspeyres, que está ponderado en el año base.</p>
+<section id="diferencias-entre-el-ipc-y-el-deflactor-del-pib" class="level3">
+<h3 class="anchored" data-anchor-id="diferencias-entre-el-ipc-y-el-deflactor-del-pib">Diferencias entre el IPC y el deflactor del PIB</h3>
+<p>El <strong>IPC</strong> es una media ponderada de los precios de los bienes y servicios que se <strong>consumen</strong> en un territorio. El <strong>deflactor del PIB</strong> es una media ponderada de los precios de los bienes y servicios que se <strong>producen</strong> en un territorio.</p>
+<p>La <a href="#tbl-diferencias-indices" class="quarto-xref">Tabla&nbsp;<span>8.3</span></a> recoge dos diferencias entre ambos índices.</p>
+<div id="tbl-diferencias-indices" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-diferencias-indices-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;8.3: Diferencias de cobertura entre el IPC y el deflactor del PIB.
+</figcaption>
+<div aria-describedby="tbl-diferencias-indices-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">¿Incluye estos bienes?</th>
+<th style="text-align: center;">IPC</th>
+<th style="text-align: center;">Deflactor del PIB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Bienes de capital producidos en el interior</td>
+<td style="text-align: center;">NO</td>
+<td style="text-align: center;">SÍ</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bienes de consumo producidos en el exterior</td>
+<td style="text-align: center;">SÍ</td>
+<td style="text-align: center;">NO</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>La misma distinción puede organizarse por tipo de bien y lugar de producción, como en la <a href="#tbl-cobertura-indices" class="quarto-xref">Tabla&nbsp;<span>8.4</span></a>.</p>
+<div id="tbl-cobertura-indices" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cobertura-indices-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;8.4: Índices que incluyen cada tipo de bien según su lugar de producción.
+</figcaption>
+<div aria-describedby="tbl-cobertura-indices-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tipo de bien</th>
+<th style="text-align: left;">Producidos en el interior</th>
+<th style="text-align: left;">Producidos en el exterior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Bienes de capital</td>
+<td style="text-align: left;">Deflactor del PIB</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bienes de consumo</td>
+<td style="text-align: left;">IPC y deflactor del PIB</td>
+<td style="text-align: left;">IPC</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>El índice que se utilice depende de lo que se quiera medir.</p>
+</section>
+</section>
+</section>
+<section id="variación-de-precios-y-poder-adquisitivo" class="level1">
+<h1>Variación de precios y poder adquisitivo</h1>
+<p>Para <strong>comparar valores medidos en momentos distintos</strong>, es necesario <strong>deflactar</strong>. Cuando se deflacta una magnitud, se obtiene una <strong>magnitud real</strong>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{Real}_t
+&amp;=\text{Nominal}_t\cdot
+\frac{\text{Índice de precios}_0}{\text{Índice de precios}_t} \\
+&amp;=\text{Nominal}_t\cdot\frac{100}{\text{Índice de precios}_t}.
+\end{aligned}
+\]</span></p>
+<section id="ejemplo-salario-nominal-y-salario-real" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplo-salario-nominal-y-salario-real">Ejemplo: salario nominal y salario real</h2>
+<p>En el ejemplo del libro de la <a href="#tbl-salario-nominal" class="quarto-xref">Tabla&nbsp;<span>9.1</span></a>, ¿el salario va subiendo? ¿Va aumentando el poder adquisitivo?</p>
+<div id="tbl-salario-nominal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-salario-nominal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;9.1: Salario nominal e IPC (tabla 11.6 del libro, según la presentación).
+</figcaption>
+<div aria-describedby="tbl-salario-nominal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Año</th>
+<th style="text-align: right;">Salario nominal (euros corrientes)</th>
+<th style="text-align: right;">IPC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0 (base)</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">117,92</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: right;">550</td>
+<td style="text-align: right;">134,58</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Al deflactar los salarios, obtenemos los valores de la <a href="#tbl-salario-real" class="quarto-xref">Tabla&nbsp;<span>9.2</span></a>.</p>
+<div id="tbl-salario-real" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-salario-real-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;9.2: Salario nominal y salario real (parte de la tabla 11.7 del libro, según la presentación).
+</figcaption>
+<div aria-describedby="tbl-salario-real-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Año</th>
+<th style="text-align: right;">Salario nominal (euros corrientes)</th>
+<th style="text-align: right;">IPC</th>
+<th style="text-align: right;">Salario real (euros del año base)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0 (base)</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">450</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">117,92</td>
+<td style="text-align: right;">424,02</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: right;">550</td>
+<td style="text-align: right;">134,58</td>
+<td style="text-align: right;">408,67</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Por ejemplo, para el año 1:</p>
+<p><span class="math display">\[
+\text{Salario real}_1=500\cdot\frac{100}{117{,}92}\approx424{,}02.
+\]</span></p>
+</section>
+<section id="salarios-expresados-en-euros-de-otro-año" class="level2">
+<h2 class="anchored" data-anchor-id="salarios-expresados-en-euros-de-otro-año">Salarios expresados en euros de otro año</h2>
+<p>¿Cuál será el <strong>salario de cada año</strong> teniendo el <strong>poder adquisitivo de otro año</strong>? Para expresar el salario del año <span class="math inline">\(n\)</span> en euros del año <span class="math inline">\(m\)</span>, se utiliza:</p>
+<p><span class="math display">\[
+\text{Salario del año }n\text{ en euros del año }m
+=\text{Salario nominal}_n\cdot\frac{IPC_m}{IPC_n}.
+\]</span></p>
+<p>La <a href="#tbl-salario-otro-anio" class="quarto-xref">Tabla&nbsp;<span>9.3</span></a> completa el ejemplo expresando los salarios en euros del año 2.</p>
+<div id="tbl-salario-otro-anio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-salario-otro-anio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;9.3: Salarios expresados en euros de distintos años (tabla 11.7 del libro, según la presentación).
+</figcaption>
+<div aria-describedby="tbl-salario-otro-anio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Año</th>
+<th style="text-align: right;">Salario nominal (euros corrientes)</th>
+<th style="text-align: right;">IPC</th>
+<th style="text-align: right;">Salario real (euros del año base)</th>
+<th style="text-align: right;">Salario en euros del año 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0 (base)</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">605,61</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">117,92</td>
+<td style="text-align: right;">424,02</td>
+<td style="text-align: right;">570,64</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: right;">550</td>
+<td style="text-align: right;">134,58</td>
+<td style="text-align: right;">408,67</td>
+<td style="text-align: right;">550</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>En particular:</p>
+<p><span class="math display">\[
+\text{Salario del año 0 en euros del año 2}
+=450\cdot\frac{134{,}58}{100}
+=\mathbf{605{,}61}\;\text{€}.
+\]</span></p>
+<p>El salario de 450 € del año 0 es equivalente a <strong>605,61</strong> € del año 2.</p>
+</section>
+</section>
+<section id="la-inflación" class="level1">
+<h1>La inflación</h1>
+<section id="la-tasa-de-inflación" class="level2">
+<h2 class="anchored" data-anchor-id="la-tasa-de-inflación">La tasa de inflación</h2>
+<p>¿<strong>Inflación</strong> o <strong>deflación</strong>? La <strong>tasa de inflación</strong> es el <strong>crecimiento porcentual del índice de precios</strong>, generalmente el IPC. Muchas veces se utiliza solo el término <strong>inflación</strong>.</p>
+<p>Si se utiliza el IPC:</p>
+<p><span class="math display">\[
+\text{Tasa de inflación}_t
+=\frac{IPC_t-IPC_{t-1}}{IPC_{t-1}}\cdot100.
+\]</span></p>
+<p>Si se utiliza el deflactor del PIB:</p>
+<p><span class="math display">\[
+\text{Tasa de inflación}_t
+=\frac{\text{Deflactor del PIB}_t-\text{Deflactor del PIB}_{t-1}}
+{\text{Deflactor del PIB}_{t-1}}\cdot100.
+\]</span></p>
+<p>Con los valores del IPC del ejemplo anterior se obtienen las tasas de la <a href="#tbl-tasa-inflacion" class="quarto-xref">Tabla&nbsp;<span>10.1</span></a>.</p>
+<div id="tbl-tasa-inflacion" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tasa-inflacion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;10.1: IPC y tasa de inflación.
+</figcaption>
+<div aria-describedby="tbl-tasa-inflacion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Año</th>
+<th style="text-align: right;">IPC</th>
+<th style="text-align: right;">Tasa de inflación (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">117,92</td>
+<td style="text-align: right;">17,92</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: right;">134,58</td>
+<td style="text-align: right;">14,13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="los-efectos-de-la-inflación" class="level2">
+<h2 class="anchored" data-anchor-id="los-efectos-de-la-inflación">Los efectos de la inflación</h2>
+<p>La inflación no necesariamente afecta al <strong>poder adquisitivo</strong> de las personas. Se denomina <strong>indiciación</strong> al ajuste de salarios, alquileres, rentas, etc., a la variación de los precios.</p>
+<section id="inflación-y-operaciones-de-préstamo" class="level3">
+<h3 class="anchored" data-anchor-id="inflación-y-operaciones-de-préstamo">Inflación y operaciones de préstamo</h3>
+<p>¿Cómo afecta la inflación a las <strong>operaciones de préstamo</strong>? Conviene distinguir entre los siguientes conceptos:</p>
+<ul>
+<li><strong>Tipo de interés nominal:</strong> es la tasa de interés que se paga en un préstamo sin ajustar por la inflación; es la que se recoge en el contrato.</li>
+<li><strong>Tipo de interés real:</strong> es la tasa de interés ajustada por la inflación, que refleja el verdadero poder adquisitivo del dinero.</li>
+</ul>
+<p>La <strong>ecuación de Fisher</strong>, tal como se presenta en las diapositivas, relaciona estas magnitudes:</p>
+<p><span class="math display">\[
+\text{Tipo de interés real}
+=\text{Tipo de interés nominal}-\text{Tasa de inflación}.
+\]</span></p>
+<p>En principio, la inflación <strong>favorece al prestatario</strong>: los pagos futuros de un préstamo tendrán menos valor real en términos de poder adquisitivo. Sin embargo, los prestamistas tienden a adaptar el interés nominal a la inflación.</p>
+</section>
+<section id="hiperinflación" class="level3">
+<h3 class="anchored" data-anchor-id="hiperinflación">Hiperinflación</h3>
+<p><strong>Hiperinflación.</strong></p>
+<p><strong>¿Qué es mejor: inflación o deflación?</strong></p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./macro_produccion_empleo.html" class="pagination-link" aria-label="Macromagnitudes (I): producción y empleo">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Macromagnitudes (I): producción y empleo</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="Referencias">
+        <span class="nav-page-text">Referencias</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
