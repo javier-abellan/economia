@@ -72,6 +72,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -504,7 +507,26 @@ RPD = \text{consumo privado} - \text{ahorro privado}
 <h4 data-number="6.2.1.1" class="anchored" data-anchor-id="clasificación-de-la-población-según-su-relación-con-el-mundo-laboral"><span class="header-section-number">6.2.1.1</span> Clasificación de la población según su relación con el mundo laboral</h4>
 <p>La población de un país se clasifica según su relación con el mundo laboral. La situación en relación con la actividad económica se basa en criterios de la Organización Internacional del Trabajo (OIT).</p>
 <p>Con base en los criterios de la OIT, la población se divide en personas <strong>en edad de trabajar</strong> y <strong>en edad de no trabajar</strong>. Entre las primeras se distinguen <strong>activas</strong> e <strong>inactivas</strong>. La población activa comprende <strong>ocupados</strong> y <strong>desempleados</strong>; los ocupados pueden trabajar por <strong>cuenta propia</strong> o <strong>por cuenta ajena</strong>. En España, la edad legal para trabajar es de 16 años.</p>
-<p>flowchart LR A[“Población total”] –&gt; B[“En edad de trabajar”] A –&gt; C[“En edad de no trabajar”] B –&gt; D[“Inactivos”] B –&gt; E[“Activos”] E –&gt; F[“Ocupados”] E –&gt; G[“Desempleados”] F –&gt; H[“Por cuenta propia”] F –&gt; I[“Por cuenta ajena”]</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A["Población total"] --&gt; B["En edad de trabajar"]
+    A --&gt; C["En edad de no trabajar"]
+    B --&gt; D["Inactivos"]
+    B --&gt; E["Activos"]
+    E --&gt; F["Ocupados"]
+    E --&gt; G["Desempleados"]
+    F --&gt; H["Por cuenta propia"]
+    F --&gt; I["Por cuenta ajena"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <section id="tasa-de-actividad" class="level4" data-number="6.2.1.2">
 <h4 data-number="6.2.1.2" class="anchored" data-anchor-id="tasa-de-actividad"><span class="header-section-number">6.2.1.2</span> Tasa de actividad</h4>
