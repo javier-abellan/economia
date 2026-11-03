@@ -212,8 +212,7 @@ window.Quarto = {
   <li><a href="#medición-del-nivel-general-de-precios" id="toc-medición-del-nivel-general-de-precios" class="nav-link" data-scroll-target="#medición-del-nivel-general-de-precios"><span class="header-section-number">7.2</span> Medición del nivel general de precios</a>
   <ul class="collapse">
   <li><a href="#el-índice-de-precios-de-consumo-ipc" id="toc-el-índice-de-precios-de-consumo-ipc" class="nav-link" data-scroll-target="#el-índice-de-precios-de-consumo-ipc"><span class="header-section-number">7.2.1</span> El índice de precios de consumo (IPC)</a></li>
-  <li><a href="#ipc-en-españa" id="toc-ipc-en-españa" class="nav-link" data-scroll-target="#ipc-en-españa"><span class="header-section-number">7.2.2</span> IPC en España</a></li>
-  <li><a href="#el-deflactor-del-pib" id="toc-el-deflactor-del-pib" class="nav-link" data-scroll-target="#el-deflactor-del-pib"><span class="header-section-number">7.2.3</span> El deflactor del PIB</a></li>
+  <li><a href="#el-deflactor-del-pib" id="toc-el-deflactor-del-pib" class="nav-link" data-scroll-target="#el-deflactor-del-pib"><span class="header-section-number">7.2.2</span> El deflactor del PIB</a></li>
   </ul></li>
   <li><a href="#variación-de-precios-y-poder-adquisitivo" id="toc-variación-de-precios-y-poder-adquisitivo" class="nav-link" data-scroll-target="#variación-de-precios-y-poder-adquisitivo"><span class="header-section-number">7.3</span> Variación de precios y poder adquisitivo</a>
   <ul class="collapse">
@@ -336,16 +335,10 @@ IPC_t &amp;= g_1^0\frac{P_1^t}{P_1^0}
        + g_2^0\frac{P_2^t}{P_2^0}
        + g_3^0\frac{P_3^t}{P_3^0}
        + \cdots + g_n^0\frac{P_n^t}{P_n^0} \\
-      &amp;= \sum_{i=1}^{n}g_i^0\frac{P_i^t}{P_i^0}.
+      &amp;= \sum_{i=1}^{n}g_i^0\frac{P_i^t}{P_i^0},
 \end{aligned}
 \]</span></p>
-<p>En esta expresión:</p>
-<ul>
-<li><span class="math inline">\(IPC_t\)</span> es el valor del IPC en el año <span class="math inline">\(t\)</span>.</li>
-<li><span class="math inline">\(P_i^t\)</span> es el precio del bien <span class="math inline">\(i\)</span> en el año <span class="math inline">\(t\)</span>.</li>
-<li><span class="math inline">\(n\)</span> es el número de bienes en la cesta de la compra.</li>
-<li><span class="math inline">\(g_i^0\)</span> es el porcentaje del gasto de la familia «media» en el bien <span class="math inline">\(i\)</span> en el año base.</li>
-</ul>
+<p>donde <span class="math inline">\(IPC_t\)</span> es el valor del IPC en el año <span class="math inline">\(t\)</span>; <span class="math inline">\(P_i^t\)</span> es el precio del bien <span class="math inline">\(i\)</span> en el año <span class="math inline">\(t\)</span>; <span class="math inline">\(n\)</span> es el número de bienes en la cesta de la compra; y <span class="math inline">\(g_i^0\)</span> es el porcentaje del gasto de la familia «media» en el bien <span class="math inline">\(i\)</span> en el año base.</p>
 </section>
 <section id="ejemplo-de-cálculo" class="level4" data-number="7.2.1.2">
 <h4 data-number="7.2.1.2" class="anchored" data-anchor-id="ejemplo-de-cálculo"><span class="header-section-number">7.2.1.2</span> Ejemplo de cálculo</h4>
@@ -395,6 +388,7 @@ IPC_0 = 30\frac{2}{2}+25\frac{50}{50}
 +35\frac{300}{300}+10\frac{4}{4}=100.
 \]</span></p>
 <p>Como se ve en el cálculo anterior, el IPC, por su carácter de índice, tiene la propiedad de tomar el valor 100 en el periodo que se toma arbitrariamente como base y que sirve como punto de referencia para los demás periodos.</p>
+<p>Veamos ahora el resultado para los dos periodos restantes:</p>
 <p><span class="math display">\[
 IPC_1 = 30\frac{1{,}75}{2}+25\frac{60}{50}
 +35\frac{400}{300}+10\frac{6}{4}\approx117{,}9.
@@ -426,14 +420,14 @@ g_1^{t-1}\frac{P_1^t}{P_1^{t-1}}
 \]</span></p>
 <p>En el año base, <span class="math inline">\(IPC_0=100\)</span>. La ponderación <span class="math inline">\(g_i^{t-1}\)</span> es el porcentaje del gasto de la familia media en el bien <span class="math inline">\(i\)</span> en el año <span class="math inline">\(t-1\)</span>.</p>
 </section>
-</section>
-<section id="ipc-en-españa" class="level3" data-number="7.2.2">
-<h3 data-number="7.2.2" class="anchored" data-anchor-id="ipc-en-españa"><span class="header-section-number">7.2.2</span> IPC en España</h3>
+<section id="ipc-en-españa" class="level4" data-number="7.2.1.4">
+<h4 data-number="7.2.1.4" class="anchored" data-anchor-id="ipc-en-españa"><span class="header-section-number">7.2.1.4</span> IPC en España</h4>
 <p>Desde 2002, el <strong>Instituto Nacional de Estadística</strong> (<strong>INE</strong>) calcula el IPC utilizando <strong>el índice de Laspeyres encadenado</strong>.</p>
 <p>Los <strong>gastos de los hogares</strong> se obtienen de la <strong>Encuesta de Presupuestos Familiares (EPF)</strong>. La <strong>cesta de bienes</strong> está compuesta por <strong>12 grupos</strong> ECOICOP (<em>European Classification of Individual Consumption by Purpose</em>) con diferentes ponderaciones.</p>
 </section>
-<section id="el-deflactor-del-pib" class="level3" data-number="7.2.3">
-<h3 data-number="7.2.3" class="anchored" data-anchor-id="el-deflactor-del-pib"><span class="header-section-number">7.2.3</span> El deflactor del PIB</h3>
+</section>
+<section id="el-deflactor-del-pib" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="el-deflactor-del-pib"><span class="header-section-number">7.2.2</span> El deflactor del PIB</h3>
 <p>El <strong>deflactor del PIB</strong> es un índice de precios que se obtiene <strong>dividiendo</strong>, para cada año, <strong>el PIB nominal entre el PIB real</strong>:</p>
 <p><span class="math display">\[
 \text{Deflactor del PIB}_t
@@ -457,8 +451,8 @@ g_1^{t-1}\frac{P_1^t}{P_1^{t-1}}
 h_i^t=\frac{P_i^0q_i^t}{\sum_{i=1}^{n}P_i^0q_i^t}\cdot100.
 \]</span></p>
 <p>El deflactor es equivalente a un <strong>índice de Paasche</strong>, o <strong>ponderado en el año corriente</strong>, a diferencia del índice de Laspeyres, que está ponderado en el año base.</p>
-<section id="diferencias-entre-el-ipc-y-el-deflactor-del-pib" class="level4" data-number="7.2.3.1">
-<h4 data-number="7.2.3.1" class="anchored" data-anchor-id="diferencias-entre-el-ipc-y-el-deflactor-del-pib"><span class="header-section-number">7.2.3.1</span> Diferencias entre el IPC y el deflactor del PIB</h4>
+<section id="diferencias-entre-el-ipc-y-el-deflactor-del-pib" class="level4" data-number="7.2.2.1">
+<h4 data-number="7.2.2.1" class="anchored" data-anchor-id="diferencias-entre-el-ipc-y-el-deflactor-del-pib"><span class="header-section-number">7.2.2.1</span> Diferencias entre el IPC y el deflactor del PIB</h4>
 <p>El <strong>IPC</strong> es una media ponderada de los precios de los bienes y servicios que se <strong>consumen</strong> en un territorio. El <strong>deflactor del PIB</strong> es una media ponderada de los precios de los bienes y servicios que se <strong>producen</strong> en un territorio.</p>
 <p>La <a href="#tbl-diferencias-indices" class="quarto-xref">Tabla&nbsp;<span>7.3</span></a> recoge dos diferencias entre ambos índices.</p>
 <div id="tbl-diferencias-indices" class="quarto-float quarto-figure quarto-figure-center anchored">
