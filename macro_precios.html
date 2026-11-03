@@ -399,6 +399,7 @@ IPC_2 = 30\frac{2{,}25}{2}+25\frac{55}{50}
 <h4 data-number="7.2.1.2" class="anchored" data-anchor-id="índice-de-laspeyres-encadenado"><span class="header-section-number">7.2.1.2</span> Índice de Laspeyres encadenado</h4>
 <p>Es posible identificar dos grandes <strong>debilidades del índice de Laspeyres convencional</strong>. La primera es que existen subidas de precios que se deben a mejoras en la calidad del bien: en estos casos no se puede concluir que se está pagando un precio mayor por el mismo bien, pues este a cambiado cualitativamente. La segunda debilidad es el llamado <strong>sesgo de sustitución</strong>: es razonable pensar que los individuos sustituirán el consumo de los bienes cuyo precio ha aumentado más por el de otros cuyo precio ha aumentado menos, pero el IPC, al seguir considerando la misma ponderación para cada bien, estaría sobrevalorando su importancia dentro de la cesta y, por tanto, sobreestimando la subida de los precios que realmente pagan los consumidores.</p>
 <p>Una solución práctica para mitigar el sesgo de sustitución es el <strong>índice de Laspeyres encadenado</strong>. Este índice relaciona los precios del periodo corriente con los precios del periodo anterior y calcula las medias ponderadas de los cocientes entre el precio del producto en el periodo corriente y el precio en el periodo anterior. Con ello se permite que las ponderaciones puedan variar cada periodo, atendiendo a cambios de los hábitos de consumo sin que sea necesario cambiar de base. Así, en el periodo base <span class="math inline">\((t=0)\)</span> el índice vale 100 por definición, y desde el periodo <span class="math inline">\(t=2\)</span> en adelante, el índice encadenado se calcula multiplicando el índice de corto plazo (eslabón) del periodo corriente por el índice encadenado del periodo anterior, dividiendo el resultado entre 100 para mantener la proporción. En el periodo <span class="math inline">\(t=1\)</span>, el índice de Laspeyres encadenado y el convencional arrojan exactamente el mismo resultado, ya que ambos parten de las ponderaciones de <span class="math inline">\(t=0\)</span>.</p>
+<p>Así pues, en el año base, <span class="math inline">\(IPC_0=100\)</span> por definición. A partir del periodo <span class="math inline">\(t=1\)</span>, el índice de Laspeyres encadenado se obtiene al aplicar la siguiente fórmula:</p>
 <p><span class="math display">\[
 \begin{aligned}
 IPC_t ={}&amp; \left(
@@ -408,10 +409,10 @@ g_1^{t-1}\frac{P_1^t}{P_1^{t-1}}
 +\cdots+g_n^{t-1}\frac{P_n^t}{P_n^{t-1}}
 \right)\frac{IPC_{t-1}}{100} \\
 ={}&amp; \frac{IPC_{t-1}}{100}
-\sum_{i=1}^{n}g_i^{t-1}\frac{P_i^t}{P_i^{t-1}}.
+\sum_{i=1}^{n}g_i^{t-1}\frac{P_i^t}{P_i^{t-1}},
 \end{aligned}
 \]</span></p>
-<p>En el año base, <span class="math inline">\(IPC_0=100\)</span>. La ponderación <span class="math inline">\(g_i^{t-1}\)</span> es el porcentaje del gasto de la familia media en el bien <span class="math inline">\(i\)</span> en el año <span class="math inline">\(t-1\)</span>.</p>
+<p>donde la ponderación <span class="math inline">\(g_i^{t-1}\)</span> es el porcentaje del gasto de la familia media en el bien <span class="math inline">\(i\)</span> en el año <span class="math inline">\(t-1\)</span>.</p>
 </section>
 <section id="ipc-en-españa" class="level4" data-number="7.2.1.3">
 <h4 data-number="7.2.1.3" class="anchored" data-anchor-id="ipc-en-españa"><span class="header-section-number">7.2.1.3</span> IPC en España</h4>
