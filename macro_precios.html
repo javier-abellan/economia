@@ -208,7 +208,7 @@ window.Quarto = {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">7.1</span> Introducción</a></li>
+  <li><a href="#conceptos-básicos" id="toc-conceptos-básicos" class="nav-link active" data-scroll-target="#conceptos-básicos"><span class="header-section-number">7.1</span> Conceptos básicos</a></li>
   <li><a href="#medición-del-nivel-general-de-precios" id="toc-medición-del-nivel-general-de-precios" class="nav-link" data-scroll-target="#medición-del-nivel-general-de-precios"><span class="header-section-number">7.2</span> Medición del nivel general de precios</a>
   <ul class="collapse">
   <li><a href="#el-índice-de-precios-de-consumo-ipc" id="toc-el-índice-de-precios-de-consumo-ipc" class="nav-link" data-scroll-target="#el-índice-de-precios-de-consumo-ipc"><span class="header-section-number">7.2.1</span> El índice de precios de consumo (IPC)</a></li>
@@ -220,10 +220,11 @@ window.Quarto = {
   <li><a href="#ejemplo-salario-nominal-y-salario-real" id="toc-ejemplo-salario-nominal-y-salario-real" class="nav-link" data-scroll-target="#ejemplo-salario-nominal-y-salario-real"><span class="header-section-number">7.3.1</span> Ejemplo: salario nominal y salario real</a></li>
   <li><a href="#salarios-expresados-en-euros-de-otro-año" id="toc-salarios-expresados-en-euros-de-otro-año" class="nav-link" data-scroll-target="#salarios-expresados-en-euros-de-otro-año"><span class="header-section-number">7.3.2</span> Salarios expresados en euros de otro año</a></li>
   </ul></li>
-  <li><a href="#la-inflación" id="toc-la-inflación" class="nav-link" data-scroll-target="#la-inflación"><span class="header-section-number">7.4</span> La inflación</a>
+  <li><a href="#los-efectos-de-la-inflación" id="toc-los-efectos-de-la-inflación" class="nav-link" data-scroll-target="#los-efectos-de-la-inflación"><span class="header-section-number">7.4</span> Los efectos de la inflación</a>
   <ul class="collapse">
-  <li><a href="#la-tasa-de-inflación" id="toc-la-tasa-de-inflación" class="nav-link" data-scroll-target="#la-tasa-de-inflación"><span class="header-section-number">7.4.1</span> La tasa de inflación</a></li>
-  <li><a href="#los-efectos-de-la-inflación" id="toc-los-efectos-de-la-inflación" class="nav-link" data-scroll-target="#los-efectos-de-la-inflación"><span class="header-section-number">7.4.2</span> Los efectos de la inflación</a></li>
+  <li><a href="#inflación-y-operaciones-de-préstamo" id="toc-inflación-y-operaciones-de-préstamo" class="nav-link" data-scroll-target="#inflación-y-operaciones-de-préstamo"><span class="header-section-number">7.4.1</span> Inflación y operaciones de préstamo</a></li>
+  <li><a href="#hiperinflación" id="toc-hiperinflación" class="nav-link" data-scroll-target="#hiperinflación"><span class="header-section-number">7.4.2</span> Hiperinflación</a></li>
+  <li><a href="#deflación" id="toc-deflación" class="nav-link" data-scroll-target="#deflación"><span class="header-section-number">7.4.3</span> Deflación</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -250,37 +251,43 @@ window.Quarto = {
 </header>
 
 
-<section id="introducción" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">7.1</span> Introducción</h2>
+<section id="conceptos-básicos" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="conceptos-básicos"><span class="header-section-number">7.1</span> Conceptos básicos</h2>
 <p>Junto con el nivel general de producción y el nivel general de empleo en una economía, otro de las magnitudes fundamentales de la macroeconomía es el nivel general de precios (NGP).</p>
-<p>El <strong>nivel general de precios</strong> (NGP) es una medida que representa a los precios de todos los bienes y servicios consumidos o producidos en un territorio. La tasa de variación del nivel general de precios se denomina tasa de <strong>inflación</strong>, y es uno de los indicadores económicos que más interés suscitan.</p>
+<p>El <strong>nivel general de precios</strong> (NGP) es una medida que representa a los precios de todos los bienes y servicios consumidos o producidos en un territorio. La tasa de variación del nivel general de precios se denomina tasa de <strong>inflación</strong>, y es uno de los indicadores económicos que más interés suscitan. Cuando se habla sobre cuánto han subido «los precios», no se hace referencia a la variación del precio de un bien concreto sino a la variación de los precios «en general».</p>
 </section>
 <section id="medición-del-nivel-general-de-precios" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="medición-del-nivel-general-de-precios"><span class="header-section-number">7.2</span> Medición del nivel general de precios</h2>
 <p>Las dos medidas más importantes del nivel general de precios son el <strong>índice de precios de consumo</strong> (<strong>IPC</strong>) y el <strong>deflactor</strong> del producto interior bruto.</p>
+<p>Si se usa como nivel general de precios el IPC, entonces la tasa de inflación es:</p>
+<p><span class="math display">\[
+\text{Tasa de inflación}_t
+=\frac{IPC_t-IPC_{t-1}}{IPC_{t-1}}\cdot100.
+\]</span></p>
+<p>Si se usa como nivel general de precios el deflactor del PIB, entonces la tasa de inflación es:</p>
+<p><span class="math display">\[
+\text{Tasa de inflación}_t
+=\frac{\text{Deflactor del PIB}_t-\text{Deflactor del PIB}_{t-1}}
+{\text{Deflactor del PIB}_{t-1}}\cdot100.
+\]</span></p>
+<p>Pasemos a ver en qué consisten estas dos medidas diferentes del nivel general de precios.</p>
 <section id="el-índice-de-precios-de-consumo-ipc" class="level3" data-number="7.2.1">
 <h3 data-number="7.2.1" class="anchored" data-anchor-id="el-índice-de-precios-de-consumo-ipc"><span class="header-section-number">7.2.1</span> El índice de precios de consumo (IPC)</h3>
-<p>El <strong>índice de precios de consumo</strong> (<strong>IPC</strong>) mide los precios totales de una cesta de bienes y servicios de consumo final que compran las familias de un país. No incluye bienes de capital.</p>
-<p>Consideremos los precios de la <a href="#tbl-precios-cesta" class="quarto-xref">Tabla&nbsp;<span>7.1</span></a>.</p>
+<p>El <strong>índice de precios de consumo</strong> (<strong>IPC</strong>) es una medida del coste general de los bienes de consumo comprados por la familia típica de un territorio y en relación a un periodo de referencia. Como su nombre indica, solo incluye los bienes de consumo; no tiene en cuenta los precios de los bienes de capital ni de los bienes intermedios.</p>
+<p>Para ver cómo se calcula el índice de precios de consumo, consideremos un ejemplo numérico. Para simplificar, supongamos que en un determinado territorio solo se consumen cuatro tipos de bienes: alimentos, vestido, vivienda y ocio. La <a href="#tbl-precios-cesta" class="quarto-xref">Tabla&nbsp;<span>7.1</span></a> muestra los precios de estos cuatro tipos de bienes a 31 de diciembre de tres años consecutivos.</p>
 <div id="tbl-precios-cesta" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-precios-cesta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabla&nbsp;7.1: Precios de los bienes y servicios de la cesta.
+Tabla&nbsp;7.1: Precios de los cuatro bienes y servicios consumidos en un territorio.
 </figcaption>
 <div aria-describedby="tbl-precios-cesta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Bien o servicio</th>
-<th style="text-align: right;">Año 0 (31 de diciembre)</th>
-<th style="text-align: right;">Año 1 (31 de diciembre)</th>
-<th style="text-align: right;">Año 2 (31 de diciembre)</th>
+<th style="text-align: right;">Año 0</th>
+<th style="text-align: right;">Año 1</th>
+<th style="text-align: right;">Año 2</th>
 </tr>
 </thead>
 <tbody>
@@ -685,23 +692,30 @@ Tabla&nbsp;7.7: Salarios expresados en euros de distintos años (tabla 11.7 del 
 <p>El salario de 450 € del año 0 es equivalente a <strong>605,61</strong> € del año 2.</p>
 </section>
 </section>
-<section id="la-inflación" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="la-inflación"><span class="header-section-number">7.4</span> La inflación</h2>
-<section id="la-tasa-de-inflación" class="level3" data-number="7.4.1">
-<h3 data-number="7.4.1" class="anchored" data-anchor-id="la-tasa-de-inflación"><span class="header-section-number">7.4.1</span> La tasa de inflación</h3>
-<p>¿<strong>Inflación</strong> o <strong>deflación</strong>? La <strong>tasa de inflación</strong> es el <strong>crecimiento porcentual del índice de precios</strong>, generalmente el IPC. Muchas veces se utiliza solo el término <strong>inflación</strong>.</p>
-<p>Si se utiliza el IPC:</p>
+<section id="los-efectos-de-la-inflación" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="los-efectos-de-la-inflación"><span class="header-section-number">7.4</span> Los efectos de la inflación</h2>
+<p>La inflación no necesariamente afecta al <strong>poder adquisitivo</strong> de las personas. Se denomina <strong>indiciación</strong> al ajuste de salarios, alquileres, rentas, etc., a la variación de los precios.</p>
+<section id="inflación-y-operaciones-de-préstamo" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="inflación-y-operaciones-de-préstamo"><span class="header-section-number">7.4.1</span> Inflación y operaciones de préstamo</h3>
+<p>¿Cómo afecta la inflación a las <strong>operaciones de préstamo</strong>? Conviene distinguir entre los siguientes conceptos:</p>
+<ul>
+<li><strong>Tipo de interés nominal:</strong> es la tasa de interés que se paga en un préstamo sin ajustar por la inflación; es la que se recoge en el contrato.</li>
+<li><strong>Tipo de interés real:</strong> es la tasa de interés ajustada por la inflación, que refleja el verdadero poder adquisitivo del dinero.</li>
+</ul>
+<p>La <strong>ecuación de Fisher</strong>, tal como se presenta en las diapositivas, relaciona estas magnitudes:</p>
 <p><span class="math display">\[
-\text{Tasa de inflación}_t
-=\frac{IPC_t-IPC_{t-1}}{IPC_{t-1}}\cdot100.
+\text{Tipo de interés real}
+=\text{Tipo de interés nominal}-\text{Tasa de inflación}.
 \]</span></p>
-<p>Si se utiliza el deflactor del PIB:</p>
-<p><span class="math display">\[
-\text{Tasa de inflación}_t
-=\frac{\text{Deflactor del PIB}_t-\text{Deflactor del PIB}_{t-1}}
-{\text{Deflactor del PIB}_{t-1}}\cdot100.
-\]</span></p>
-<p>Con los valores del IPC del ejemplo anterior se obtienen las tasas de la <a href="#tbl-tasa-inflacion" class="quarto-xref">Tabla&nbsp;<span>7.8</span></a>.</p>
+<p>En principio, la inflación <strong>favorece al prestatario</strong>: los pagos futuros de un préstamo tendrán menos valor real en términos de poder adquisitivo. Sin embargo, los prestamistas tienden a adaptar el interés nominal a la inflación.</p>
+</section>
+<section id="hiperinflación" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="hiperinflación"><span class="header-section-number">7.4.2</span> Hiperinflación</h3>
+</section>
+<section id="deflación" class="level3" data-number="7.4.3">
+<h3 data-number="7.4.3" class="anchored" data-anchor-id="deflación"><span class="header-section-number">7.4.3</span> Deflación</h3>
+<p>Cuando la tasa de inflación muestra un valor negativo se dice que hay <strong>deflación</strong>.</p>
+<p>Con los valores del IPC del ejemplo anterior se obtienen las tasas de la <a href="#tbl-tasa-inflacion" class="quarto-xref">Tabla&nbsp;<span>7.8</span></a>. En un caso como este es necesario plantearse qué es lo que ocurre en el año 2 respecto al año 1: ¿hay inflación o hay deflación?</p>
 <div id="tbl-tasa-inflacion" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tasa-inflacion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -713,7 +727,7 @@ Tabla&nbsp;7.8: IPC y tasa de inflación.
 <tr class="header">
 <th style="text-align: left;">Año</th>
 <th style="text-align: right;">IPC</th>
-<th style="text-align: right;">Tasa de inflación (%)</th>
+<th style="text-align: right;">Tasa de inflación interanual (%)</th>
 </tr>
 </thead>
 <tbody>
@@ -737,29 +751,8 @@ Tabla&nbsp;7.8: IPC y tasa de inflación.
 </div>
 </figure>
 </div>
-</section>
-<section id="los-efectos-de-la-inflación" class="level3" data-number="7.4.2">
-<h3 data-number="7.4.2" class="anchored" data-anchor-id="los-efectos-de-la-inflación"><span class="header-section-number">7.4.2</span> Los efectos de la inflación</h3>
-<p>La inflación no necesariamente afecta al <strong>poder adquisitivo</strong> de las personas. Se denomina <strong>indiciación</strong> al ajuste de salarios, alquileres, rentas, etc., a la variación de los precios.</p>
-<section id="inflación-y-operaciones-de-préstamo" class="level4" data-number="7.4.2.1">
-<h4 data-number="7.4.2.1" class="anchored" data-anchor-id="inflación-y-operaciones-de-préstamo"><span class="header-section-number">7.4.2.1</span> Inflación y operaciones de préstamo</h4>
-<p>¿Cómo afecta la inflación a las <strong>operaciones de préstamo</strong>? Conviene distinguir entre los siguientes conceptos:</p>
-<ul>
-<li><strong>Tipo de interés nominal:</strong> es la tasa de interés que se paga en un préstamo sin ajustar por la inflación; es la que se recoge en el contrato.</li>
-<li><strong>Tipo de interés real:</strong> es la tasa de interés ajustada por la inflación, que refleja el verdadero poder adquisitivo del dinero.</li>
-</ul>
-<p>La <strong>ecuación de Fisher</strong>, tal como se presenta en las diapositivas, relaciona estas magnitudes:</p>
-<p><span class="math display">\[
-\text{Tipo de interés real}
-=\text{Tipo de interés nominal}-\text{Tasa de inflación}.
-\]</span></p>
-<p>En principio, la inflación <strong>favorece al prestatario</strong>: los pagos futuros de un préstamo tendrán menos valor real en términos de poder adquisitivo. Sin embargo, los prestamistas tienden a adaptar el interés nominal a la inflación.</p>
-</section>
-<section id="hiperinflación" class="level4" data-number="7.4.2.2">
-<h4 data-number="7.4.2.2" class="anchored" data-anchor-id="hiperinflación"><span class="header-section-number">7.4.2.2</span> Hiperinflación</h4>
 
 
-</section>
 </section>
 </section>
 
