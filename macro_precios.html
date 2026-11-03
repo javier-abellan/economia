@@ -339,9 +339,7 @@ IPC_t &amp;= g_1^0\frac{P_1^t}{P_1^0}
 \end{aligned}
 \]</span></p>
 <p>donde <span class="math inline">\(IPC_t\)</span> es el valor del IPC en el año <span class="math inline">\(t\)</span>; <span class="math inline">\(P_i^t\)</span> es el precio del bien <span class="math inline">\(i\)</span> en el año <span class="math inline">\(t\)</span>; <span class="math inline">\(n\)</span> es el número de bienes en la cesta de la compra; y <span class="math inline">\(g_i^0\)</span> es el porcentaje del gasto de la familia «media» en el bien <span class="math inline">\(i\)</span> en el año base.</p>
-<section id="ejemplo-de-cálculo" class="level5" data-number="7.2.1.1.1">
-<h5 data-number="7.2.1.1.1" class="anchored" data-anchor-id="ejemplo-de-cálculo"><span class="header-section-number">7.2.1.1.1</span> Ejemplo de cálculo</h5>
-<p>Utilizamos los precios de la <a href="#tbl-precios-cesta" class="quarto-xref">Tabla&nbsp;<span>7.1</span></a> y los porcentajes de gasto de la <a href="#tbl-ponderaciones-cesta" class="quarto-xref">Tabla&nbsp;<span>7.2</span></a>.</p>
+<p>Veamos un ejemplo de cálculo numérico utilizando los precios de la <a href="#tbl-precios-cesta" class="quarto-xref">Tabla&nbsp;<span>7.1</span></a> y los porcentajes de gasto de la <a href="#tbl-ponderaciones-cesta" class="quarto-xref">Tabla&nbsp;<span>7.2</span></a>.</p>
 <div id="tbl-ponderaciones-cesta" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ponderaciones-cesta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -397,15 +395,10 @@ IPC_2 = 30\frac{2{,}25}{2}+25\frac{55}{50}
 +35\frac{500}{300}+10\frac{6}{4}\approx134{,}6.
 \]</span></p>
 </section>
-</section>
-<section id="debilidades-del-índice-y-laspeyres-encadenado" class="level4" data-number="7.2.1.2">
-<h4 data-number="7.2.1.2" class="anchored" data-anchor-id="debilidades-del-índice-y-laspeyres-encadenado"><span class="header-section-number">7.2.1.2</span> Debilidades del índice y Laspeyres encadenado</h4>
-<p>Las <strong>debilidades del índice de Laspeyres convencional</strong> son:</p>
-<ul>
-<li>Las subidas de precios que son mejoras en la calidad.</li>
-<li>El sesgo de sustitución.</li>
-</ul>
-<p>La <strong>solución al sesgo de sustitución</strong> es el índice de Laspeyres encadenado:</p>
+<section id="índice-de-laspeyres-encadenado" class="level4" data-number="7.2.1.2">
+<h4 data-number="7.2.1.2" class="anchored" data-anchor-id="índice-de-laspeyres-encadenado"><span class="header-section-number">7.2.1.2</span> Índice de Laspeyres encadenado</h4>
+<p>Es posible identificar dos grandes <strong>debilidades del índice de Laspeyres convencional</strong>. La primera es que existen subidas de precios que se deben a mejoras en la calidad del bien: en estos casos no se puede concluir que se está pagando un precio mayor por el mismo bien, pues este a cambiado cualitativamente. La segunda debilidad es el llamado <strong>sesgo de sustitución</strong>: es razonable pensar que los individuos sustituirán el consumo de los bienes cuyo precio ha aumentado más por el de otros cuyo precio ha aumentado menos, pero el IPC, al seguir considerando la misma ponderación para cada bien, estaría sobrevalorando su importancia dentro de la cesta y, por tanto, sobreestimando la subida de los precios que realmente pagan los consumidores.</p>
+<p>La solución al sesgo de sustitución es el <strong>índice de Laspeyres encadenado</strong>. Este índice relaciona los precios del periodo corriente con los precios del periodo anterior y calcula las medias ponderadas de los cocientes entre el precio del producto en el periodo corriente y el precio en el periodo anterior. Con ello se permite que las ponderaciones puedan variar cada periodo, atendiendo a cambios de los hábitos de consumo sin que sea necesario cambiar de base. Así, en el periodo base <span class="math inline">\((t=0)\)</span> el índice vale 100 por definición, y desde el periodo <span class="math inline">\(t=2\)</span> en adelante el índice debe ser reescalado multiplicándolo por el IPC del año anterior para que guarde la proporción con respecto al año base.</p>
 <p><span class="math display">\[
 \begin{aligned}
 IPC_t ={}&amp; \left(
