@@ -208,7 +208,11 @@ window.Quarto = {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#conceptos-básicos" id="toc-conceptos-básicos" class="nav-link active" data-scroll-target="#conceptos-básicos"><span class="header-section-number">7.1</span> Conceptos básicos</a></li>
+  <li><a href="#conceptos-básicos" id="toc-conceptos-básicos" class="nav-link active" data-scroll-target="#conceptos-básicos"><span class="header-section-number">7.1</span> Conceptos básicos</a>
+  <ul class="collapse">
+  <li><a href="#el-nivel-general-de-precios" id="toc-el-nivel-general-de-precios" class="nav-link" data-scroll-target="#el-nivel-general-de-precios"><span class="header-section-number">7.1.1</span> El nivel general de precios</a></li>
+  <li><a href="#la-tasa-de-inflación" id="toc-la-tasa-de-inflación" class="nav-link" data-scroll-target="#la-tasa-de-inflación"><span class="header-section-number">7.1.2</span> La tasa de inflación</a></li>
+  </ul></li>
   <li><a href="#medición-del-nivel-general-de-precios" id="toc-medición-del-nivel-general-de-precios" class="nav-link" data-scroll-target="#medición-del-nivel-general-de-precios"><span class="header-section-number">7.2</span> Medición del nivel general de precios</a>
   <ul class="collapse">
   <li><a href="#el-índice-de-precios-de-consumo-ipc" id="toc-el-índice-de-precios-de-consumo-ipc" class="nav-link" data-scroll-target="#el-índice-de-precios-de-consumo-ipc"><span class="header-section-number">7.2.1</span> El índice de precios de consumo (IPC)</a></li>
@@ -252,21 +256,33 @@ window.Quarto = {
 
 <section id="conceptos-básicos" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="conceptos-básicos"><span class="header-section-number">7.1</span> Conceptos básicos</h2>
+<section id="el-nivel-general-de-precios" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="el-nivel-general-de-precios"><span class="header-section-number">7.1.1</span> El nivel general de precios</h3>
 <p>Junto con el nivel general de producción y el nivel general de empleo en una economía, otro de las magnitudes fundamentales de la macroeconomía es el nivel general de precios (NGP).</p>
-<p>El <strong>nivel general de precios</strong> (NGP) es una medida que representa a los precios de todos los bienes y servicios consumidos o producidos en un territorio. La tasa de variación del nivel general de precios se denomina tasa de <strong>inflación</strong>, y es uno de los indicadores económicos que más interés suscitan. Cuando se habla sobre cuánto han subido «los precios», no se hace referencia a la variación del precio de un bien concreto sino a la variación de los precios «en general».</p>
-<p>Las dos medidas más importantes del nivel general de precios son el <strong>índice de precios de consumo</strong> (<strong>IPC</strong>) y el <strong>deflactor</strong> del producto interior bruto.</p>
-<p>Si se usa como nivel general de precios el IPC, entonces la tasa de inflación es:</p>
+<p>El <strong>nivel general de precios</strong> (NGP) es una medida que representa a los precios de todos los bienes y servicios consumidos o producidos en un territorio. Las dos medidas más importantes del nivel general de precios son el <strong>índice de precios de consumo</strong> (<strong>IPC</strong>) y el <strong>deflactor del PIB</strong>.</p>
+</section>
+<section id="la-tasa-de-inflación" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="la-tasa-de-inflación"><span class="header-section-number">7.1.2</span> La tasa de inflación</h3>
+<p>La tasa de variación del nivel general de precios se denomina tasa de <strong>inflación</strong>, y es uno de los indicadores económicos que más interés suscitan. Cuando se habla sobre cuánto han subido «los precios», no se hace referencia a la variación del precio de un bien concreto sino a la variación de los precios «en general».</p>
+<p>Si se usa como nivel general de precios el IPC, entonces la tasa de inflación en el periodo <span class="math inline">\(t\)</span> respecto al periodo de referencia <span class="math inline">\(r\)</span> es:</p>
 <p><span class="math display">\[
 \text{Tasa de inflación}_t
+=\frac{IPC_t-IPC_r}{IPC_r}\cdot100,
+\]</span></p>
+<p>donde la multiplicación por 100 se realiza para expresar la tasa en tanto por ciento.</p>
+<p>Habitualmente, la tasa de inflación que recibe mayor atención es la que se calcula para periodos de un año, tomando como periodo de referencia el año inmediatamente anterior. En este caso, el año de referencia <span class="math inline">\(r\)</span> es <span class="math inline">\(r=t-1\)</span> y se trata específicamente de la tasa de inflación interanual:</p>
+<p><span class="math display">\[
+\text{Tasa de inflación interanual}_t
 =\frac{IPC_t-IPC_{t-1}}{IPC_{t-1}}\cdot100.
 \]</span></p>
-<p>Si se usa como nivel general de precios el deflactor del PIB, entonces la tasa de inflación es:</p>
+<p>Si en lugar de usar el IPC, se usa como nivel general de precios el deflactor del PIB, entonces la tasa de inflación interanual, medida en tanto por ciento, es:</p>
 <p><span class="math display">\[
-\text{Tasa de inflación}_t
+\text{Tasa de inflación interanual}_t
 =\frac{\text{Deflactor del PIB}_t-\text{Deflactor del PIB}_{t-1}}
 {\text{Deflactor del PIB}_{t-1}}\cdot100.
 \]</span></p>
 <p>Pasemos a ver en qué consisten estas dos medidas diferentes del nivel general de precios.</p>
+</section>
 </section>
 <section id="medición-del-nivel-general-de-precios" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="medición-del-nivel-general-de-precios"><span class="header-section-number">7.2</span> Medición del nivel general de precios</h2>
