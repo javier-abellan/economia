@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9&nbsp; Sistema monetario – Economía: una introducción</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./ciclo_polfiscal.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./moneda.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Sistema monetario</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./portada.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./portada.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Economía: una introducción</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contenidos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Decisiones económicas</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mercado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Demanda y oferta</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./produccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Producción y costes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mercados-competitivos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mercados competitivos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./poder-de-mercado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Poder de mercado</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_produccion_empleo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Macromagnitudes (I): producción y empleo</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_precios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Macromagnitudes (II): precios</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ciclo_polfiscal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Ciclo y política fiscal</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./moneda.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Sistema monetario</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referencias</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#qué-es-el-dinero" id="toc-qué-es-el-dinero" class="nav-link active" data-scroll-target="#qué-es-el-dinero"><span class="header-section-number">9.1</span> ¿Qué es el dinero?</a></li>
+  <li><a href="#tipos-de-dinero-a-lo-largo-de-la-historia" id="toc-tipos-de-dinero-a-lo-largo-de-la-historia" class="nav-link" data-scroll-target="#tipos-de-dinero-a-lo-largo-de-la-historia"><span class="header-section-number">9.2</span> Tipos de dinero a lo largo de la historia</a></li>
+  <li><a href="#demanda-de-dinero" id="toc-demanda-de-dinero" class="nav-link" data-scroll-target="#demanda-de-dinero"><span class="header-section-number">9.3</span> Demanda de dinero</a>
+  <ul class="collapse">
+  <li><a href="#concepto" id="toc-concepto" class="nav-link" data-scroll-target="#concepto"><span class="header-section-number">9.3.1</span> Concepto</a></li>
+  <li><a href="#motivos" id="toc-motivos" class="nav-link" data-scroll-target="#motivos"><span class="header-section-number">9.3.2</span> Motivos</a></li>
+  <li><a href="#demanda-de-dinero-y-tipo-de-interés" id="toc-demanda-de-dinero-y-tipo-de-interés" class="nav-link" data-scroll-target="#demanda-de-dinero-y-tipo-de-interés"><span class="header-section-number">9.3.3</span> Demanda de dinero y tipo de interés</a></li>
+  </ul></li>
+  <li><a href="#creación-del-dinero-legal-base-monetaria" id="toc-creación-del-dinero-legal-base-monetaria" class="nav-link" data-scroll-target="#creación-del-dinero-legal-base-monetaria"><span class="header-section-number">9.4</span> Creación del dinero legal: base monetaria</a></li>
+  <li><a href="#dinero-bancario-y-magnitudes-monetarias" id="toc-dinero-bancario-y-magnitudes-monetarias" class="nav-link" data-scroll-target="#dinero-bancario-y-magnitudes-monetarias"><span class="header-section-number">9.5</span> Dinero bancario y magnitudes monetarias</a>
+  <ul class="collapse">
+  <li><a href="#un-ejemplo-de-creación-de-dinero-bancario" id="toc-un-ejemplo-de-creación-de-dinero-bancario" class="nav-link" data-scroll-target="#un-ejemplo-de-creación-de-dinero-bancario"><span class="header-section-number">9.5.1</span> Un ejemplo de creación de dinero bancario</a></li>
+  <li><a href="#base-monetaria-y-oferta-monetaria" id="toc-base-monetaria-y-oferta-monetaria" class="nav-link" data-scroll-target="#base-monetaria-y-oferta-monetaria"><span class="header-section-number">9.5.2</span> Base monetaria y oferta monetaria</a></li>
+  </ul></li>
+  <li><a href="#la-relación-entre-efectivo-y-depósitos" id="toc-la-relación-entre-efectivo-y-depósitos" class="nav-link" data-scroll-target="#la-relación-entre-efectivo-y-depósitos"><span class="header-section-number">9.6</span> La relación entre efectivo y depósitos</a></li>
+  <li><a href="#el-coeficiente-de-caja" id="toc-el-coeficiente-de-caja" class="nav-link" data-scroll-target="#el-coeficiente-de-caja"><span class="header-section-number">9.7</span> El coeficiente de caja</a></li>
+  <li><a href="#el-multiplicador-monetario" id="toc-el-multiplicador-monetario" class="nav-link" data-scroll-target="#el-multiplicador-monetario"><span class="header-section-number">9.8</span> El multiplicador monetario</a></li>
+  <li><a href="#la-política-monetaria" id="toc-la-política-monetaria" class="nav-link" data-scroll-target="#la-política-monetaria"><span class="header-section-number">9.9</span> La política monetaria</a>
+  <ul class="collapse">
+  <li><a href="#instrumentos" id="toc-instrumentos" class="nav-link" data-scroll-target="#instrumentos"><span class="header-section-number">9.9.1</span> Instrumentos</a></li>
+  <li><a href="#objetivos" id="toc-objetivos" class="nav-link" data-scroll-target="#objetivos"><span class="header-section-number">9.9.2</span> Objetivos</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Sistema monetario</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Este capítulo estudia el dinero, los bancos y la política monetaria. Primero se presentan las funciones del dinero y sus tipos a lo largo de la historia. Después se analiza la demanda de dinero y su relación con el tipo de interés, la creación del dinero legal y del dinero bancario, las magnitudes monetarias, la relación entre efectivo y depósitos, el coeficiente de caja y el multiplicador monetario. Por último, se abordan los instrumentos y objetivos de la política monetaria.</p>
+<section id="qué-es-el-dinero" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="qué-es-el-dinero"><span class="header-section-number">9.1</span> ¿Qué es el dinero?</h2>
+<p>El dinero es cualquier bien que cumple <strong>tres funciones</strong>:</p>
+<ul>
+<li><strong>Medio de cambio.</strong> Al ser de aceptación generalizada, sirve para realizar transacciones y evita la necesidad de recurrir al trueque.</li>
+<li><strong>Unidad de cuenta.</strong> El precio de cualquier bien se mide como la relación a la cual ese bien se intercambia por dinero.</li>
+<li><strong>Depósito de valor.</strong> Se puede conservar el dinero, en lugar de intercambiarlo por otros bienes hoy, para intercambiarlo en el futuro.</li>
+</ul>
+<p>Es necesario distinguir el dinero de la riqueza y de la renta. Una persona puede ser muy rica si posee, por ejemplo, tierras o acciones, y sin embargo, al mismo tiempo, tener poco dinero. El dinero es solo una de las diversas maneras en que puede acumularse riqueza.</p>
+<p>También es necesario distinguir entre el dinero y la renta. Esta última no se obtiene necesariamente en dinero; también puede obtenerse en especie.</p>
+</section>
+<section id="tipos-de-dinero-a-lo-largo-de-la-historia" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="tipos-de-dinero-a-lo-largo-de-la-historia"><span class="header-section-number">9.2</span> Tipos de dinero a lo largo de la historia</h2>
+<p>El dinero aparece para evitar las desventajas del trueque. Para ello, se acuerda aceptar un bien a cambio de todos los demás.</p>
+<p>En la historia del dinero, pueden distinguirse dos etapas: la etapa del dinero mercancía y la del dinero fiduciario.</p>
+<p>El <strong>dinero mercancía</strong> tiene un valor intrínseco que coincide con el valor que representa. A lo largo de la historia se han utilizado como dinero la sal, el tabaco, la plata y el oro, entre otros bienes. Estos pueden cumplir las tres funciones del dinero —medio de pago, unidad de cuenta y depósito de valor— gracias a ciertas características:</p>
+<ul>
+<li>Son relativamente escasos, lo que permite mantener su valor.</li>
+<li>No son perecederos, lo que permite utilizarlos como depósito de valor.</li>
+<li>Son divisibles, lo que facilita el intercambio.</li>
+</ul>
+<p>Posteriormente, se comenzó a mantener el oro guardado o depositado en alguna institución, y los intercambios se realizaban mediante un papel canjeable por oro. Así surgen los bancos.</p>
+<p>En esta evolución apareció el <strong>dinero fiduciario</strong>. Al principio, el papel era una promesa de pago en oro; actualmente, ya no está respaldado por oro. Su uso y aceptación se apoyan en la obligación legal de aceptarlo y en la <em>confianza</em> en que otras personas también lo aceptarán. (El adjetivo «fiduciario» proviene del latín <em>fiducia</em>, que significa «confianza».)</p>
+<p>Hoy en día, la cantidad total de dinero está formada por el <strong>dinero legal</strong>, constituido por monedas y billetes, y el <strong>dinero bancario</strong>, constituido por cuentas o depósitos.</p>
+</section>
+<section id="demanda-de-dinero" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="demanda-de-dinero"><span class="header-section-number">9.3</span> Demanda de dinero</h2>
+<section id="concepto" class="level3" data-number="9.3.1">
+<h3 data-number="9.3.1" class="anchored" data-anchor-id="concepto"><span class="header-section-number">9.3.1</span> Concepto</h3>
+<p>Las personas deben decidir cómo asignan su riqueza entre diferentes activos. Esta decisión se denomina selección de cartera. La <strong>demanda de dinero</strong> es la cantidad de riqueza que los individuos desean mantener en forma de dinero.</p>
+<p>Consideremos un ejemplo numérico. Pedro tiene una riqueza de 50.000 €. Desea mantener 40.000 € en forma de bonos y 10.000 € en forma de dinero. Su demanda de dinero es, por tanto, de 10.000 €. Su amigo Ricardo tiene una riqueza de 15.000 €. No se fía de nadie y la ha guardado toda en billetes escondidos en su casa. Su demanda de dinero es, por tanto, de 15.000 €. La demanda de dinero de Pedro y Ricardo juntos es la suma de las demandas de dinero individuales; esto es, de 25.000 €.</p>
+</section>
+<section id="motivos" class="level3" data-number="9.3.2">
+<h3 data-number="9.3.2" class="anchored" data-anchor-id="motivos"><span class="header-section-number">9.3.2</span> Motivos</h3>
+<p>Si el dinero no proporciona rentabilidad, ¿por qué motivos las personas mantienen una parte de su riqueza en dinero?</p>
+<ul>
+<li><strong>Motivo de transacción</strong> (medio de cambio): se mantiene dinero para comprar bienes y servicios. Lo que importa es lo que se puede comprar con él, es decir, su valor real, y no su valor nominal. Si sube el nivel general de precios (<span class="math inline">\(P\)</span>), la demanda nominal de dinero (<span class="math inline">\(M^d\)</span>) subirá en la misma proporción. Por tanto, la <strong>demanda real de dinero</strong> (<span class="math inline">\(m^d\)</span>) es:</li>
+</ul>
+<p><span class="math display">\[
+m^d
+= \frac{\text{Demanda nominal de dinero}}{\text{Nivel general de precios}}
+= \frac{M^d}{P}.
+\]</span></p>
+<ul>
+<li><strong>Motivo especulativo</strong> (depósito de valor): las personas desean obtener rentabilidad, pero también asegurarse contra las pérdidas. Mantener dinero supone una menor rentabilidad, pero también un menor riesgo.</li>
+</ul>
+</section>
+<section id="demanda-de-dinero-y-tipo-de-interés" class="level3" data-number="9.3.3">
+<h3 data-number="9.3.3" class="anchored" data-anchor-id="demanda-de-dinero-y-tipo-de-interés"><span class="header-section-number">9.3.3</span> Demanda de dinero y tipo de interés</h3>
+<p>El <a href="intro.html#coste-de-oportunidad">coste de oportunidad</a> de mantener riqueza en dinero es el <strong>tipo de interés</strong> que se deja de ganar.</p>
+<p>Para simplificar, supongamos que la <strong>riqueza</strong> solo puede asignarse a dinero y a bonos. El dinero no proporciona interés, mientras que los bonos proporcionan un interés <span class="math inline">\(r\)</span>. En ese caso, la <strong>riqueza real</strong> es la suma de la <strong>demanda real de dinero</strong> (<span class="math inline">\(m^d\)</span>) y la <strong>demanda real de bonos</strong> (<span class="math inline">\(b^d\)</span>):</p>
+<p><span class="math display">\[
+\text{Riqueza real} = m^d + b^d.
+\]</span></p>
+<p>Si sube el tipo de interés, ¿qué ocurre con la cantidad demandada de dinero? La <strong>curva de demanda de dinero</strong> es <strong>decreciente</strong> con respecto al tipo de interés. Como muestra la <a href="#fig-demanda-dinero" class="quarto-xref">Figura&nbsp;<span>9.1</span></a>, un tipo de interés más alto se corresponde con una menor cantidad real demandada de dinero.</p>
+<div id="cell-fig-demanda-dinero" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div id="fig-demanda-dinero" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-demanda-dinero-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="moneda_files/figure-html/fig-demanda-dinero-output-1.png" width="625" height="439" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-demanda-dinero-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;9.1: Demanda real de dinero y tipo de interés.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="creación-del-dinero-legal-base-monetaria" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="creación-del-dinero-legal-base-monetaria"><span class="header-section-number">9.4</span> Creación del dinero legal: base monetaria</h2>
+<p>¿Cómo se crea el dinero y cuánto circula? El <strong>dinero legal</strong> está formado por <strong>monedas y billetes</strong>. Para comprender su creación, consideremos primero un sistema de billetes canjeables por oro.</p>
+<p><strong>Ejemplo: balance de un banco central en un sistema de billetes canjeables por oro.</strong> El banco central tiene un activo de 1.000 millones de oro y emite 1.000 millones en billetes, como se recoge en la <a href="#tbl-bc-oro" class="quarto-xref">Tabla&nbsp;<span>9.1</span></a>. Los billetes son un pasivo para el banco central, porque suponen una deuda con los particulares, y un activo para los particulares.</p>
+<div id="tbl-bc-oro" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bc-oro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;9.1: Balance inicial del banco central en un sistema de billetes canjeables por oro (millones).
+</figcaption>
+<div aria-describedby="tbl-bc-oro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Activo</th>
+<th style="text-align: left;">Pasivo (<span class="math inline">\(BM\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Oro = 1.000</td>
+<td style="text-align: left;">Billetes = 1.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>El valor total de estos pasivos monetarios del banco cdentral, es decir, de los billetes emitidos, se denomina <strong>base monetaria</strong> (<span class="math inline">\(BM\)</span>).</p>
+<p>Si el banco central quiere aumentar la base monetaria en, por ejemplo, 100 millones, tendrá que comprar oro por ese valor y financiar la compra mediante la emisión de billetes por 100 millones. La <a href="#tbl-bc-compra-oro" class="quarto-xref">Tabla&nbsp;<span>9.2</span></a> muestra esta operación.</p>
+<div id="tbl-bc-compra-oro" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bc-compra-oro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;9.2: Balance del banco central tras comprar oro y emitir billetes por 100 millones.
+</figcaption>
+<div aria-describedby="tbl-bc-compra-oro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Activo</th>
+<th style="text-align: left;">Pasivo (<span class="math inline">\(BM\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Oro = 1.000 + 100</td>
+<td style="text-align: left;">Billetes = 1.000 + 100</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Consideremos ahora un sistema en el que los billetes están respaldados por varios tipos de activos. La <a href="#tbl-bc-varios-activos" class="quarto-xref">Tabla&nbsp;<span>9.3</span></a> presenta un ejemplo de balance del banco central. Las partidas del activo son las fuentes de creación de base monetaria.</p>
+<div id="tbl-bc-varios-activos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bc-varios-activos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;9.3: Balance del banco central con billetes respaldados por varios tipos de activos (millones).
+</figcaption>
+<div aria-describedby="tbl-bc-varios-activos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Activo</th>
+<th style="text-align: left;">Pasivo (<span class="math inline">\(BM\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Oro = 1.100</td>
+<td style="text-align: left;">Billetes = 10.600</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Préstamo neto al sistema bancario = 4.500</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Títulos financieros = 3.500</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Divisas = 1.500</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Si el banco central adquiere nuevos activos, a cambio emite dinero para pagarlos y la base monetaria aumenta. Si el banco central se desprende de activos, recoge dinero que había emitido anteriormente y la base monetaria disminuye.</p>
+</section>
+<section id="dinero-bancario-y-magnitudes-monetarias" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="dinero-bancario-y-magnitudes-monetarias"><span class="header-section-number">9.5</span> Dinero bancario y magnitudes monetarias</h2>
+<p>Los bancos son empresas que aceptan <em>depósitos</em> o cuentas y conceden <em>créditos</em>. Un depósito tiene una doble consideración: para el banco, es un pasivo; para el individuo, es un activo.</p>
+<p>Los <em>depósitos a la vista</em> o <em>cuentas corrientes</em> son considerados dinero porque permiten realizar pagos mediante tarjetas, transferencias bancarias y otras anotaciones contables. Este dinero se denomina <strong>dinero bancario</strong>.</p>
+<section id="un-ejemplo-de-creación-de-dinero-bancario" class="level3" data-number="9.5.1">
+<h3 data-number="9.5.1" class="anchored" data-anchor-id="un-ejemplo-de-creación-de-dinero-bancario"><span class="header-section-number">9.5.1</span> Un ejemplo de creación de dinero bancario</h3>
+<p>Inicialmente, Vicente tiene 1.000 € en efectivo. Este dinero forma parte del <strong>efectivo en manos de particulares</strong> correspondiente a Vicente (<span class="math inline">\(EMP_V\)</span>):</p>
+<p><span class="math display">\[
+EMP_V = 1.000\;\text{€}.
+\]</span></p>
+<p>Vicente conserva 200 € en efectivo y deposita 800 € en el banco. Por tanto:</p>
+<p><span class="math display">\[
+EMP_V = 200\;\text{€}, \qquad D = 800\;\text{€}.
+\]</span></p>
+<p>Cuando los bancos reciben depósitos, guardan una parte como <strong>activos de caja</strong> (<span class="math inline">\(AC\)</span>), o reservas líquidas, y prestan el resto. Supongamos que, de los 800 € que Vicente ha depositado, el banco conserva 20 € como activos de caja y concede un crédito (<span class="math inline">\(C\)</span>) de 780 € a Julián:</p>
+<p><span class="math display">\[
+AC = 20\;\text{€}, \qquad C = 780\;\text{€}.
+\]</span></p>
+<p>Julián recibe 780 € en efectivo (<span class="math inline">\(EMP_J\)</span>) y contrae una deuda de la misma cuantía. Así, tiene 780 € de efectivo y una posición deudora de <span class="math inline">\(-780\)</span> € por el crédito recibido. La <a href="#fig-creacion-dinero-bancario" class="quarto-xref">Figura&nbsp;<span>9.2</span></a> resume las etapas del ejemplo.</p>
+<div id="cell-fig-creacion-dinero-bancario" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-creacion-dinero-bancario" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-creacion-dinero-bancario-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="moneda_files/figure-html/fig-creacion-dinero-bancario-output-1.png" width="950" height="605" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-creacion-dinero-bancario-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;9.2: El depósito de Vicente y el crédito a Julián: creación de dinero bancario.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La base monetaria es la suma del efectivo en manos de Vicente, el efectivo en manos de Julián y los activos de caja del banco:</p>
+<p><span class="math display">\[
+BM = EMP_V + EMP_J + AC
+= 200 + 780 + 20
+= 1.000\;\text{€}.
+\]</span></p>
+<p>La oferta monetaria, o dinero en circulación, suma el efectivo en manos de ambos particulares y los depósitos:</p>
+<p><span class="math display">\[
+OM = EMP_V + EMP_J + D
+= 200 + 780 + 800
+= 1.780\;\text{€}.
+\]</span></p>
+</section>
+<section id="base-monetaria-y-oferta-monetaria" class="level3" data-number="9.5.2">
+<h3 data-number="9.5.2" class="anchored" data-anchor-id="base-monetaria-y-oferta-monetaria"><span class="header-section-number">9.5.2</span> Base monetaria y oferta monetaria</h3>
+<p>Cuando un banco recibe un depósito, guarda una parte como <strong>activos de caja</strong> (<span class="math inline">\(AC\)</span>), o reservas líquidas, y presta lo que queda. El resto del dinero legal, formado por monedas y billetes, es <strong>efectivo en manos de los particulares</strong> (<span class="math inline">\(EMP\)</span>).</p>
+<p>La <strong>base monetaria</strong>, que controla el banco central, está formada por los <strong>activos de caja</strong> y el <strong>efectivo en manos de particulares</strong>:</p>
+<p><span class="math display">\[
+BM = AC + EMP.
+\]</span></p>
+<p>[La <strong>oferta monetaria</strong>, que representa la cantidad de dinero en circulación, está formada por los <strong>depósitos</strong> y el <strong>efectivo en manos de particulares</strong>:</p>
+<p><span class="math display">\[
+OM = D + EMP.
+\]</span>]{#oferta-monetaria}</p>
+</section>
+</section>
+<section id="la-relación-entre-efectivo-y-depósitos" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="la-relación-entre-efectivo-y-depósitos"><span class="header-section-number">9.6</span> La relación entre efectivo y depósitos</h2>
+<p>Los individuos deciden mantener una parte de su dinero en forma de monedas y billetes (<span class="math inline">\(EMP\)</span>) y otra parte en depósitos bancarios (<span class="math inline">\(D\)</span>).</p>
+<p>El cociente entre el efectivo y los depósitos que poseen las personas se denomina <strong>relación efectivo/depósitos</strong>, que denotaremos con <span class="math inline">\(e\)</span>:</p>
+<p><span class="math display">\[
+e = \frac{EMP}{D}
+= \frac{\text{Efectivo en manos de particulares}}{\text{Depósitos}}.
+\]</span></p>
+<p>Por ejemplo, si Vicente mantiene 200 € en billetes y 800 € en depósitos, entonces su relación efectivo/depósitos es:</p>
+<p><span class="math display">\[
+e_V = \frac{EMP_V}{D_V} = \frac{200}{800} = 0{,}25.
+\]</span></p>
+<p>De la definición de la relación efectivo/depósitos se puede despejar el efectivo en manos de particulares:</p>
+<p><span class="math display">\[
+EMP = e \cdot D.
+\]</span></p>
+</section>
+<section id="el-coeficiente-de-caja" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="el-coeficiente-de-caja"><span class="header-section-number">9.7</span> El coeficiente de caja</h2>
+<p>Los bancos intermedian canalizando el ahorro. Para ello, captan <strong>depósitos</strong> que remuneran a un tipo de interés, mediante operaciones de pasivo, y conceden <strong>créditos</strong> por los que cobran un tipo de interés, mediante operaciones de activo.</p>
+<p>Con los depósitos captados, los bancos mantienen una parte en forma de <strong>activos de caja</strong> (<span class="math inline">\(AC\)</span>), que son muy <em>líquidos</em>, pero tienen una baja rentabilidad. Con el resto conceden <strong>créditos</strong> (<span class="math inline">\(C\)</span>), que son poco líquidos, pero más <em>rentables</em>.</p>
+<p>A la hora de decidir cuánto mantienen como activos de caja y cuánto destinan a créditos, los bancos tienen en cuenta dos objetivos:</p>
+<ul>
+<li><strong>Rentabilidad</strong> para sus accionistas, que favorece el aumento de los créditos (<span class="math inline">\(\Delta C\)</span>).</li>
+<li><strong>Liquidez</strong> para hacer frente a las demandas de efectivo, que favorece el aumento de los activos de caja (<span class="math inline">\(\Delta AC\)</span>).</li>
+</ul>
+<p>Los bancos deciden guardar en forma de activos de caja una determinada proporción de los depósitos. Esta proporción se denomina <strong>coeficiente de caja</strong> (<span class="math inline">\(\alpha\)</span>):</p>
+<p><span class="math display">\[
+\alpha = \frac{AC}{D}
+= \frac{\text{Activos de caja}}{\text{Depósitos}}.
+\]</span></p>
+<p>De la definición del coeficiente de caja puede despejarse el valor de los activos de caja:</p>
+<p><span class="math display">\[
+AC = \alpha \cdot D.
+\]</span></p>
+<p>El banco central puede establecer un <strong>coeficiente de caja mínimo</strong>.</p>
+<p><strong>Ejemplo:</strong> un banco privado recibe depósitos por valor de 800 € y está sometido a un coeficiente de caja mínimo de <span class="math inline">\(0{,}02\)</span>. Suponiendo que el banco no considera rentable asumir un coeficiente de caja superior al mínimo exigido, sus activos de caja son:</p>
+<p><span class="math display">\[
+AC = 0{,}02 \cdot 800 = 16\;\text{€}.
+\]</span></p>
+<p>El resto se destina a créditos, como muestra la <a href="#tbl-banco-privado" class="quarto-xref">Tabla&nbsp;<span>9.4</span></a>.</p>
+<div id="tbl-banco-privado" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-banco-privado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;9.4: Balance de un banco privado con depósitos de 800 € y un coeficiente de caja de 0,02 (euros).
+</figcaption>
+<div aria-describedby="tbl-banco-privado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Activo</th>
+<th style="text-align: left;">Pasivo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Activos de caja (<span class="math inline">\(AC\)</span>) = 16</td>
+<td style="text-align: left;">Depósitos (<span class="math inline">\(D\)</span>) = 800</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Créditos (<span class="math inline">\(C\)</span>) = 784</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="el-multiplicador-monetario" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="el-multiplicador-monetario"><span class="header-section-number">9.8</span> El multiplicador monetario</h2>
+<p>Los receptores de créditos también pueden depositar el crédito en el banco, dando lugar a un proceso circular. La cantidad de depósitos que puede crearse finalmente está limitada por la base monetaria <span class="math inline">\((BM)\)</span>, el coeficiente de caja <span class="math inline">\((\alpha)\)</span> y la relación efectivo/depósitos <span class="math inline">\((e)\)</span>:</p>
+<p><span class="math display">\[
+D = \frac{BM}{\alpha + e}.
+\]</span></p>
+<p>La <a href="#oferta-monetaria">oferta monetaria</a> (<span class="math inline">\(OM\)</span>) está limitada por las mismas variables:</p>
+<p><span class="math display">\[
+OM = \underbrace{\frac{1+e}{\alpha+e}}_{\text{Multiplicador monetario}}\,BM.
+\]</span></p>
+<p>De esta expresión se extrae que un mayor coeficiente de caja <span class="math inline">\((\alpha)\)</span> supone un menor valor del multiplicador monetario. Del mismo modo, una mayor relación efectivo/depósitos <span class="math inline">\((e)\)</span> supone un menor valor del multiplicador.</p>
+</section>
+<section id="la-política-monetaria" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="la-política-monetaria"><span class="header-section-number">9.9</span> La política monetaria</h2>
+<p>Mediante la política monetaria, los bancos centrales pueden controlar, hasta cierto punto, la <a href="#oferta-monetaria">oferta monetaria</a>. Para ello pueden actuar de dos maneras:</p>
+<ul>
+<li>Modificar la <strong>base monetaria</strong> (<span class="math inline">\(BM\)</span>), comprando activos con emisión de moneda o vendiendo activos y recogiendo moneda.</li>
+<li>Modificar el <strong>coeficiente de caja mínimo</strong> (<span class="math inline">\(\alpha\)</span>).</li>
+</ul>
+<p>La relación entre estas variables viene dada por el multiplicador monetario que ya hemos definido:</p>
+<p><span class="math display">\[
+OM = \underbrace{\frac{1+e}{\alpha+e}}_{\text{Multiplicador monetario}}\,BM.
+\]</span></p>
+<p>Un mayor coeficiente de caja reduce el multiplicador monetario y, por tanto, reduce la oferta monetaria. Asimismo, una menor base monetaria reduce la oferta monetaria.</p>
+<section id="instrumentos" class="level3" data-number="9.9.1">
+<h3 data-number="9.9.1" class="anchored" data-anchor-id="instrumentos"><span class="header-section-number">9.9.1</span> Instrumentos</h3>
+<p>En el caso de la eurozona, los mecanismos concretos que el Banco Central Europeo (BCE) utiliza para actuar sobre la economía son tres:</p>
+<ul>
+<li><p><strong>Coeficiente de caja</strong> o de reservas mínimas (<span class="math inline">\(\alpha\)</span>). Es la <strong>obligación</strong> de los bancos de mantener un porcentaje de los depósitos como reservas. Sirve para <strong>controlar cuánto dinero bancario crean</strong> mediante préstamos.</p></li>
+<li><p><strong>Operaciones de mercado abierto</strong> (OMA). Son operaciones de compraventa de activos, normalmente deuda, entre el BCE y los bancos. Sirven para <strong>inyectar</strong> o <strong>retirar liquidez</strong> del sistema, aumentando o disminuyendo la base monetaria (<span class="math inline">\(\Delta BM\)</span> o <span class="math inline">\(\nabla BM\)</span>, respectivamente).</p></li>
+<li><p><strong>Facilidades permanentes.</strong> Los bancos piden dinero al BCE o lo depositan en el BCE de un día para otro. Estas operaciones marcan los <strong>tipos de interés</strong> a <strong>muy corto plazo</strong>.</p></li>
+</ul>
+<p>Estos instrumentos determinan los tipos de interés.</p>
+</section>
+<section id="objetivos" class="level3" data-number="9.9.2">
+<h3 data-number="9.9.2" class="anchored" data-anchor-id="objetivos"><span class="header-section-number">9.9.2</span> Objetivos</h3>
+<p>El <strong>objetivo principal en el largo plazo</strong> del BCE es la <strong>estabilidad de precios</strong>, con una inflación aproximada del 2 %.</p>
+<p>Los <strong>objetivos a corto plazo</strong> son la <strong>estabilidad financiera</strong> y <strong>atenuar las crisis económicas</strong>, evitando caídas fuertes de la producción y del empleo. Para ello, es necesario establecer en qué medida se está dispuesto a asumir una discrepancia respecto a la estabilidad de precios.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ciclo_polfiscal.html" class="pagination-link" aria-label="Ciclo y política fiscal">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Ciclo y política fiscal</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="Referencias">
+        <span class="nav-page-text">Referencias</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
