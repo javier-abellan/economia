@@ -554,7 +554,7 @@
     "href": "moneda.html#el-multiplicador-monetario",
     "title": "9  Sistema monetario",
     "section": "9.9 El multiplicador monetario",
-    "text": "9.9 El multiplicador monetario\nLa oferta monetaria (\\(OM\\)) está limitada por las mismas variables que la cantidad máxima de depósitos que pueden crearse:\n\\[\nOM = \\underbrace{\\frac{1+e}{\\alpha+e}}_{\\text{Multiplicador monetario}}\\,BM.\n\\]\nDe esta expresión se extrae que un mayor coeficiente de caja \\((\\alpha)\\) supone un menor valor del multiplicador monetario. Del mismo modo, una mayor relación efectivo/depósitos \\((e)\\) supone un menor valor del multiplicador.",
+    "text": "9.9 El multiplicador monetario\nLa oferta monetaria (\\(OM\\)) está limitada por las mismas variables que la cantidad máxima de depósitos que pueden crearse:\n\\[\nOM = \\frac{1+e}{\\alpha+e} BM,\n\\]\ndonde el factor \\((1+e)(\\alpha+e)\\) recibe el nombre de multiplicador monetario.\nDe esta expresión se extrae que un mayor coeficiente de caja \\((\\alpha)\\) supone un menor valor del multiplicador monetario. Del mismo modo, una mayor relación efectivo/depósitos \\((e)\\) supone un menor valor del multiplicador.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sistema monetario</span>"
     ]
